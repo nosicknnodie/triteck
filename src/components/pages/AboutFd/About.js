@@ -97,11 +97,10 @@ const About = () => {
                                 src="/img/about/concept-img-1.jpg"
                               ></img>
                             </MDBCol>
-                            <p>Metaverse</p>
-                            <strong>Simulation</strong>
+                            <strong>Modeling & Simulation</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            현실과 비현실이 모두 공존할 수 있는 폭넓은 분야 구현
+                            현실과 비현실이 모두 공존할 수 있는 폭넓은 분야 구현<br/>
                             설계. 생활. 예술. 게임 3차원 가상 세계
                           </MDBCardText>
                           <NavLink
@@ -128,12 +127,11 @@ const About = () => {
                                 src="/img/about/concept-img-2.jpg"
                               ></img>
                             </MDBCol>
-                            <p>VR / AR / MR / XR </p>
                             <strong>DigitalTwin</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            현실세계의 기계.장비.사물 등을 컴퓨터 속 가상세계에
-                            구현 시험 . 훈련. 분석. 평가 3차원 가상 실험
+                          현실 세계에서 발생하는 실제 데이터를<br/>
+                          디지털 환경에서 실시간으로 반영
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -161,20 +159,17 @@ const About = () => {
                             <MDBCol>
                               <img
                                 className="cardImgSize mb-5"
-                                src="/img/about/concept-img-3.jpg"
+                                src="/img/about/concept-img-6.jpg"
                               ></img>
                             </MDBCol>
-                            <p>Recycle</p>
-                            <strong>Clean Energy</strong>
+                            <strong>Metaverse</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation cardTextClean">
-                            저 NOx 화 “고온 다단 싸이크론 연소기술” 개발 연소용
-                            공기의 흐름 - 싸이크론 회전식 폐기물(고체, 액체 및
-                            기체) 연소장치로 다양하게 응용
+                          가상 현실(VR), 증강 현실(AR), 3D 인터넷 등의<br/>기술을 통해 현실과 가상 현실이 융합된 공간
                           </MDBCardText>
                           <NavLink
                             tag="button"
-                            to="/pages/AboutIndexFd/subPageFd/clean"
+                            to="/pages/AboutIndexFd/subPageFd/Voucher"
                             color="mdb-color"
                             className="btn btn-outline-mdb-color btn-sm btn-rounded d-inline"
                             onClick={handleScrollToTop}
@@ -193,20 +188,17 @@ const About = () => {
                             <MDBCol>
                               <img
                                 className="cardImgSize mb-5"
-                                src="/img/about/concept-img-4.jpg"
+                                src="/img/about/concept-img-5.jpg"
                               ></img>
                             </MDBCol>
-                            <p>Fusion</p>
-                            <strong>Art Technology</strong>
+                            <strong>ICT</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            디지털 기술과 예술의 결합 아트테크놀로지 디지털
-                            미디어 특징으로 새로운 예술 구현 여러 분야 융합하여
-                            색다른 예술 창조
+                          정보의 효율적인 전달과 통신기술을 포함
                           </MDBCardText>
                           <NavLink
                             tag="button"
-                            to="/pages/FieldPageFd/subPageFd/Rsa"
+                            to="/pages/AboutIndexFd/subPageFd/dlpp"
                             color="mdb-color"
                             className="btn btn-outline-mdb-color btn-sm btn-rounded d-inline"
                             onClick={handleScrollToTop}
