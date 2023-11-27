@@ -248,12 +248,12 @@ class Header extends React.Component {
                 <MDBNavItem id="dropdown-top-menu" className="dropdown">
                   <NavLink
                     to="/pages/CeoFd/ceo"
-                    // className="first_rid Ripple-parent"
+                    className="first_rid Ripple-parent"
                   >
-                    <div>
+                    <li>
                       회사소개
                       <MDBIcon icon="angle-down" className="ml-1" />
-                    </div>
+                    </li>
                   </NavLink>
                   <MDBNavItem
                     className="dropdown-menu"
@@ -266,7 +266,10 @@ class Header extends React.Component {
                 </MDBNavItem>
 
                 <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink to="/pages/FieldPageFd/FieldIndex">
+                  <NavLink
+                    to="/pages/FieldPageFd/FieldIndex"
+                    className="Ripple-parent"
+                  >
                     연구분야
                     <MDBIcon icon="angle-down" className="ml-1" />
                   </NavLink>
@@ -296,7 +299,10 @@ class Header extends React.Component {
                 </MDBNavItem>
 
                 <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink to="/pages/AboutIndexFd/aboutIndex">
+                  <NavLink
+                    to="/pages/AboutIndexFd/aboutIndex"
+                    className="Ripple-parent"
+                  >
                     연구실적
                     <MDBIcon icon="angle-down" className="ml-1" />
                   </NavLink>
@@ -332,11 +338,19 @@ class Header extends React.Component {
                 </MDBNavItem>
 
                 <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink to="/pages/ContactFd/contact">고객문의</NavLink>
+                  <NavLink
+                    to="/pages/ContactFd/contact"
+                    className="Ripple-parent"
+                  >
+                    고객문의
+                  </NavLink>
                 </MDBNavItem>
 
                 <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink to="/pages/PromotionFd/subPageFd/NewsArticle">
+                  <NavLink
+                    to="/pages/PromotionFd/subPageFd/NewsArticle"
+                    className="Ripple-parent"
+                  >
                     블로그
                     <MDBIcon icon="angle-down" className="ml-1" />
                   </NavLink>
