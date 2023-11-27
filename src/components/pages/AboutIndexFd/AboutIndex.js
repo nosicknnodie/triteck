@@ -21,7 +21,7 @@ import {
 
 import Copyrights from "../../Footer";
 import KstarCompPage from "./component/KstarCompPage";
-import { store } from "@/common/Store";
+import { store } from "../../../common/Store";
 // import TopImgPageFieldPage from '../FieldPageFd/component/TopImgPageFieldPage';
 // import TopImgPageFieldPageMobile from '../FieldPageFd/component/TopImgPageFieldPageMobile';
 import TopImgPageFieldPage from "../../pages/TopImgFd/TopImgPageFieldPage";
@@ -34,8 +34,12 @@ const AboutIndex = () => {
 
   return (
     <div id="AboutIndex">
-      <div className="aboutWeb">{/* <TopImgPageFieldPage /> */}</div>
-      <div className="aboutMobile">{/* <TopImgPageFieldPageMobile /> */}</div>
+      <div className="aboutWeb">
+        <TopImgPageFieldPage />
+      </div>
+      <div className="aboutMobile">
+        <TopImgPageFieldPageMobile />
+      </div>
       {/* <TopImgPageAboutIndexLink /> */}
 
       <MDBContainer className="mainContainer">
@@ -66,7 +70,9 @@ const AboutIndex = () => {
 
                   {level.step === 1 && (
                     <MDBContainer>
-                      <MDBRow>{/* <KstarCompPage /> */}</MDBRow>
+                      <MDBRow>
+                        <KstarCompPage />
+                      </MDBRow>
                     </MDBContainer>
                   )}
                 </MDBRow>
@@ -76,7 +82,7 @@ const AboutIndex = () => {
         </MDBRow>
       </MDBContainer>
 
-      {/* <Copyrights /> */}
+      <Copyrights />
     </div>
   );
 };

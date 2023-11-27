@@ -14,7 +14,6 @@ const KstarCompPage = (uuid) => {
   if (error) {
     return <div>{error.message}</div>;
   }
-
   const { resarchs } = data;
 
   return (

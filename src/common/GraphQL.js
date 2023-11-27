@@ -1,15 +1,14 @@
 import gql from "graphql-tag";
 
 export const GET_CARDICT = gql`
-query getCardIct($uuid: String!) {
-  cardIct(uuid: $uuid) {
-    uuid
-    eng
-    password
-    
-  }      
-}
-`
+  query getCardIct($uuid: String!) {
+    cardIct(uuid: $uuid) {
+      uuid
+      eng
+      password
+    }
+  }
+`;
 
 export const GET_CARDICTS = gql`
   query getCardIcts {
@@ -17,12 +16,11 @@ export const GET_CARDICTS = gql`
       uuid
       eng
       password
-    }      
+    }
   }
-`
+`;
 
-
-export const  GET_RESARCH = gql`
+export const GET_RESARCH = gql`
   query getResarch($uuid: String!) {
     resarch(uuid: $uuid) {
       uuid
@@ -33,12 +31,11 @@ export const  GET_RESARCH = gql`
       Project
       date
       link
-      
-    }      
+    }
   }
-`
+`;
 
-export const  GET_RESARCHS = gql`
+export const GET_RESARCHS = gql`
   query getResarchs {
     resarchs {
       uuid
@@ -49,13 +46,11 @@ export const  GET_RESARCHS = gql`
       Project
       date
       link
-      
-    }      
+    }
   }
-`
+`;
 
-
-export const  GET_FIELD = gql`
+export const GET_FIELD = gql`
   query getField($uuid: String!) {
     field(uuid: $uuid) {
       uuid
@@ -65,13 +60,12 @@ export const  GET_FIELD = gql`
       content
       Project
       link
-      
-    }      
+    }
   }
-`
+`;
 
-export const  GET_FIELDS = gql`
-  query getFields{
+export const GET_FIELDS = gql`
+  query getFields {
     fields {
       uuid
       kor
@@ -80,14 +74,11 @@ export const  GET_FIELDS = gql`
       content
       Project
       link
-      
-    }      
+    }
   }
-`
+`;
 
-
-
-export const  GET_TOPIMGPAGE = gql`
+export const GET_TOPIMGPAGE = gql`
   query getTopImgPage($uuid: String!) {
     topImgPage(uuid: $uuid) {
       uuid
@@ -96,12 +87,11 @@ export const  GET_TOPIMGPAGE = gql`
       file
       link
       alt
-      
-    }      
+    }
   }
-`
+`;
 
-export const  GET_TOPIMGPAGES = gql`
+export const GET_TOPIMGPAGES = gql`
   query getTopImgPages {
     topImgPages {
       uuid
@@ -110,7 +100,6 @@ export const  GET_TOPIMGPAGES = gql`
       file
       link
       alt
-      
-    }      
+    }
   }
-`
+`;
