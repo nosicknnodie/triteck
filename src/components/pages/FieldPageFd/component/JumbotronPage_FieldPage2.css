@@ -1,0 +1,66 @@
+#jumbotronId2 .DvScopeListM{
+  display: none;
+}
+
+#jumbotronId2 .jumbotron {
+  background-color: #fff;
+  border-radius: .125rem;
+  /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); */
+  box-shadow: none;
+  padding: 5px;
+}
+
+
+#jumbotronId2 .VrTitle{
+  color: #05AF53;
+}
+
+#jumbotronId2 .DvScope {
+  color: #077038;
+  font-weight: 800;
+  justify-content: center;
+  background-color: #E2E2E2;
+  border-top: 2px solid #09a351 ;
+}
+
+#jumbotronId2 .DvScopeContent {
+  background-color: #F5F5F5;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#jumbotronId2 .DvScopeList {
+  color: #077038;
+  font-weight: 900;
+  
+}
+
+
+#jumbotronId2 .DvScopeListChild {
+  color: #4A4A4A;
+  font-weight: 900;
+  text-align: left;
+}
+
+#jumbotronId2 .cardJumbot{
+  color:rgb(51, 43, 43);
+  
+}
+@media (max-width:700px){
+
+
+  #jumbotronId2 .VrTitle{
+    font-size: 30px;
+  }
+
+  #jumbotronId2 .rowJumbo{
+    margin-top: -50px;
+  }
+  
+  #jumbotronId2 .cardJumbot{
+    font-size: 10px;
+    
+    
+  }
+
+}

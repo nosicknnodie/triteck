@@ -1,0 +1,287 @@
+
+#pography_2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  #pography_2 .bq-title{
+    font-weight: 700;
+  }
+
+  #pography_2 .bq-primary {
+    border-left: 3px solid #6621c0!important;
+}
+
+#pography_2 .bq-primary .bq-title {
+  color: #6621c0 !important;
+}
+
+
+  .blockquote .row {
+    padding-left: 10px;
+  }
+  
+ .cle-img {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_1.jpg);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+    
+  }
+
+    
+ .cle-img1 {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_2.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    margin-right: 5px;
+    
+
+  }
+
+  .tech-img {
+    display: inline-block;
+    width: 100px;
+    height: 500px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_3.png);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+
+  }
+
+  .Application {
+    text-align: center;
+  }
+
+  .Application-img {
+    display: inline-block; 
+    width: 900px;
+    height: 500px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_4.png);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  .title-1 h6 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2em;
+    
+  }
+
+
+  @media (max-width:990px){
+
+    .tech-img {
+      display: inline-block;
+      width: 100px;
+      height: 300px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_3.png);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+  
+    }
+
+    .cle-img {
+      display: inline-block;
+      width: 100px;
+      height: 170px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_1.jpg);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+      
+    }
+  
+      
+   .cle-img1 {
+      display: inline-block;
+      width: 100px;
+      height: 170px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_2.jpg);
+      background-repeat: no-repeat;
+      background-color: white;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      margin-right: 5px;
+      
+  
+    }
+
+
+    
+  .Application-img {
+    display: inline-block; 
+    width: 900px;
+    height: 320px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_4.png);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  
+  
+  }
+ 
+
+  @media (max-width: 767px){
+
+    .tech-img {
+      display: inline-block;
+      width: 100px;
+      height: 200px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_3.png);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+  
+    }
+
+    .cle-img {
+      display: inline-block;
+      width: 100px;
+      height: 120px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_1.jpg);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+      
+    }
+  
+      
+   .cle-img1 {
+      display: inline-block;
+      width: 100px;
+      height: 120px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_2.jpg);
+      background-repeat: no-repeat;
+      background-color: white;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      margin-right: 5px;
+      
+  
+    }
+
+      
+  .Application-img {
+    display: inline-block; 
+    width: 900px;
+    height: 220px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_4.png);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  
+  }
+
+  @media(max-width:530px){
+  .Application-img {
+    display: inline-block; 
+    width: 900px;
+    height: 190px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_4.png);
+    background-repeat: no-repeat;
+    border: 2px solid rgb(221, 221, 221);
+    background-size: contain;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  }
+
+  @media(max-width:400px){
+    .Application-img {
+      display: inline-block; 
+      width: 900px;
+      height: 150px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_4.png);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+    }
+
+    .cle-img {
+      display: inline-block;
+      width: 100px;
+      height: 80px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_1.jpg);
+      background-repeat: no-repeat;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      background-color: white;
+      margin-right: 5px;
+      
+    }
+  
+      
+   .cle-img1 {
+      display: inline-block;
+      width: 100px;
+      height: 80px;
+      padding-right: 10px;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/cle_2.jpg);
+      background-repeat: no-repeat;
+      background-color: white;
+      border: 2px solid rgb(221, 221, 221);
+      background-size: contain;
+      margin-right: 5px;
+      
+  
+    }
+  
+    }
+ 

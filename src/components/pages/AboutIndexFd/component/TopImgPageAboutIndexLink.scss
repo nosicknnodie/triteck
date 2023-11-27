@@ -1,0 +1,108 @@
+
+#TopImgPageAboutIndexLink {
+  .view {
+  height: 50vh !important;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.sub_title01 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0.40em;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 0em;
+  font-family: 'Goldman', cursive;
+ }
+ .containTopBg {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right;
+  background-image: url(/img/logo/Blue.png);
+}
+
+.btn-outline-blue {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  border: 2px solid #1976d2 !important;
+}
+.h1-responsive{
+  font-size: 5rem;
+  color: #ffffff
+}
+&img{
+  width:25rem;
+}
+.rowIconRotText .mt-xl-5 {
+  margin-top: 5rem!important;
+
+}
+
+.topAnimation {
+  text-align: center;
+  padding-right: 20em;
+  }
+
+  .colTitleText{
+    margin-left: 18%;
+   }
+
+}
+
+
+
+
+@media (max-width: 576px) {
+  #TopImgPageAboutIndexLink{
+    .h1-responsive{
+     font-size: 3em;
+     color: #ffffff
+  }
+    .rowIconRotText {
+    margin-right: 2rem;
+  }
+  .btnWeb{
+    display: inline;
+    font-weight: 800;
+
+  }
+  }
+}
+
+
+@media (max-width: 767px){
+  #TopImgPageAboutIndexLink{
+    .rowIconRot img{
+    display: none;
+  }
+    .btnWeb{
+    display: none;
+  }
+    .btnMobile{
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+
+  }
+}
+}
+
+@media (min-width: 768px){
+
+  #TopImgPageAboutIndexLink{
+     .btnWeb{
+    display: inline;
+  }
+}
+
+  #TopImgPageAboutIndexLinDk {
+    .btnMobile{
+      display: none;
+    }
+  }
+
+}

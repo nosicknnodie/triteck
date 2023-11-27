@@ -1,0 +1,68 @@
+#TabsJustId2 .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow: none;
+  background-color: #F5F5F5 ;
+}
+
+#TabsJustId2 .vrText {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 23px;
+color: #4B4B4B;
+}
+
+#TabsJustId2 .DvScope {
+  color: #2E638D;
+  font-weight: 800;
+  justify-content: center;
+  background-color: #E2E2E2;
+  border-top: none;
+  font-size: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px; 
+}
+
+#TabsJustId2 .DvScope2 {
+  color: #2E638D;
+  font-weight: 800;
+  justify-content: center;
+  background-color: #E2E2E2;
+  border-top: none;
+  font-size: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px; 
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#TabsJustId2 .DvScopeText {
+  color: #4B4B4B;
+  font-weight: 800;
+  justify-content: center;
+  border-top: none;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+#TabsJustId2 .SimulationCont {
+  margin-top: 30px;
+
+}
+
+#TabsJustId2 .DvImg {
+
+ justify-content: center;
+ margin-bottom: 2px;
+}
+
+#TabsJustId2 .textNavLink{
+  font-size: smaller;
+  
+}
+
+#TabsJustId2 .rowImgText{
+  justify-content: center;
+}

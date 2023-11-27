@@ -1,0 +1,62 @@
+#jumbotronIdMobile2 .DevelopmentDetails{
+  color: #34B78F;
+  font-weight: 700;
+  border-bottom: 2px solid #34B78F;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+
+#jumbotronIdMobile2 .cardTitle2{
+  font-size: 1rem;
+  font-weight: 800;
+  color:rgb(233, 229, 15)
+}
+
+#jumbotronIdMobile2 .blueBoxColor{
+  background: linear-gradient(180deg, #35CF72 0%, #009B3E 100%);
+}
+
+#jumbotronIdMobile2  .btnBox{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: rgb(24, 180, 24);
+  font-weight: 800;
+  text-align: center;
+
+  
+ }
+ 
+ #jumbotronIdMobile2 .card-title{
+   font-size: 19px;
+ }
+
+ #jumbotronIdMobile2 .rowCleanEnergy{
+   height: auto;
+   background-color: #3F7363 ;
+   justify-items: center;
+   text-align: center;
+   align-items: center;
+ }
+
+ #jumbotronIdMobile2 .colCleanEnergy{
+   color: white;   
+  height: auto;
+  margin-top: 2em;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+#jumbotronIdMobile2 .colCleanEnergyTitle{
+  color: white;   
+ height: auto;
+
+ justify-items: center;
+ text-align: center;
+ align-items: center;
+}
+
+ 

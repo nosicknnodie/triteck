@@ -1,0 +1,248 @@
+#cleanProjects {
+  margin-top: 5rem!important;
+}
+#cleanProjects h2{
+  color:#007D14;
+  
+}
+
+#cleanProjects p{
+  font-weight: bold;
+  color: #565656;
+}
+#cleanProjects .CleanHrSize{
+  border: 1px solid #007D14;
+}
+
+#cleanProjects .colTextpt{
+   justify-content: center;
+   padding-left: 1em;
+   letter-spacing: 0.4em;
+}
+
+#cleanProjects .colTextpt2{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.2em;
+}
+
+#cleanSectionID .rowText1{
+ justify-content: center;
+ word-break: keep-all;
+
+}
+#cleanSection2Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+#cleanProjects .colTextpt2{
+ font-weight: 400;
+ text-align: center;
+ font-size: 35px;
+ color: #007D14;
+ padding-left: 1em;
+}
+
+#cleanSection2Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #007D14;
+  padding-left: 0.5em;
+ }
+
+#cleanProjects .rowText1{
+ font-size: 1em;
+ margin-bottom: 5rem;
+}
+
+
+#cleanSection2Id {
+  background-color: #F5F5F5;
+}
+
+#cleanSection2Id .colCleanProject{
+  line-height: 2;
+}
+
+
+#cleanSection3Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #007D14;
+  padding-left: 0.5em;
+  letter-spacing: 0.7rem;
+  
+ }
+ #cleanSection3Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+#cleanSection3Id {
+  background-color: #ffffff;
+}
+
+#cleanSection3Id .colCleanProject{
+  line-height: 2;
+  font-weight: 500;
+}
+
+
+#cleanSection4Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #007D14;
+  letter-spacing: 1rem;
+  
+ }
+ #cleanSection4Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+
+
+
+#cleanSection4Id {
+  background-color: #F5F5F5;
+}
+
+#cleanSection4Id .colCleanProject{
+  line-height: 2;
+  font-weight: 500;
+}
+
+
+#cleanSection4Id .containSection4{
+  margin-bottom: 4rem;  
+}
+
+#cleanSection4Id .containSection4 img{
+  margin-bottom: 4rem;  
+}
+
+
+#cleanSection5Id .colSection5 hr{
+ border-color: #007D14; 
+}
+
+
+#cleanSection5Id .colSection5{
+  color: #007D14; 
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1em;
+  text-align: center;
+  line-height: 1;
+}
+
+#cleanSection5Id .colSectionImg5{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+
+@media (max-width: 767px){
+
+  #cleanProjects .colTextpt{
+    font-size: 0.8em; 
+  }
+  #cleanProjects .colTextpt2{
+    font-size: 1.5em; 
+  }
+
+
+  #cleanSectionID .rowText1{
+    display: none;
+  }
+
+
+  #cleanSection2Id .colTextpt{
+   letter-spacing: .5em;   
+   
+  }
+
+  #cleanSection2Id .colTextpt2{
+    font-size: 1.5em;    
+   }
+
+  #cleanSection2Id .rowCleanProjectsWeb{
+    display: none;        
+  }
+
+  #cleanSection2Id .colCleanProject{
+    display: none;
+  }
+
+
+
+  #cleanSection3Id .colTextpt{
+    letter-spacing: .8em;   
+    
+   }
+ 
+   #cleanSection3Id .colTextpt2{
+     font-size: 1.5em;  
+     letter-spacing: .3em;     
+     
+    }
+  #cleanSection3Id .rowCleanProjectsWeb{
+    display: none;        
+  }
+
+  #cleanSection3Id .colCleanProject{
+    display: none;
+  }
+
+
+
+  #cleanSection4Id .colTextpt2{
+    font-weight: 400;
+    text-align: left;
+    font-size: 35px;
+    color: #007D14;
+    padding-left: 0.5em;
+    letter-spacing: 1rem;   
+  }
+
+  #cleanSection4Id .rowCleanProjectsWeb{
+    display: none;        
+  }
+
+  #cleanSection4Id .colCleanProject{
+    display: none;
+  }
+
+
+  #cleanSection4Id .colTextpt{
+    letter-spacing: .5em;   
+    
+   }
+ 
+   #cleanSection4Id .colTextpt2{
+     font-size: 1.5em;  
+     letter-spacing: .1em;     
+     
+    }
+
+  
+  #cleanSection4Id .containSection4{
+    display: none;
+  }
+
+
+  
+
+ #cleanSection5Id {
+  display: none;
+}
+
+}

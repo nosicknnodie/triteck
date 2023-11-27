@@ -1,0 +1,55 @@
+#pography {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-radius: 1em;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+  #pography .bq-title{
+    font-weight: 700;
+  
+    
+  }
+
+  .blockquote .row {
+    padding-left: 10px;
+  }
+  
+ .nfri-img {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/nfri_1.png);
+  }
+
+    
+ .nfri-img1 {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/nfri_2.png);
+  }
+
+    
+ .nfri-img2 {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/nfri_3.png);
+  }
+
+  .nfri-img3 {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 258px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/nfri_4.png);
+  }
+

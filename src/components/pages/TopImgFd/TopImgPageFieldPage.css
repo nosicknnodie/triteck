@@ -1,0 +1,218 @@
+#TopImgPageFieldPage_1.view {
+  height: 100vh !important;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+#TopImgPageFieldPage_1.sub_title01 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0.4em;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 0em;
+  font-family: "Goldman", cursive;
+}
+
+#TopImgPageFieldPage_1.containTopBg {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right;
+  background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/logo/white.png);
+  height: 100vh;
+}
+
+#TopImgPageFieldPage_1.h1-responsive {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+#TopImgPageFieldPage_1img {
+  width: 25rem;
+}
+
+#TopImgPageFieldPage_1.rowIconRotText .mt-xl-5 {
+  margin-top: 5rem !important;
+}
+
+#TopImgPageFieldPage_1.topAnimation {
+  text-align: center;
+  padding-right: 20em;
+}
+
+#TopImgPageFieldPage_1.colTitleText {
+  margin-left: 18%;
+}
+
+#TopImgPageFieldPage_1 .carousel .carousel-control-prev-icon {
+  width: 130px;
+  height: 130px;
+  margin-top: 150px;
+}
+
+#TopImgPageFieldPage_1 .carousel .carousel-control-next-icon {
+  width: 130px;
+  height: 130px;
+  margin-top: 150px;
+}
+#TopImgPageFieldPage_1 .testimonial-carousel .carousel-control {
+  top: 0;
+  background-image: none;
+  transform: translateY(-35%);
+}
+
+#TopImgPageFieldPage_1 .testimonial-carousel .carousel-control:hover::before {
+  color: rgb(253, 253, 253);
+  transition: 0.4s;
+}
+
+#TopImgPageFieldPage_1 .testimonial-carousel .carousel-control::before {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.4s;
+}
+
+#TopImgPageFieldPage_1 .itemId4 {
+  display: block;
+  width: 1200;
+  height: 490px;
+}
+
+#TopImgPageFieldPage_1 .xrProject {
+  margin: none;
+  padding: none;
+}
+
+#TopImgPageFieldPage_1 .carousel-indicators {
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#TopImgPageFieldPage_1 .carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 1200px;
+}
+
+@media (max-width: 576px) {
+  #TopImgPageFieldPage_1.h1-responsive {
+    font-size: 3em;
+    color: #ffffff;
+  }
+
+  #TopImgPageFieldPage_1.rowIconRotText {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #TopImgPageFieldPage_1.rowIconRot img {
+    display: none;
+  }
+
+  #TopImgPageFieldPage_1.btnWeb {
+    display: none;
+  }
+
+  #TopImgPageFieldPage_1.btnMobile {
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+  }
+
+  #TopImgPageFieldPage_1.containTopBg {
+    background-repeat: no-repeat;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/logo/white.png);
+    background-size: 100%;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  #TopImgPageFieldPage_1.btnWeb {
+    display: inline;
+  }
+
+  #TopImgPageFieldPage_1.btnMobile {
+    display: none;
+  }
+}
+
+/* ----------------------------------------- */
+
+#TopImgPageFieldPage_1 .view {
+  background-image: url("@/assets/img/ceo/component/earth-1756274_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#TopImgPageFieldPage_1 .mask {
+  min-height: 70vh;
+}
+
+#TopImgPageFieldPage_1 .h1-responsive {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+#TopImgPageFieldPage_1 .topAnimation {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  #TopImgPageFieldPage_1 .h1-responsive {
+    font-size: 3em;
+    color: #ffffff;
+  }
+
+  #TopImgPageFieldPage_1 .rowIconRotText {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #TopImgPageFieldPage_1 .rowIconRot img {
+    display: none;
+  }
+
+  #TopImgPageFieldPage_1 .btnWeb {
+    display: none;
+  }
+
+  #TopImgPageFieldPage_1 .btnMobile {
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+  }
+
+  #TopImgPageFieldPage_1 .containTopBg {
+    background-repeat: no-repeat;
+    background-image: url("@/assets/img/ceo/component/earth-1756274_1920.jpg");
+    background-size: 100%;
+    padding: 50px;
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #TopImgPageFieldPage_1 .btnWeb {
+    display: inline;
+  }
+
+  #TopImgPageFieldPage_1 .btnMobile {
+    display: none;
+  }
+}

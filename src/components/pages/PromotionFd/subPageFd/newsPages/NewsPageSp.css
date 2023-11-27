@@ -1,0 +1,67 @@
+#newsPageSp {
+  background-color: #fff;
+  word-break: keep-all;
+}
+
+
+#newsPageSp .newsPageSpMobile{
+  display: none;
+}
+
+#newsPageSp .card{
+  box-shadow: none;
+}
+
+#newsPageSp .w-responsive{
+  font-size: larger;
+  color: rgb(5, 5, 131);
+}
+
+#newsPageSp .hrCenter{
+  border: 0.5px solid black;
+}
+
+#newsPageSp .title{
+  font-size: 1em;
+}
+
+#newsPageSp .titleText h4{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#newsPageSp .titleText h6{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#newsPageSp .titleText_2 img{
+  width: 40vw;
+}
+
+#newsPageSp p{
+  font-size: 1em;
+}
+
+#newsPageSp .imgTitle{
+  width: 10vw;
+}
+@media (max-width: 767px) {
+  #newsPageSp .newsPageSpMobile{
+    display: block;
+  }
+
+  #newsPageSp .newsPageSpWeb{
+    display: none;
+  }
+
+  #newsPageSp .imgTitle{
+    width: 30vw;
+  }
+  #newsPageSp .titleText_2 img{
+    width: 90vw;
+  }
+  
+
+  
+}

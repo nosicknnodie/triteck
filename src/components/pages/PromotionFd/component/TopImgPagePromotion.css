@@ -1,0 +1,132 @@
+
+#TopImgPagePromotion_1 .view {
+  height: 60vh !important;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+#TopImgPagePromotion_1 .sub_title01 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0.40em;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 0em;
+  font-family: 'Goldman', cursive;
+ }
+  
+
+
+
+#TopImgPagePromotion_1 .h1-responsive{
+  font-size: 5rem;
+  color: #ffffff
+}
+
+#TopImgPagePromotion_1 img{
+  width:25rem;
+  
+}
+
+#TopImgPagePromotion_1 .rowIconRotText .mt-xl-5 {
+
+  margin-top: 5rem!important;
+}
+
+#TopImgPagePromotion_1 .containTopBg {
+  background-repeat: no-repeat;
+  background-image: url('/img/ceo/component/earth-1756274_1920.jpg');
+  background-size: 100%;
+  height: 60vh;
+  width: 100vw;
+  
+}
+
+#TopImgPagePromotion_1 .containTopBg .btnMobile{
+  display: none;
+}
+/* 
+#TopImgPagePromotion_1 .imgSize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: auto;
+  
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+} */
+
+@media (max-width: 576px) {
+
+  #TopImgPagePromotion_1 h6{
+    display: inline;
+  }
+
+  #TopImgPagePromotion_1 .h1-responsive{
+     font-size: 3em;
+     color: #ffffff
+  }
+   
+  #TopImgPagePromotion_1 .rowIconRotText {
+    margin-right: 2rem;
+   
+  }   
+
+  #TopImgPagePromotion_1 .containTopBg {
+    background-repeat: no-repeat;
+    background-image: url('/img/ceo/component/earth-1756274_1920.jpg');
+    background-size: 100%;
+   
+    height: 70vh;
+    width: 100vw;
+  }
+  #TopImgPagePromotion_1 .containTopBg .btnWeb{
+    display: inline;
+  }
+
+}
+
+
+@media (max-width: 767px){
+  #TopImgPagePromotion_1 .rowIconRot img{
+    display: none;
+  }
+
+  #TopImgPagePromotion_1 .btnWeb{
+    display: none;
+  }
+
+  #TopImgPagePromotion_1 .containTopBg {
+    background-repeat: no-repeat;
+  background-image: url('/img/ceo/component/earth-1756274_1920.jpg');
+  background-size: 100%;
+ 
+  height: 70vh;
+  width: 100vw;
+
+  }
+
+}
+/* 
+@media (min-width: 768px){
+  #TopImgPagePromotion_1 .btnWeb{
+    display: inline;
+    color: white !important;
+  }
+ 
+
+  #TopImgPagePromotion_1 .btnMobile{
+    display: none;
+  }
+} */

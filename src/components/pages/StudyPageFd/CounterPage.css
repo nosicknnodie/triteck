@@ -1,0 +1,124 @@
+
+
+#idSideList {
+ 
+    position: sticky;
+    z-index: 2;
+    bottom: 0px;
+    top: 90px;
+    
+}
+
+#idSideList .advertisement {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 180px;
+  background-color: indianred;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 10px;
+
+}
+
+@media (max-width:1200px){
+  #idSideList {
+  display: none;
+
+  }
+
+}
+
+
+
+.rowSideList li{
+  list-style: none;
+  line-height: 1.9rem;
+  padding: 0 5px;
+  font-size: larger;
+  color:rgb(10, 10, 10)
+  
+ 
+}
+
+.rowSideList .active li{
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 600;
+  color: rgb(235, 18, 18);
+  background-color: transparent;
+  border-left: 4mm ridge rgba(194, 17, 55, 0.8); 
+  box-shadow: none;
+ 
+
+}
+
+
+
+
+#idCounterComponent .colCounterComponent {
+  margin-top: 4rem;
+
+}
+
+
+#idCounterComponent .rowCounterComponent {
+  height: 100vh;
+  background-color: rgb(209, 200, 78);
+  justify-content: center;
+  align-items: center;
+
+}
+
+#idCounterComponent .rowInputSample {
+  height: 100vh;
+  background-color: rgb(86, 100, 230);
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  padding: 0 20px;
+
+}
+
+#idCounterComponent .rowInputSample2 {
+  height: 100vh;
+  background-color: rgb(102, 75, 223);
+  justify-content: center;
+  align-items: center;
+  color: white;
+    
+
+}
+
+#idCounterComponent .rowUserList {
+  height: 100vh;
+  background-color: rgb(102, 194, 78);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#idCounterComponent .rowUserListPro {
+  height: 100vh;
+  background-color: rgb(218, 85, 162);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#idCounterComponent .rowUserListProUseRef {
+  height: 100vh;
+  background-color: rgb(33, 188, 194);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#idCounterComponent .rowColGridSystem {
+  display: grid;
+  height: 100vh;
+  background-color: rgb(119, 128, 207);
+
+  color: rgb(172, 151, 151);
+}
+

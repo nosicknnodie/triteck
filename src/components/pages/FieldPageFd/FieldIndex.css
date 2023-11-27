@@ -1,0 +1,208 @@
+#FieldPageMain {
+  background-color: #fff
+}
+
+
+
+
+#FieldPageMain .topLinkPageMobile{
+  display: none;
+}
+
+#FieldPageMain .fieldMobile {
+  display: none;
+}
+
+@media (max-width: 767px){
+
+  #FieldPageMain .fieldMobile {
+    display: block;
+  }
+
+  #FieldPageMain .fieldWeb {
+    display: none;
+  }
+ 
+  #FieldPageMain .topLinkPageMobile{
+    display:block;
+  }
+  
+  #FieldPageMain .topLinkPageWeb{
+    display: none;
+  }
+}
+
+
+#fieldPageSideList {
+ 
+    position: sticky;
+    z-index: 2;
+    bottom: 0px;
+    top: 90px;
+    
+}
+
+#fieldPageSideList .advertisement {
+  display: auto;
+  flex-wrap: nowrap;
+  width: 8rem;
+  height: 180px;
+  background-image: url(  https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/sideMenu.png);
+  background-color: #363636;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 10px;
+  color:rgb(255, 255, 255);
+  font-weight:600;
+  justify-content: center;
+  padding-top: 5rem;
+  
+
+
+}
+
+#fieldPageSideList .rowSideList li{
+  list-style: none;
+  line-height: 1.9rem;
+  padding: 0 5px;
+  font-size: 14px;
+  color:rgb(10, 10, 10)
+  
+ 
+}
+
+#fieldPageSideList .rowSideList .active li{
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 600;
+  color: rgb(235, 80, 18);
+  background-color: transparent;
+  border-left: 4mm ridge rgba(250, 100, 0, 0.973); 
+  box-shadow: none;
+ 
+
+}
+
+
+
+
+#FieldPageCounterComponent .colCounterComponent {
+  margin-top: 4rem;
+
+}
+
+
+#FieldPageCounterComponent .rowCounterComponent {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#FieldPageCounterComponent .rowInputSample {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+
+}
+
+
+#FieldPageCounterComponent .rowInputSample2 {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+#FieldPageCounterComponent .FieldPl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+
+
+#FieldPageCounterComponent .rowCounterComponentMobile{
+  display: none;
+}
+
+#FieldPageCounterComponent .rowInputSampleMobile{
+  display: none;
+}
+
+#FieldPageCounterComponent .rowUserListMobile{
+  display: none;
+}
+
+
+#FieldPageCounterComponent .rowCreateUserMobile{
+  display: none;
+}
+
+
+
+
+@media (max-width: 992px){
+
+  #fieldPageSideList {
+    display: none;
+  }
+
+  #fieldPageSideList .advertisement {
+    display: none;
+  }
+
+
+
+  #FieldPageCounterComponent .rowCounterComponent{
+    display: none;
+  }
+
+  #FieldPageCounterComponent .rowCounterComponentMobile{
+    display: flex;
+  }
+
+  #FieldPageCounterComponent .rowInputSample{
+    display: none;
+  }
+
+  #FieldPageCounterComponent .rowInputSampleMobile{
+    display: flex;
+  }
+
+  #FieldPageCounterComponent .rowUserList{
+    display: none;
+  }
+
+  #FieldPageCounterComponent .rowUserListMobile{
+    display: flex;
+  }
+
+  #FieldPageCounterComponent .rowCreateUser{
+    display: none;
+  }
+
+  #FieldPageCounterComponent .rowCreateUserMobile{
+    display: flex;
+  }
+  
+}
+
+
+/* footerContainer css */
+.footerBg{
+  background-color: #000000;
+}
+
+
+

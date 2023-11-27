@@ -1,0 +1,73 @@
+#TabsJustId .card {
+    font-weight: 400;
+    border: 0;
+    box-shadow: none;
+    background-color: #F5F5F5 ;
+}
+
+#TabsJustId .vrText {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 23px;
+color: #4B4B4B;
+}
+
+#TabsJustId .DvScope {
+    color: #2E638D;
+    font-weight: 800;
+    justify-content: center;
+    background-color: #E2E2E2;
+    border-top: none;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+  }
+
+  #TabsJustId .DvScopeText {
+    color: #4B4B4B;
+    font-weight: 800;
+    justify-content: center;
+    border-top: none;
+    font-size: 13px;
+    margin-top: 30px;
+  }
+
+#TabsJustId .SimulationCont {
+    margin-top: 30px;
+  
+}
+  
+#TabsJustId .img-fluid1 {
+   
+  margin-left: 1.2rem;
+  width: 31em;
+  height: auto;
+  
+}
+
+@media (min-width: 1200px){
+  #TabsJustId .img-fluid1 {
+   
+    margin-left: 5rem;
+    width: 31em;
+    height: auto;
+    
+  }
+}
+
+#TabsJustId .img-fluid2 {
+  margin-top: 22px;
+  margin-left: 40px;
+  width: 12em;
+  height: auto;
+}
+
+
+#TabsJustId .img-fluid3 {
+
+  max-width: 100%;
+  height: auto;
+}
+

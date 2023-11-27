@@ -1,0 +1,32 @@
+#ContainTopText2 .titleText h4{
+  font-weight: 700;
+  color: #05AF53 
+ 
+}
+
+#ContainTopText2 .titleText p {
+  font-weight: 700;
+  color: #4caf50 ;
+}
+
+#ContainTopText2 .titleText span {
+ font-size: smaller;
+}
+
+#ContainTopText2 .card{
+  font-size:smaller;
+}
+
+#ContainTopText2 .CollapseHd h5{
+font-size: larger;
+}
+
+#ContainTopText2 .btnBox{
+  margin-top: 2rem;
+  margin-left: 1rem;
+ color: rgb(24, 180, 24);
+ font-weight: 800;
+ text-align: center;
+
+  
+}

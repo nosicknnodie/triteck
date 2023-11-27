@@ -1,0 +1,18 @@
+
+
+
+
+.hide {
+    display: none;
+  
+  }
+
+
+  .myDIV {
+      background-color: transparent;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+  
+  }

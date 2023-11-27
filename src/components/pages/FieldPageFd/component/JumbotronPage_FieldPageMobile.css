@@ -1,0 +1,33 @@
+#jumbotronIdMobile .DevelopmentDetails{
+  color: #2A4A83;
+  font-weight: 700;
+  border-bottom: 2px solid #2A4A83;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+
+#jumbotronIdMobile .cardTitle2{
+  font-size: 1rem;
+  font-weight: 800;
+  color:rgb(233, 229, 15)
+}
+
+#jumbotronIdMobile .blueBoxColor{
+  background: linear-gradient(180deg, #055AFF 0%, #0F4FAF 100%);
+}
+
+#jumbotronIdMobile .card-title{
+  font-size: 19px;
+}
+
+#jumbotronIdMobile  .btnBox{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: rgb(24, 47, 180);
+  font-weight: 800;
+  text-align: center;
+
+  
+ }

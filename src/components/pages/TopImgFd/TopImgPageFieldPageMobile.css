@@ -1,0 +1,149 @@
+#TopImgPageFieldPageMobile .view {
+  background-image: url("@/assets/img/ceo/component/earth-1756274_1920_m.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+#TopImgPageFieldPageMobile .mask {
+  min-height: 100vh;
+}
+#TopImgPageFieldPageMobile .h1-responsive {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+/*
+#TopImgPageFieldPageMobile .containTopBg {
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+  padding: 1em;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+ */
+
+/* ----------------------------------------- */
+/* 
+#TopImgPageFieldPageMobile .view {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center;
+  background-image: url('/img/ceo/component/earth-1756274_1920_m.jpg');
+  height: 85vh;
+    
+}
+
+
+
+#TopImgPageFieldPageMobile .mask {
+  min-height: 100vh;   
+}
+
+
+
+#TopImgPageFieldPageMobile .h1-responsive {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+
+
+
+#TopImgPageFieldPageMobile .testimonial-carousel .carousel-control:hover::before {
+  color: rgb(253, 253, 253);
+  transition: .4s;
+  
+}
+
+#TopImgPageFieldPageMobile .testimonial-carousel .carousel-control::before {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: .4s;
+}
+
+
+@media (max-width: 576px) {
+  #TopImgPageFieldPageMobile .h1-responsive {
+    font-size: 3em;
+    color: #ffffff;
+  }
+
+  #TopImgPageFieldPageMobile .rowIconRotText {
+    margin-right: 2rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #TopImgPageFieldPageMobile .rowIconRot img {
+    display: none;
+    ;
+  }
+
+  #TopImgPageFieldPageMobile .btnWeb {
+    display: none;
+  }
+
+  #TopImgPageFieldPageMobile .btnMobile {
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+  }
+
+  #TopImgPageFieldPageMobile .viwe {
+   background-color: black;
+
+  }
+
+
+  #TopImgPageFieldPageMobile .containTopBg {
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100%;
+    padding: 1em;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #TopImgPageFieldPageMobile .rowIconRot img {
+    display: none;
+    ;
+  }
+
+  #TopImgPageFieldPageMobile .btnWeb {
+    display: none;
+  }
+
+  #TopImgPageFieldPageMobile .btnMobile {
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+  }
+
+  #TopImgPageFieldPageMobile .viwe {
+   background-color: black;
+
+  }
+
+
+  #TopImgPageFieldPageMobile .containTopBg {
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100%;
+    padding: 1em;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #TopImgPageFieldPageMobile .btnWeb {
+    display: inline;
+  }
+
+  #TopImgPageFieldPageMobile .btnMobile {
+    display: none;
+  }
+} */

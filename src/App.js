@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/jsx-pascal-case */
+import React, {
+  createContext,
+  useContext,
+  useRef,
+  useReducer,
+  useState,
+  useCallback,
+} from "react";
+import "./App.css";
 
-function App() {
+import { Route, Routes } from "react-router-dom";
+import LRoutes from "./components/Routes";
+import Header from "./components/Header";
+import ApolloClient from "apollo-client";
+import { ApolloProvider } from "@apollo/react-hooks";
+import { InMemoryCache } from "apollo-cache-inmemory";
+import schemaLink from "@/common/Mocking";
+import ModalFormPage from "./components/pages/ModalFormPageFd/ModalFormPage";
+import ScrollToTop from "./common/ScrollToTop.js";
+
+const client = new ApolloClient({
+  ssrMode: true,
+  link: schemaLink,
+  cache: new InMemoryCache(),
+});
+
+const MainPage = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ScrollToTop />
+      {/* <div className="flyout"> */}
+      <Header />
+      <main>
+        {/* style={{ marginTop: '2vh' }} */}
+        <div className="container-fluid">
+          <LRoutes />
+        </div>
+      </main>
+      {/* </div> */}
+    </>
   );
-}
+};
+
+const App = () => {
+  return (
+    <ApolloProvider client={client}>
+      <MainPage />
+    </ApolloProvider>
+  );
+};
 
 export default App;

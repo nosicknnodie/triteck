@@ -1,0 +1,204 @@
+#fieldProjects {
+    h2{
+    color: #0018EE;
+}
+    h6{
+     color: #4285F4;
+     font-weight: 800;      
+    }    
+
+    hr{
+        border-color: #0018EE;
+        
+    }
+    .fieldTitle{
+        font-weight: 800;
+        word-break: keep-all;
+    }
+    .colTitle{
+        font-weight: 900;
+        color: #0018EE;
+        font-size: 1.2em;
+    }
+
+    .colFieldProjects th{
+        color: #0018EE;
+    }  
+
+    .tableHead{
+        text-align: -webkit-center;
+        text-align-last: center;
+        padding-left: 8em;
+       
+        td{
+            padding-left: 8em;
+            text-align-last: center;
+                        
+       }
+   
+
+ 
+    } 
+}
+
+
+#fieldProjects {
+.containTable{
+ padding-left: 10em;
+ padding-right: 15em;
+}
+
+}
+
+#fieldProjects
+.containTableMobile {
+    display: none;
+ 
+}
+
+#fireTitle{
+    .wordBreack{
+        word-break: keep-all;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#simulTitle{
+    .wordBreack{
+        word-break: keep-all;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#vrTitle{
+    .wordBreack{
+        word-break: keep-all;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+    
+
+
+#sportsTitle{
+    .wordBreack{
+        word-break: keep-all;
+    }
+    img {
+        width: 100%;
+    }
+
+    .colIct{
+        color: #002367
+    }
+}
+
+
+
+
+@media(max-width: 992px){
+  
+
+
+ #fieldProjects {
+
+    .containTable{
+        display: none;
+      }
+ 
+    
+      .containTableMobile {
+    display: block;
+      }
+      .containTableMobile p{
+word-break: keep-all;
+      }
+
+    .fieldTitle {
+        word-break: keep-all;
+    }
+
+}
+
+}
+
+
+
+
+
+#fieldSectionID {
+    .colTitle {
+        font-weight: 900;
+        color: #0018EE;
+        font-size: 1.2em;
+    }
+    hr{
+        border-color: #0018EE;
+        
+    }
+    .btnTitle {
+        text-align: center;
+         .btn1{
+            font-weight: 900;
+            font-size: 0.9em;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+        .btn2{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 3.5em;
+            padding-right: 3.5em;
+        }
+        .btn3{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        .btn4{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        .btnTitle {
+            text-align: center;
+             .btn1{
+                font-weight: 900;
+                font-size: 0.9em;
+      
+            }
+            .btn2{
+                font-weight: 900;
+                font-size: 0.9rem;
+        
+            }
+            .btn3{
+                font-weight: 900;
+                font-size: 0.9rem;
+             
+            }
+            .btn4{
+                font-weight: 900;
+                font-size: 0.9rem;
+           
+            }
+       } 
+      
+    }
+
+
+
+}
+

@@ -1,0 +1,49 @@
+#newsPageSafe {
+  background-color: #fff;
+  word-break: keep-all;
+}
+
+
+#newsPageSafe .newsPageSafeMobile{
+  display: none;
+}
+
+#newsPageSafe .card{
+  box-shadow: none;
+}
+
+#newsPageSafe .w-responsive{
+  font-size: larger;
+  color: rgb(5, 5, 131);
+}
+
+#newsPageSafe .hrCenter{
+  border: 0.5px solid black;
+}
+
+#newsPageSafe .title{
+  font-size: 1em;
+}
+
+#newsPageSafe p{
+  font-size: 1em;
+}
+
+#newsPageSafe .imgTitle{
+  width: 15vw;
+}
+@media (max-width: 767px) {
+  #newsPageSafe .newsPageSafeMobile{
+    display: block;
+  }
+
+  #newsPageSafe .newsPageSafeWeb{
+    display: none;
+  }
+
+  #newsPageSafe .imgTitle{
+    width: 30vw;
+  }
+
+  
+}

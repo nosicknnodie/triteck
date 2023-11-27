@@ -1,0 +1,41 @@
+
+#TopImgPage_1 .view {
+    height: 35vh !important;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/topImgPage_wide_.png);
+    background-position: center;
+  }
+  
+  @media (max-width: 600px){
+  
+    #TopImgPage_1 .view {
+      
+      margin-top: 4rem;
+      height: 22vh !important;
+      width: auto;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: contain;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/topImgPage_600.png);
+      background-position: center;
+  }
+  }
+  
+  
+  @media (max-width: 400px){
+  
+    #TopImgPage_1 .view {
+      
+      margin-top: 4rem;
+      height: 12vh !important;
+      width: auto;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: contain;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/topImgPage_600.png);
+      background-position: center;
+  }
+  }
+  

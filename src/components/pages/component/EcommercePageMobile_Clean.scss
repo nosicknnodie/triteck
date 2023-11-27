@@ -1,0 +1,185 @@
+#cleanMobileProjects {
+    h2{
+        color: #05AF53
+    }
+    h6{
+        color: #06612E;
+        font-weight: 500;
+    }
+    p{
+        color: #505050;
+        font-weight: 800;
+        font-size: 0.9em;
+    }
+
+    p{
+        word-break: keep-all;
+    }
+    .colTitle{
+        color: #06612E;
+       
+    }
+       hr{
+        border-color: #007D14; 
+    }
+    .colTitle{
+        font-weight: 900;
+        color: #007D14;
+        font-size: 1.2em;
+    }
+}
+
+#cleanMobileProjects
+.containTableMobile {
+    display: none;
+ }
+ 
+
+#cleanMobileProjects {
+    .containTable{
+        padding-left: 10em;
+        padding-right: 1em;
+    }
+    
+    }
+
+#cleanProjectMobile_2{
+
+       hr{
+        border-color: #007D14; 
+    }
+    .colTitle{
+        font-weight: 900;
+        color: #06612E;
+        font-size: 1.2em;
+    }
+      img{
+          
+        width: 40%;
+      }
+
+}
+
+#cleanProjectMobile_3{
+
+    hr{
+     border-color: #007D14; 
+ }
+ .colTitle{
+     font-weight: 900;
+     color: #06612E;
+     font-size: 1.2em;
+ }
+   img{
+       
+     width: 60%;
+   }
+
+}
+
+
+#cleanProjectMobile_4{
+
+    hr{
+     border-color: #007D14; 
+ }
+ .colTitle{
+     font-weight: 900;
+     color: #06612E;
+     font-size: 1.2em;
+ }
+   img{
+       
+     width: 80%;
+   }
+
+}
+
+
+
+
+@media(max-width: 992px){
+  
+    #cleanMobileProjects 
+     .containTable{
+       display: none;
+     }
+   
+    #cleanMobileProjects
+     .containTableMobile {
+       display: block;
+   }
+   
+   }
+   
+
+
+
+   #cleanMobileProjects {
+    .colTitle {
+        font-weight: 900;
+        color: #06612E;
+        font-size: 1.2em;
+    }
+    hr{
+        border-color: #007D14;
+        
+    }
+    .btnTitle {
+        text-align: center;
+         .btn1{
+            font-weight: 900;
+            font-size: 0.9em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        .btn2{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 3.5em;
+            padding-right: 3.5em;
+        }
+        .btn3{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        .btn4{
+            font-weight: 900;
+            font-size: 0.9rem;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+    }
+
+
+
+    @media (max-width: 992px) {
+        .btnTitle {
+            text-align: center;
+             .btn1{
+                font-weight: 900;
+                font-size: 0.9em;
+      
+            }
+            .btn2{
+                font-weight: 900;
+                font-size: 0.9rem;
+        
+            }
+            .btn3{
+                font-weight: 900;
+                font-size: 0.9rem;
+             
+            }
+            .btn4{
+                font-weight: 900;
+                font-size: 0.9rem;
+           
+            }
+       } 
+      
+    }
+   }

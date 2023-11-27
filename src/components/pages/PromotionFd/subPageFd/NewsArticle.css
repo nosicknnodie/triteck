@@ -1,0 +1,132 @@
+#newsArticle {
+  background-color: #fff
+}
+#newsArticle .topLinkPageMobile {
+  display: none;
+}
+#newsArticle .newsArticleMobile {
+  display: none;
+}
+#article .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow: none;
+}
+#article .rowArticle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: -webkit-center;
+}
+#article .colTitle {
+  color: #2A4A83;
+  font-size: 1.2em;
+}
+#article hr {
+  border: 1px solid #2A4A83;
+}
+#article_2 .kstar_title {
+  letter-spacing: 2.5mm;
+  background: #2ABBAC;
+  border-radius: 18px;
+  color: white;
+  font-weight: 900;
+}
+#article_2 .kstar_title2 {
+  letter-spacing: 2.5mm;
+  background: #4285F4;
+  border-radius: 18px;
+  color: white;
+  font-weight: 900;
+}
+#article_2 .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow: none;
+}
+#article_2 .rowArticle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#article_2 .colTitle {
+  color: #2A4A83;
+  font-size: 1.2em;
+}
+#article_2 hr {
+  border: 0.5px solid #2A4A83;
+}
+@media(max-width: 767px) {
+  #newsArticle .newsArticleMobile {
+      display: block;
+  }
+  #newsArticle .newsArticleWeb {
+      display: none;
+  }
+  #newsArticle .topLinkPageMobile {
+      display: block;
+  }
+  #newsArticle .topLinkPageWeb {
+      display: none;
+  }
+}
+/* ---------------------------- */
+#reports {
+  justify-content: center;
+  text-align: center;
+  word-break: keep-all;
+}
+#reports hr {
+  border: 0.5px solid #2A4A83;
+}
+#reports .sectionTitle {
+  color: #2A4A83;
+  font-size: 1.2em;
+  font-weight: bold;
+  /* text-align: left */
+}
+#reports .mainContent {
+  border-radius: 0.80rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+/* --------------------- */
+#reportsInGrayBgSection {
+  justify-content: center;
+  text-align: center;
+  word-break: keep-all;
+  background-color: #F5F5F5;
+}
+#reportsInGrayBgSection .mainContent {
+  border-radius: 0.80rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+}
+/* ---------------------------------- */
+#csoArticle {
+  justify-content: center;
+  text-align: center;
+  word-break: keep-all;
+  margin-top: 5rem !important;
+  margin-bottom: 3rem;
+}
+#csoArticle .mainContent {
+  /* border-radius: 0.80rem !important;
+padding-top: 1.5rem; */
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media (max-width: 767px) {
+  #csoArticle .cardNews {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 1.5rem;
+  }
+}
+@media(min-width: 768px) {
+  #csoArticle .cardNews {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 2rem;
+  }
+}

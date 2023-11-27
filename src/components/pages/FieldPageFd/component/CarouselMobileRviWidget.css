@@ -1,0 +1,8 @@
+#carouselId .carouselBtn {
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+#carouselId .videoKstar {
+  background-image: url("@/assets/img/FieldIndex/field/size_img/5_1.png");
+}

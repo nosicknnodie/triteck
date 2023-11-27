@@ -1,0 +1,11 @@
+#fieldId {
+    word-break: keep-all;
+}
+
+#fieldId .fieldCardBody{
+    
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+ 
+ 
+}

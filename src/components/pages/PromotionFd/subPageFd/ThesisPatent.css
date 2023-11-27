@@ -1,0 +1,65 @@
+#thesisPatent {
+  background-color: #fff;
+  word-break: keep-all;
+}
+
+#thesisPatent .topLinkPageMobile {
+  display: none;
+}
+
+#thesisPatent .thesisPatentMobile {
+  display: none;
+}
+
+#thesisPatent .colTitle{
+  color: #2A4A83;
+  font-size: 1.2em;
+}
+#thesisPatent .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow: none;
+}
+
+#thesisPatent .hrLine hr{
+  border: 1px solid #2A4A83;
+}
+
+#thesisPatent .colTitle{
+  color: #2A4A83;
+  font-size: 1.2em;
+}
+
+#Patent .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow:  0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+
+@media (max-width: 767px) {
+  #thesisPatent .thesisPatentMobile {
+    display: block;
+  }
+
+  #thesisPatent .thesisPatentWeb {
+    display: none;
+  }
+  #thesisPatent .topLinkPageMobile {
+    display: block;
+  }
+
+  #thesisPatent .topLinkPageWeb {
+    display: none;
+  }
+
+  #thesisPatent_1 p{
+    font-size: 0.8em;
+    color:rgb(102, 100, 100);
+    text-align: center;
+  }
+  #thesisPatent_1 h6{
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+#ContainTopText .titleText h4{
+  font-weight: 700;
+  color: #0018EE
+ 
+}
+
+#ContainTopText .titleText p {
+  font-weight: 700;
+  color: #4285F4;
+}
+
+#ContainTopText .titleText span {
+ font-size: smaller;
+}
+
+#ContainTopText .card{
+  font-size:smaller;
+}
+
+#ContainTopText .CollapseHd h5{
+font-size: larger;
+}
+

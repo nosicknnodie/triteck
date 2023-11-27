@@ -1,0 +1,21 @@
+#subPageFd {
+  background-color: #ffffff
+}
+
+@media (max-width: 767px) {
+  #subPageFd .mobile {
+      display: block;
+  }
+  #subPageFd .desktop {
+      display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #subPageFd .mobile {
+      display: none;
+  }
+  #subPageFd .desktop {
+      display: block;
+  }
+}

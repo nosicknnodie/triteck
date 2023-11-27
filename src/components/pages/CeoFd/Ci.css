@@ -1,0 +1,44 @@
+#ci {
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(0, 0, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+/* p {
+  color: rgb(107, 117, 125);
+} */
+
+
+/* 화면크기에 다른 디스플레이 변경 */
+@media (max-width: 767px) {
+  #ci {
+    /* background-color: rgb(255, 0, 0); */
+    /* margin-top: 60px; */
+  }
+  #ci .topImgDesktopMode {
+    display: none;
+  }
+  #ci .topImgMobileMode {
+    display: block;
+  }
+
+  #singLogoImg
+  {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  #ci {
+    /* background-color: rgb(0, 255, 0); */
+    /* margin-top: 80px; */
+  }
+  #ci .topImgDesktopMode {
+    display: block;
+  }
+  #ci .topImgMobileMode {
+    display: none;
+  }
+}

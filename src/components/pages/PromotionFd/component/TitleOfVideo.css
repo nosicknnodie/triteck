@@ -1,0 +1,19 @@
+#titleOfVideo {
+  word-break: keep-all;
+}
+#titleOfVideo .video_1 {
+  margin-top: -6px;}
+
+#titleOfVideo .card{
+  box-shadow: none;
+}
+
+
+
+@media (max-width: 767px){
+
+  #titleOfVideo h2{
+    font-size: large;
+  }
+}
+

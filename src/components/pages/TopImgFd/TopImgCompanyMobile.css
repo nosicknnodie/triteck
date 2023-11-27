@@ -1,0 +1,14 @@
+#TopImgCompanyMobile .view {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("@/assets/img/ceo/component/earth-1756274_1920_m.jpg");
+  height: 30rem;
+}
+#TopImgCompanyMobile .mask {
+  min-height: 100vh;
+}
+#TopImgCompanyMobile .h1-responsive {
+  font-size: 3rem;
+  color: #ffffff;
+}

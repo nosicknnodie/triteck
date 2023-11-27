@@ -1,0 +1,32 @@
+
+#videoNews {
+    background-color: #fff
+  }
+  
+  
+  
+  #videoNews .topLinkPageMobile{
+    display: none;
+  }
+  
+  
+  #videoNews .videoNewsMobile{
+    display: none;
+  }
+  @media (max-width: 767px) {
+    #videoNews .videoNewsMobile{
+      display: block;
+    }
+  
+    #videoNews .videoNewsWeb{
+      display: none;
+    }
+    #videoNews .topLinkPageMobile{
+      display:block;
+    }
+    
+    #videoNews .topLinkPageWeb{
+      display: none;
+    }
+  }
+  

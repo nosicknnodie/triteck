@@ -1,0 +1,95 @@
+#about_1 .view {
+  /* background-image: url('http://mdbootstrap.com/img/Photos/Others/images/91.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 70px;
+  height: 40em;
+}
+#about_1 .video-intro {
+  height: 150vh;
+}
+#about .topLinkPageMobile {
+  display: none;
+}
+#work .textSimulation {
+  word-break: keep-all
+}
+#categories .textSimulation {
+  word-break: keep-all
+}
+#categories .cardBodyBg1 {
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 10px 100px rgba(6, 127, 212, 0.15);
+}
+#categories .cardBodyBg2 {
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 10px 100px rgba(6, 127, 212, 0.15);
+}
+#categories .cardBodyBg3 {
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 10px 100px rgba(6, 127, 212, 0.15);
+}
+#categories .cardBodyBg4 {
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 10px 100px rgba(6, 127, 212, 0.15);
+  padding-bottom: 1.9em;
+}
+#categories p {
+  font-size: 13px;
+  padding: 0;
+  margin-bottom: 0;
+}
+#categories .cardImgSize {
+  width: 100%;
+}
+#categories .cardTextClean {
+  margin-bottom: 1.9rem;
+}
+#categories .card {
+  font-weight: 400;
+  border: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  #about_1 .view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0px;
+    height: 30em;
+  }
+  #about .topLinkPageMobile {
+    display: block;
+  }
+  #about .topLinkPageWeb {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #about_1 .view {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0px;
+    height: 40em;
+  }
+  #about .topLinkPageMobile {
+      display: block;
+  }
+  #about .topLinkPageWeb {
+      display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about_1 .video-intro {
+      width: 430vw; 
+  }
+}

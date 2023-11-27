@@ -1,0 +1,109 @@
+
+#TopImgCompPageItem .view {
+    height: 50vh !important;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 70%;
+    background-position: right;
+    
+
+  }
+  
+  #TopImgCompPageItem .sub_title01 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-align: center;
+    letter-spacing: 0.40em;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-top: 0em;
+    font-family: 'Goldman', cursive;
+   }
+    
+  
+   #TopImgCompPageItem .containTopBg {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right;
+ 
+       
+  }
+
+
+
+  #TopImgCompPageItem .h1-responsive{
+    font-size: 5rem;
+    color: #ffffff
+  }
+
+  #TopImgCompPageItem img{
+    width:25rem;
+    
+  }
+
+  #TopImgCompPageItem .rowIconRotText .mt-xl-5 {
+    margin-top: 5rem!important;
+
+}
+
+#TopImgCompPageItem .topAnimation {
+  text-align: center;
+  padding-right: 20em;
+}
+
+
+
+ #TopImgCompPageItem .colTitleText{
+   margin-left: 18%;
+ }
+  @media (max-width: 576px) {
+    #TopImgCompPageItem .h1-responsive{
+       font-size: 3em;
+       color: #ffffff
+    }
+     
+    #TopImgCompPageItem .rowIconRotText {
+      margin-right: 2rem;
+     
+    }   
+  }
+
+
+  @media (max-width: 767px){
+    #TopImgCompPageItem .rowIconRot img{
+      display: none;
+    }
+
+    #TopImgCompPageItem .btnWeb{
+      display: none;
+    }
+
+    #TopImgCompPageItem .btnMobile{
+      display: inline;
+      color: rgb(19, 18, 18);
+      font-weight: 800;
+      
+    }
+
+
+
+    #TopImgCompPageItem .containTopBg {
+      background-repeat: no-repeat;
+      background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/logo/white.png);
+      background-size: 100%;
+      padding: 50px;
+    }
+ 
+  }
+
+  @media (min-width: 768px){
+    #TopImgCompPageItem .btnWeb{
+      display: inline;
+    }
+   
+
+    #TopImgCompPageItem .btnMobile{
+      display: none;
+    }
+  }

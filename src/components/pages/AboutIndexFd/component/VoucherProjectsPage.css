@@ -1,0 +1,365 @@
+#voucherProjects {
+  margin-top: 5rem!important;
+}
+
+
+#voucherProjects h2{
+  color:#D080B7;
+  
+}
+
+#voucherProjects p{
+  font-weight: bold;
+  color: #565656;
+}
+#voucherProjects .voucherHrSize{
+  border: 1px solid #D080B7;
+}
+
+#voucherProjects .colTextpt{
+   justify-content: center;
+   padding-left: 1em;
+}
+
+#voucherSectionID {
+  padding-top : 50px;
+}
+
+#voucherSectionID .card{
+  font-weight: 400;
+    border: 0;
+    box-shadow: none;
+}
+
+#voucherSectionID .row{
+  text-align: center;
+}
+
+#voucherSectionID .rowText1Mb{
+  display: none;
+}
+
+#voucherSectionID .technology{
+  letter-spacing: 0mm;
+}
+
+#voucherSection2Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+#voucherProjects .colTextpt2{
+ font-weight: 400;
+ text-align: center;
+ font-size: 35px;
+ color: #D080B7;
+ padding-left: 1em;
+}
+
+#voucherSection2Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #D080B7;
+  padding-left: 0.5em;
+ }
+
+#voucherProjects .rowText1{
+ font-size: 1em;
+ margin-bottom: 5rem;
+}
+
+#voucherProjects .rowVoucherProjectsMobile{
+  display: none;
+}
+
+#voucherSection2Id .rowVoucherProjectsMobile{
+  display: none;        
+}
+
+#voucherSection2Id {
+  word-break: keep-all;
+  background-color: #F5F5F5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#voucherSection2Id .colVoucherProject{
+  line-height: 2;
+}
+
+#voucherSection2Id .colVoucherProjectMb{
+  display: none;
+}
+
+
+
+
+#voucherSection3Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #D080B7;
+  padding-left: 0.5em;
+  letter-spacing: 0.7rem;
+  
+ }
+ #voucherSection3Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+#voucherSection3Id .rowVoucherProjectsMobile{
+  display: none;        
+}
+
+#voucherSection3Id {
+  background-color: #ffffff;
+}
+
+#voucherSection3Id .colVoucherProject{
+  line-height: 2;
+  font-weight: 500;
+}
+
+#voucherSection3Id .colVoucherProjectMb{
+  display: none;
+}
+
+
+
+
+
+#voucherSection4Id .colTextpt2{
+  font-weight: 400;
+  text-align: center;
+  font-size: 35px;
+  color: #D080B7;
+  letter-spacing: 1rem;
+  
+ }
+ #voucherSection4Id .colTextpt{
+  justify-content: center;
+  padding-left: 1em;
+  letter-spacing: 0.9em;
+}
+
+
+
+#voucherSection4Id .rowVoucherProjectsMobile{
+  display: none;        
+}
+
+#voucherSection4Id {
+  background-color: #F5F5F5;
+}
+
+#voucherSection4Id .colVoucherProject{
+  line-height: 2;
+  font-weight: 500;
+}
+
+#voucherSection4Id .colVoucherProjectMb{
+  display: none;
+}
+
+#voucherSection4Id .containSection4{
+  margin-bottom: 4rem;  
+}
+
+#voucherSection4Id .containSection4 h5{
+  line-height: 4;
+}
+
+#voucherSection4Id .containSection4Mb{
+  display: none;
+}
+
+
+#voucherSection5Id .colSection5 hr{
+ border-color: #D080B7; 
+}
+
+
+#voucherSection5Id .colSection5{
+  color: #D080B7; 
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1em;
+  text-align: center;
+  line-height: 1;
+}
+
+#voucherSection5Id .colSectionImg5{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#voucherSection5IdMb {
+  display: none;
+}
+
+
+
+
+@media (max-width: 1000px){
+  #voucherProjects .rowVoucherProjectsMobile{
+    display: block;        
+  }
+  #voucherProjects .colTextpt{
+    font-size: 0.8em; 
+  }
+  #voucherProjects .colTextpt2{
+    font-size: 1.5em; 
+  }
+
+
+  #voucherProjects .rowVoucherProjectsWeb{
+    display: none;
+  }
+
+  #voucherSectionID .rowText1{
+    display: none;
+  }
+  #voucherSectionID .rowText1Mb{
+   display: block;
+   font-size: .8em;
+   text-align: center;
+    }
+
+  #voucherSection2Id .rowVoucherProjectsMobile{
+    display: block;        
+  }
+
+  #voucherSection2Id .colTextpt{
+   letter-spacing: .5em;   
+   
+  }
+
+  #voucherSection2Id .colTextpt2{
+    font-size: 1.5em;    
+   }
+
+  #voucherSection2Id .rowVoucherProjectsWeb{
+    display: none;        
+  }
+
+  #voucherSection2Id .colVoucherProject{
+    display: none;
+  }
+
+  #voucherSection2Id .colVoucherProjectMb{
+    display: block;
+    font-size: small;
+
+  }
+
+  #voucherSection3Id .rowVoucherProjectsMobile{
+    display: block;        
+  }
+
+  #voucherSection3Id .colTextpt{
+    letter-spacing: .8em;   
+    
+   }
+ 
+   #voucherSection3Id .colTextpt2{
+     font-size: 1.5em;  
+     letter-spacing: .3em;     
+     
+    }
+  #voucherSection3Id .rowVoucherProjectsWeb{
+    display: none;        
+  }
+
+  #voucherSection3Id .colVoucherProject{
+    display: none;
+  }
+
+  #voucherSection3Id .colVoucherProjectMb{
+    display: block;
+    font-size: small;
+    line-height: 3;
+
+  }
+
+
+  #voucherSection4Id .rowVoucherProjectsMobile{
+    display: block;        
+  }
+
+  #voucherSection4Id .colTextpt2{
+    font-weight: 400;
+    text-align: left;
+    font-size: 35px;
+    color: #D080B7;
+    padding-left: 0.5em;
+    letter-spacing: 1rem;   
+  }
+
+  #voucherSection4Id .rowVoucherProjectsWeb{
+    display: none;        
+  }
+
+  #voucherSection4Id .colVoucherProject{
+    display: none;
+  }
+
+  #voucherSection4Id .colVoucherProjectMb{
+    display: block;
+    font-size: small;
+    line-height: 3;
+
+  }
+
+  #voucherSection4Id .colTextpt{
+    letter-spacing: .5em;   
+    
+   }
+ 
+   #voucherSection4Id .colTextpt2{
+     font-size: 1.5em;  
+     letter-spacing: .1em;     
+     
+    }
+    
+  #voucherSection4Id .containSection4Mb{
+    display: block;
+  }
+  
+  #voucherSection4Id .containSection4{
+    display: none;
+  }
+
+  #voucherSection4Id .containSection4Mb h6{
+   font-size: 0.8em;
+  }
+ 
+  
+  
+  
+  #voucherSection5IdMb {
+    display: block;
+  }
+
+  #voucherSection5IdMb .colSection5{
+    font-size: large;
+    text-align: center;
+    line-height: 1;
+    font-weight: 500;
+    color: #D080B7;
+    border-color: #D080B7;    
+    letter-spacing: .5em; 
+  }
+
+  #voucherSection5IdMb .colSection5 hr{
+  
+    border-color: #D080B7;     
+  }
+ #voucherSection5Id {
+  display: none;
+}
+
+}

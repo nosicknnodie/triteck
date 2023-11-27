@@ -1,0 +1,30 @@
+title1{
+  font-weight: 800;
+  font-size: 30px;
+}
+
+title2{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+title2Light{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+title3{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+title4{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+spacingEngText{
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}

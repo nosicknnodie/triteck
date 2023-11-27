@@ -1,0 +1,92 @@
+
+
+#TopImgPageAboutIndexLinkMobile .h1-responsive{
+  font-size: 5rem;
+  color: #ffffff
+}
+
+#TopImgPageAboutIndexLinkMobile img{
+  width:25rem;
+  
+}
+
+#TopImgPageAboutIndexLinkMobile .rowIconRotText .mt-xl-5 {
+  margin-top: 5rem!important;
+}
+
+
+#TopImgPageAboutIndexLinkMobile .colTitleText{
+ margin-left: 18%;
+}
+
+
+  
+#TopImgPageAboutIndexLinkMobile .view {
+  height: 40vh !important;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+#TopImgPageAboutIndexLinkMobile .sub_title01 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0.40em;
+  color: #ffffff;
+  margin-bottom: 8px;
+  margin-top: 0em;
+  font-family: 'Goldman', cursive;
+ }
+  
+
+
+
+@media (max-width: 767px) {
+  #TopImgPageAboutIndexLinkMobile .h1-responsive{
+     font-size: 3em;
+     color: #ffffff
+  }
+
+  #TopImgPageAboutIndexLinkMobile .btn-outline-blue {
+    color: #ffffff !important;
+    background-color:  transparent !important;
+    border: 2px solid #1976d2 !important;
+    
+  }
+   
+  #TopImgPageAboutIndexLinkMobile .rowIconRotText {
+    margin-right: 2rem;
+   
+  }   
+}
+
+
+@media (max-width: 767px){
+  #TopImgPageAboutIndexLinkMobile .rowIconRot img{
+    display: none;
+  }
+
+  #TopImgPageAboutIndexLinkMobile .btnWeb{
+    display: none;
+  }
+
+  #TopImgPageAboutIndexLinkMobile .btnMobile{
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+    
+  }
+
+
+
+  #TopImgPageAboutIndexLinkMobile .containTopBg {
+    background-repeat: no-repeat;
+    background-image: url(/img/logo/Blue.png);
+    background-size: 100%;
+    padding: 50px;
+  }
+
+}

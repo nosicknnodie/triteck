@@ -1,0 +1,114 @@
+sectionTitle {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+/* --------------------- */
+/* --------------------- */
+#pageTitleSection {
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem !important;
+  margin-bottom: 3rem;
+}
+#pageTitleSection .titleContainer {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+#pageTitleSection .mainContent {
+  border-radius: 0.80rem !important;
+  /* padding-top: 1.5rem; */
+  padding-bottom: 1rem;
+}
+/* --------------------- */
+#bar {
+  word-break: keep-all;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+#bar .line {
+  border: 1px solid;
+}
+#bar .mainContent {
+  border-radius: 0.80rem !important;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+/* --------------------- */
+#wideImgSection {
+  word-break: keep-all;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+#wideImgSection .titleContainer {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+#wideImgSection .desc {}
+#wideImgSection .mainContent {
+  border-radius: 0.80rem !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+#wideImgSection .lineBreak {
+  padding-bottom: 2rem;
+}
+/* --------------------- */
+#wideImgInGrayBgSection {
+  background-color: #F5F5F5;
+  word-break: keep-all;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+#wideImgInGrayBgSection .titleContainer {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+#wideImgInGrayBgSection .titleLeftImg {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  justify-content: left;
+  text-align: left;
+}
+#wideImgInGrayBgSection .titleGrayText {
+  color: #848484;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+}
+#wideImgInGrayBgSection .desc {}
+#wideImgInGrayBgSection .mainContent {
+  border-radius: 0.80rem !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+#wideImgInGrayBgSection .lineBreak {
+  padding-bottom: 2rem;
+}
+#wideImgInGrayBgSection .mainContentText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --------------------- */
+#normalSection {
+  word-break: keep-all;
+  margin-top: 5rem !important;
+  margin-bottom: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+/* --------------------- */
+/* --------------------- */
+#netWork {
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem !important;
+  margin-bottom: 3rem;
+}

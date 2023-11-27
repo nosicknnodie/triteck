@@ -1,0 +1,56 @@
+
+#pography_1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  #pography_1 .bq-title{
+    font-weight: 700;
+  }
+
+  #pography_1 .bq-primary {
+    border-left: 3px solid #A32B2A!important;
+}
+
+#pography_1 .bq-primary .bq-title {
+  color:  #A32B2A !important;
+}
+
+
+  .blockquote .row {
+    padding-left: 10px;
+  }
+  
+ .ict-img {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/ict_1.png);
+  }
+
+    
+ .ict-img1 {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/ict_2.jpg);
+  }
+
+    
+ .ict-img2 {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    padding-right: 10px;
+    background-image: url(https://tritech.s3.ap-northeast-2.amazonaws.com/homepage_img/dlpp_page/ict_3.png);
+  }
+
+ 

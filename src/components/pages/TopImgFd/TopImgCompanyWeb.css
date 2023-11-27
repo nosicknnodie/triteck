@@ -1,0 +1,59 @@
+#TopImgCompanyWeb .view {
+  background-image: url("@/assets/img/ceo/component/earth-1756274_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+#TopImgCompanyWeb .mask {
+  min-height: 70vh;
+}
+#TopImgCompanyWeb img {
+  display: inline;
+  width: 20em;
+}
+#TopImgCompanyWeb .h1-responsive {
+  font-size: 5rem;
+  color: #ffffff;
+}
+#TopImgCompanyWeb .topAnimation {
+  font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  #TopImgCompanyWeb .h1-responsive {
+    font-size: 3em;
+    color: #ffffff;
+  }
+  #TopImgCompanyWeb .rowIconRotText {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  #TopImgCompanyWeb .rowIconRot img {
+    display: none;
+  }
+  #TopImgCompanyWeb .btnWeb {
+    display: none;
+  }
+  #TopImgCompanyWeb .btnMobile {
+    display: inline;
+    color: rgb(19, 18, 18);
+    font-weight: 800;
+  }
+  #TopImgCompanyWeb .containTopBg {
+    background-repeat: no-repeat;
+    background-image: url("@/assets/img/ceo/component/earth-1756274_1920.jpg");
+    background-size: 100%;
+    padding: 50px;
+    height: 70vh;
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  #TopImgCompanyWeb .btnWeb {
+    display: inline;
+  }
+  #TopImgCompanyWeb .btnMobile {
+    display: none;
+  }
+}

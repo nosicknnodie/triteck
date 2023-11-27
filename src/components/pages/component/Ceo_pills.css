@@ -1,0 +1,15 @@
+#pills-id .tab-content {
+    background-color: rgb(243, 243, 243);
+}
+
+#Ceo .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    font-weight: 900;
+    background-color: #F3F3F3;
+}
+
+#pills-id  a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+}

@@ -1,0 +1,84 @@
+#footerId .footerBg{
+  font-size: 0.8em;
+  background-color: #ececec;
+ }
+
+
+
+ #footerId .footerBg h6{
+   color: black;
+ }
+ #footerId .page-footer a {
+  color: rgb(110, 110, 110);
+}
+
+
+#footerId .page-footer a:hover {
+  color: rgb(11, 121, 247);
+}
+
+
+#footerId .colBorder{
+   font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    border-right: 1px solid;
+    border-right-color: #818181;
+
+}
+
+/* 회사 정보 
+큰화면 시, 모바일용 내용 비활성화
+모바일화면 시, 큰화면 내용 비활성화*/
+#footerCompanyInfoId .footerCompanyInfo{
+  display: block;
+
+  color: #636363;
+  background-color: white;
+  margin-top: 7em;
+  margin-bottom: 5em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+
+  word-break: keep-all;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+
+#footerCompanyInfoMobile .footerCompanyInfo{
+  display: none;
+}
+
+@media (max-width:727px){
+
+  #footerCompanyInfoId .footerCompanyInfo{
+    display: none;
+  }
+
+  #footerCompanyInfoMobile .footerCompanyInfo{
+    display: block;
+    
+    color: #636363;
+    background-color: white;
+    margin-top: 7em;
+    margin-bottom: 5em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+  
+    word-break: keep-all;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 4px;
+  }
+}
+
+
+
+/* 회사 저작권표기 */
+#footerBt .footerBottom{
+  color: white;
+  background-color: #32373c;
+  padding-top: 0.9em;
+  padding-bottom: 0.4em;
+
+}
