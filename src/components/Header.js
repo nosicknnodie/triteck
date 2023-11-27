@@ -51,6 +51,7 @@ class Header extends React.Component {
     this.state = {
       toggleStateA: false,
     };
+    console.log(this.state.toggleStateA);
   }
 
   handleToggleClickA = () => {
@@ -80,7 +81,6 @@ class Header extends React.Component {
               triggerOpening={this.state.toggleStateA}
               // bg="https://mdbootstrap.com/img/Photos/Others/sidenav4.jpg"
               mask="strong"
-              hidden
             >
               {/* <MDBSideNavNav>
                 <MDBSideNavCat
@@ -196,8 +196,6 @@ class Header extends React.Component {
             className="pt-3"
             //className="pt-3 mt-5"
             double
-            // expand="md"
-            expand="md"
             fixed="top"
             scrolling
           >
