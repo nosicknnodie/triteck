@@ -21,12 +21,12 @@
 }
 #top-menu .navItemLogo img {
   /* 바 왼쪽 설정 */
-  width: 100%
+  width: 100%;
 }
 #top-menu .barRightSpace {
   /* 바 오른쪽 설정 
 #top-menu .navbar-nav>li{ padding = 50px } 값을 고려해 수치 설정*/
-  width: 100px
+  width: 100px;
 }
 #top-menu .menuBtn {
   display: inline;
@@ -42,7 +42,7 @@
   padding-top: 7px;
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Sarpanch', sans-serif;
+  font-family: "Sarpanch", sans-serif;
   /* transform: rotate(-20deg); */
   /* letter-spacing: inherit; */
   /* size: letter; */
@@ -87,7 +87,7 @@ left: 0;
   display: block;
   background-color: #ffffff;
 }
-#top-menu-id .dropdown>.btn:active {
+#top-menu-id .dropdown > .btn:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
@@ -102,7 +102,8 @@ left: 0;
   border-radius: 0.125rem;
   /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); */
   box-shadow: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   /* padding: .84rem 2.14rem; */
   padding: 10px;
   font-weight: 400;
@@ -117,7 +118,7 @@ left: 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   color: rgb(30, 57, 92);
 }
@@ -128,7 +129,7 @@ left: 0;
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098D1;
+  background: #2098d1;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -158,7 +159,7 @@ left: 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: rgb(30, 57, 92);
   font-weight: 400;
@@ -255,7 +256,7 @@ padding-left: 0px;
 }
 .mdb-skin .side-nav .sidenav-bg:after,
 .mdb-skin .side-nav .sidenav-bg.mask-strong:after {
-  background: rgb(22, 22 , 22);
+  background: rgb(22, 22, 22);
 }
 #title .side-nav a {
   color: white;
@@ -284,7 +285,7 @@ padding-left: 0px;
   background-color: rgb(70, 70, 70);
 }
 #top-menu-id a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   color: #fff;
 }
@@ -320,17 +321,39 @@ padding-left: 0px;
 
 /* ------------------------------------- */
 @media (max-width: 767px) {
-  #top-menu .menuBtn {
+  /* #top-menu .menuBtn {
     display: inline;
-  }
+  } */
   #top-menu .navItemLogo {
     display: none;
   }
+  /* #top-menu-id {
+    display: none;
+  } */
+  #top-menu .Ripple-parent {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-right: 0;
+    left: 0;
+  }
   #top-menu-id {
+    margin-left: 15px;
+    min-width: 500px;
+  }
+  #top-menu .menuBtn {
     display: none;
   }
   #top-menu .barRightSpace {
-    width: 0px
+    width: 0px;
+  }
+  #top-menu .menuBtn {
+    display: none;
+  }
+  #top-menu .navbar-nav > li {
+    padding-right: 20px;
+    padding-left: 0;
   }
 }
 
@@ -339,23 +362,23 @@ padding-left: 0px;
     display: none;
   }
   #top-menu .Ripple-parent {
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      padding-top: 4px;
-      padding-right: 0;
-      left: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-right: 0;
+    left: 0;
   }
   #top-menu .navbar-nav > li {
     padding-right: 20px;
     padding-left: 0;
-}
+  }
   /*메뉴바 중앙으로 위치하도록 여백조절 #top-menu .navbar-nav>li{ padding } 값에 영향받음*/
   #top-menu-id {
-      margin-left: 15px;
+    margin-left: 15px;
   }
   #top-menu .barRightSpace {
-    width: 0px
+    width: 0px;
   }
 }
 
@@ -372,11 +395,11 @@ padding-left: 0px;
     left: 0;
   }
   #top-menu .navbar-nav > li {
-      padding-right: 50px;
-      padding-left: 2px;
+    padding-right: 50px;
+    padding-left: 2px;
   }
   /*메뉴바 중앙으로 위치하도록 여백조절 #top-menu .navbar-nav>li{ padding } 값에 영향받음*/
   #top-menu-id {
-      margin-left: 115px;
+    margin-left: 115px;
   }
 }
