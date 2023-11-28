@@ -14,9 +14,9 @@ import {
   MDBContainer,
   // MDBCard,
 } from "mdbreact";
-import "../../../../common/form/contentDesign.css";
-import * as contentDesign from "../../../../common/form/contentDesign.js";
-import "../../../../common/form/contentFont.css";
+import "@/common/form/contentDesign.css";
+import * as contentDesign from "@/common/form/contentDesign.js";
+import "@/common/form/contentFont.css";
 
 const KstarProjectsPage = () => {
   const MAIN_COLOR = "#2A99EA";
@@ -64,7 +64,7 @@ const KstarProjectsPage = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="10">
               {contentDesign.addImgView(
-                "/img/aboutIndex/kstar/kstar-overview.png",
+                "/img/aboutIndex/kstar/kstar-overview.png"
               )}
             </MDBCol>
             <MDBCol md="1"></MDBCol>
@@ -100,7 +100,7 @@ const KstarProjectsPage = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="10">
               {contentDesign.addImgView(
-                "/img/aboutIndex/kstar/kstar-technology.png",
+                "/img/aboutIndex/kstar/kstar-technology.png"
               )}
             </MDBCol>
             <MDBCol md="1"></MDBCol>
@@ -174,7 +174,7 @@ const KstarProjectsPage = () => {
                 {contentDesign.addImgInTwoCol(
                   "/img/aboutIndex/kstar/kstar-program-",
                   "jpg",
-                  0,
+                  0
                 )}
               </MDBRow>
 
@@ -182,7 +182,7 @@ const KstarProjectsPage = () => {
                 {contentDesign.addImgInTwoCol(
                   "/img/aboutIndex/kstar/kstar-program-",
                   "jpg",
-                  2,
+                  2
                 )}
               </MDBRow>
             </MDBContainer>
@@ -203,7 +203,7 @@ const KstarProjectsPage = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="10">
               {contentDesign.addImgRoundedView(
-                "/img/aboutIndex/kstar/kstar-showroom.jpg",
+                "/img/aboutIndex/kstar/kstar-showroom.jpg"
               )}
             </MDBCol>
             <MDBCol md="1"></MDBCol>

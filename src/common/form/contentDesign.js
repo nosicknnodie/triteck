@@ -30,7 +30,7 @@ export function addImgInTwoCol(imgRootPath, imgExtension, startedImgNum) {
             <MDBMask overlay="white-slight" />
           </a>
         </MDBView>
-      </MDBCol>,
+      </MDBCol>
     );
   }
 
@@ -46,7 +46,7 @@ export function addVideoInCol(videoInfo) {
     const ratio = `${videoInfo[i].videoRatio ?? null}`;
     const title = `${videoInfo[i].videoTitle ?? null}`;
     const desc = videoInfo[i].videoDesc ?? null;
-    const htmlDesc = [];
+    let htmlDesc = [];
 
     if (Array.isArray(desc)) {
       for (let j = 0; j < desc.length; j++) {
@@ -67,7 +67,7 @@ export function addVideoInCol(videoInfo) {
               </MDBCardBody>
             </MDBCard>
           </SectionContainer>
-        </MDBCol>,
+        </MDBCol>
       );
     } else {
       result.push(
@@ -83,7 +83,7 @@ export function addVideoInCol(videoInfo) {
               </MDBCardBody>
             </MDBCard>
           </SectionContainer>
-        </MDBCol>,
+        </MDBCol>
       );
     }
   }
