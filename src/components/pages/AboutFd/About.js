@@ -27,6 +27,7 @@ import {
 import "./About.css";
 import Copyrights from "../../Footer";
 import { NavLink } from "react-router-dom";
+import Test from "@/common/test";
 
 const About = () => {
   const GRAY_COLOR = "#565656";
@@ -68,7 +69,7 @@ const About = () => {
               <MDBCol md="12" className="mt-4">
                 <p>
                   <h2 className="main-text_1 text-center my-5 font-weight-bold">
-                    TRITECH{" "}
+                    TRITECH
                     <span className="text-light-dark font-weight-light"></span>
                   </h2>
                 </p>
