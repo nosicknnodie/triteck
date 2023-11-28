@@ -9,11 +9,14 @@ import "./Header.css";
 
 const Header = () => {
   const [, setToggleStateA] = useState(false);
-  const { t } = useTranslation(["menu"]);
+  const { t, i18n } = useTranslation(["menu"]);
 
   const handleToggleClickA = useCallback(() => {
     setToggleStateA((f) => !f);
   }, []);
+  const handleChangeLanguage = useCallback(() => {
+    i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR")
+  }, [i18n])
   const specialCaseNavbarStyles = {
     WebkitBoxOrient: "horizontal",
     flexDirection: "row",
@@ -214,6 +217,7 @@ const Header = () => {
           <MDBNavbarNav right>
             <div className="barRightSpace"></div>
           </MDBNavbarNav>
+          <button onClick={handleChangeLanguage} className="">{i18n.language === "ko-KR" ? "한국어" : "English"}</button>
         </MDBNavbar>
       </div>
     </>

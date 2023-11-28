@@ -19,7 +19,7 @@ i18n.use(initReactI18next).init({
   },
   debug: true,
   defaultNS: "lang",
-  ns: ["menu", "lang", "about", "ci"],
+  ns: ["menu", "lang", "about", "ci", "field", "rsa", "clean", "dlpp"],
   keySeparator: false,
   interpolation: {
     escapeValue: false,
