@@ -16,8 +16,10 @@ import Copyrights from "../../../Footer";
 import TopImgCompanyMobile from "../../TopImgFd/TopImgCompanyMobile";
 import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
 import "./ThesisPatent.css";
+import { useTranslation } from "react-i18next";
 
 const ThesisPatent = () => {
+  const { t } = useTranslation(["blog"]);
   return (
     <>
       <div id="thesisPatent">
@@ -30,7 +32,7 @@ const ThesisPatent = () => {
 
         <section id="thesisPatent_1">
           <h2 className="h1-responsive font-weight-bold text-center my-5 pt-5">
-            논 문 . 특 허
+            {t("T01")}
           </h2>
           <MDBContainer>
             <MDBRow>
@@ -41,7 +43,7 @@ const ThesisPatent = () => {
                       <MDBContainer>
                         <MDBRow className="rowArticle mb-5">
                           <MDBCol className="colTitle font-weight-bold" sm="2">
-                            논 문
+                            {t("T02")}
                           </MDBCol>
                           <MDBCol className="hrLine" sm="10">
                             <hr />
@@ -66,13 +68,16 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                열생성 기법
+                                {t("T03")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  열생성 기법에 의한 <br />
-                                  항공기 운항계획 문제의 최적 해법
+                                  {t("T04")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>1993.01</p>
                               </h4>
@@ -84,7 +89,7 @@ const ThesisPatent = () => {
                                     href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE00311666"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -127,7 +132,7 @@ const ThesisPatent = () => {
                                     href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/cae.20358"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -151,12 +156,13 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                훈련용 시뮬레이터
+                                {t("T06")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  고소작업대 조종훈련용 시뮬레이터
+                                  {t("T07")}
+
                                   <br />
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2019.04</p>
@@ -169,7 +175,7 @@ const ThesisPatent = () => {
                                     href="https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=CFKO200734514816229&oCn=NPAP08143151&dbt=CFKO&journal=NPRO00290338"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -195,13 +201,16 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                위기관리시스템
+                                {t("T08")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  위기관리 시스템 활성화를 위한 <br />
-                                  시뮬레이터 개발에 관한 연구
+                                  {t("T09")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2006.08</p>
                               </h4>
@@ -213,7 +222,7 @@ const ThesisPatent = () => {
                                     href="https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=CFKO200626813067502&oCn=NPAP08143040&dbt=CFKO&journal=NPRO00290336"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -237,12 +246,13 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                가상안전체험
+                                {t("T10")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-4">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  가상 안전 운전 체험 교육 <br />
+                                  {t("T11")}
+                                  <br />
                                 </p>
 
                                 <p style={{ fontSize: "0.5em" }}>2002.12</p>
@@ -255,7 +265,7 @@ const ThesisPatent = () => {
                                     href="https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=JAKO200211921691343&oCn=JAKO200211921691343&dbt=JAKO&journal=NJOU00397348"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -279,14 +289,11 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                ICT기반 원격해체
+                                {t("T12")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
-                                <p style={{ fontSize: "0.6em" }}>
-                                  {" "}
-                                  가상 운전 시스템 아키텍처
-                                </p>
+                                <p style={{ fontSize: "0.6em" }}> {t("T13")}</p>
                                 <p style={{ fontSize: "0.5em" }}>2019.04</p>
                               </h4>
                               <MDBRow>
@@ -297,7 +304,7 @@ const ThesisPatent = () => {
                                     href="https://www.earticle.net/Article/A362666"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -323,13 +330,16 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                원전해체
+                                {t("T14")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  디지털 트윈을 적용한 고감도 <br />
-                                  충돌 시뮬레이션 개발을 위한 연구
+                                  {t("T15")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2020.12</p>
                               </h4>
@@ -341,7 +351,7 @@ const ThesisPatent = () => {
                                     href="https://journal.kosdi.or.kr/articles/article/bO1Q/"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -361,12 +371,12 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                핵융합
+                                {t("T16")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-4">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  올해 예정 <br />
+                                  {t("T17")} <br />
                                 </p>
 
                                 <p style={{ fontSize: "0.5em" }}>2021.12</p>
@@ -378,7 +388,7 @@ const ThesisPatent = () => {
                                     size="md"
                                     href="#"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -402,14 +412,16 @@ const ThesisPatent = () => {
                               />
                               <MDBMask overlay="white-slight" />
                               <h6 className="font-weight-bold ml-3 mb-3 mt-3">
-                                스포츠 ICT
+                                {t("T18")}
                               </h6>
 
                               <h4 className="font-weight-bold mb-3">
                                 <p style={{ fontSize: "0.6em" }}>
-                                  태권도 전자호구 개발을 위한
-                                  <br />
-                                  충격감지 센서 연구
+                                  {t("T19")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2019.04</p>
                               </h4>
@@ -421,7 +433,7 @@ const ThesisPatent = () => {
                                     href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002459902"
                                     target="blank"
                                   >
-                                    논문보기
+                                    {t("T05")}
                                   </MDBBtn>
                                 </MDBCol>
                               </MDBRow>
@@ -435,7 +447,7 @@ const ThesisPatent = () => {
                       <MDBContainer>
                         <MDBRow className="rowArticle mt-5 mb-5">
                           <MDBCol className="colTitle font-weight-bold" sm="2">
-                            특 허
+                            {t("T20")}
                           </MDBCol>
                           <MDBCol className="hrLine" sm="10">
                             <hr />
@@ -445,17 +457,15 @@ const ThesisPatent = () => {
                         <MDBRow>
                           <MDBCol md="6">
                             <MDBCard border="primary" className="m-3">
-                              <MDBCardHeader>
-                                원자력 발전호 해체를 위한 시뮬레이션 기술
-                              </MDBCardHeader>
+                              <MDBCardHeader>{t("T21")}</MDBCardHeader>
                               <MDBCardBody className="text-primary">
-                                <MDBCardTitle tag="h5">
-                                  특허 제 10-2020-0187456호
-                                </MDBCardTitle>
+                                <MDBCardTitle tag="h5">{t("T22")}</MDBCardTitle>
                                 <MDBCardText>
-                                  발명자: 기재석 황교찬 최주호
-                                  <br />
-                                  등록일: 2020.12.30
+                                  {t("T23")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </MDBCardText>
                               </MDBCardBody>
                             </MDBCard>
@@ -463,17 +473,15 @@ const ThesisPatent = () => {
 
                           <MDBCol md="6">
                             <MDBCard border="secondary" className="m-3">
-                              <MDBCardHeader>
-                                용접 시뮬레이션 장치
-                              </MDBCardHeader>
+                              <MDBCardHeader>{t("T24")}</MDBCardHeader>
                               <MDBCardBody className="text-secondary">
-                                <MDBCardTitle tag="h5">
-                                  특허 제 10-0926045호
-                                </MDBCardTitle>
+                                <MDBCardTitle tag="h5">{t("T25")}</MDBCardTitle>
                                 <MDBCardText>
-                                  특권자: (주)코리아일레콤, 기재석
-                                  <br />
-                                  등록일: 2009.11.03
+                                  {t("T26")
+                                    .split("\n")
+                                    .map((v, i) => (
+                                      <div key={i}>{v}</div>
+                                    ))}
                                 </MDBCardText>
                               </MDBCardBody>
                             </MDBCard>

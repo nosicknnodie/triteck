@@ -1,105 +1,73 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import { useCallback } from "react";
 
 import { NavLink } from "react-router-dom";
 
-import {
-  MDBIcon,
-  MDBNav,
-  MDBNavItem,
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBSideNav,
-  MDBSideNavCat,
-  MDBSideNavItem,
-  MDBSideNavLink,
-  MDBSideNavNav,
-} from "mdbreact";
+import { MDBIcon, MDBNav, MDBNavItem, MDBNavbar, MDBNavbarNav } from "mdbreact";
+import { useTranslation } from "react-i18next";
 import "./Header.css";
 
-class Header extends React.Component {
-  rSNL(to, text) {
-    return (
-      <MDBSideNavLink to={to} onClick={this.props.onLinkClick}>
-        {text}
-      </MDBSideNavLink>
-    );
-  }
+const Header = () => {
+  // const [, setToggleStateA] = useState(false);
+  const { t } = useTranslation(["menu"]);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      toggleStateA: false,
-    };
-    console.log(this.state.toggleStateA);
-  }
+  // const handleToggleClickA = useCallback(() => {
+  //   setToggleStateA((f) => !f);
+  // }, []);
 
-  handleToggleClickA = () => {
-    this.setState({
-      toggleStateA: !this.state.toggleStateA,
-    });
+  const specialCaseNavbarStyles = {
+    WebkitBoxOrient: "horizontal",
+    flexDirection: "row",
   };
+  return (
+    <>
+      <div className="mdb-skin">
+        {/* --------------------------------------------top nav ------------------------------------- */}
 
-  render() {
-    // const mainStyle = {
-    //   paddingTop: "5rem",
-    // };
-
-    const specialCaseNavbarStyles = {
-      WebkitBoxOrient: "horizontal",
-      flexDirection: "row",
-    };
-
-    return (
-      <>
-        <div className="mdb-skin">
-          {/* --------------------------------------------top nav ------------------------------------- */}
-
-          <MDBNavbar
-            id="top-menu"
-            className="pt-3"
-            //className="pt-3 mt-5"
-            double
-            fixed="top"
-            scrolling
-          >
-            <MDBNavbarNav left>
-              <MDBNavItem className="menuBtn">
-                <div
-                  onClick={this.handleToggleClickA}
-                  key="sideNavToggleA"
-                  style={{
-                    lineHeight: "30px",
-                    marginRight: "0.5em",
-                    verticalAlign: "middle",
-                    backgroundColor: "transparent",
-                  }}
-                >
-                  <MDBIcon icon="bars" color="white" size="1x" />
-                </div>
-              </MDBNavItem>
-
-              <MDBNavItem className="navItemLogo">
-                <a href="/">
-                  <img src="/img/logo/tritech-logo-xs.png" />
-                </a>
-              </MDBNavItem>
-            </MDBNavbarNav>
-
-            <MDBNav>
-              <MDBNavbarNav
-                id="top-menu-id"
-                className="top-menu-1 mr-5 pr-5"
-                style={specialCaseNavbarStyles}
-                center
+        <MDBNavbar
+          id="top-menu"
+          className="pt-3"
+          //className="pt-3 mt-5"
+          double
+          fixed="top"
+          scrolling
+        >
+          <MDBNavbarNav left>
+            {/* <MDBNavItem className="menuBtn">
+              <div
+                onClick={handleToggleClickA}
+                key="sideNavToggleA"
+                style={{
+                  lineHeight: "30px",
+                  marginRight: "0.5em",
+                  verticalAlign: "middle",
+                  backgroundColor: "transparent",
+                }}
               >
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink to="/" className="first_rid Ripple-parent">
-                    <li>홈</li>
-                  </NavLink>
-                </MDBNavItem>
+                <MDBIcon icon="bars" color="white" size="1x" />
+              </div>
+            </MDBNavItem> */}
 
-                {/* <MDBNavItem id="dropdown-top-menu" className="dropdown">
+            <MDBNavItem className="navItemLogo">
+              <a href="/">
+                <img src="/img/logo/tritech-logo-xs.png" />
+              </a>
+            </MDBNavItem>
+          </MDBNavbarNav>
+
+          <MDBNav>
+            <MDBNavbarNav
+              id="top-menu-id"
+              className="top-menu-1 mr-5 pr-5"
+              style={specialCaseNavbarStyles}
+            >
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink to="/" className="first_rid Ripple-parent">
+                  <li>{t("HOME")}</li>
+                </NavLink>
+              </MDBNavItem>
+
+              {/* <MDBNavItem id="dropdown-top-menu" className="dropdown">
                   <NavLink
                     to="/pages/CeoFd/ceo"
                     className="first_rid Ripple-parent"
@@ -107,33 +75,15 @@ class Header extends React.Component {
                     <li>회사소개</li>
                   </NavLink>
                 </MDBNavItem> */}
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink
-                    to="/pages/CeoFd/ceo"
-                    className="first_rid Ripple-parent"
-                  >
-                    <li>
-                      회사소개
-                      <MDBIcon icon="angle-down" className="ml-1" />
-                    </li>
-                  </NavLink>
-                  <MDBNavItem
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <NavLink className="dropdown-item" to="/pages/CeoFd/ci">
-                      CI
-                    </NavLink>
-                  </MDBNavItem>
-                </MDBNavItem>
-
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink
-                    to="/pages/FieldPageFd/FieldIndex"
-                    className="Ripple-parent"
-                  >
-                    연구분야
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink
+                  to="/pages/CeoFd/ceo"
+                  className="first_rid Ripple-parent"
+                >
+                  <li>
+                    {t("INTRODUCTION")}
                     <MDBIcon icon="angle-down" className="ml-1" />
+<<<<<<< HEAD
                   </NavLink>
                   <MDBNavItem
                     className="dropdown-menu"
@@ -211,52 +161,172 @@ class Header extends React.Component {
                     className="Ripple-parent"
                   >
                     고객문의
+=======
+                  </li>
+                </NavLink>
+                <MDBNavItem
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <NavLink className="dropdown-item" to="/pages/CeoFd/ci">
+                    CI
+>>>>>>> c5656d76cefc619ed5942871799baf89549b9395
                   </NavLink>
                 </MDBNavItem>
+              </MDBNavItem>
 
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink
+                  to="/pages/FieldPageFd/FieldIndex"
+                  className="Ripple-parent"
+                >
+                  {t("RESEARCH_FIELD")}
+                  <MDBIcon icon="angle-down" className="ml-1" />
+                </NavLink>
+                <MDBNavItem
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <NavLink
-                    to="/pages/PromotionFd/subPageFd/NewsArticle"
-                    className="Ripple-parent"
+                    className="dropdown-item"
+                    to="/pages/FieldPageFd/subPageFd/Field"
                   >
-                    블로그
-                    <MDBIcon icon="angle-down" className="ml-1" />
+                    AR/VR
                   </NavLink>
-                  <MDBNavItem
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/FieldPageFd/subPageFd/Rsa"
                   >
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/PromotionFd/subPageFd/NewsArticle"
+                    ART Technology
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/FieldPageFd/subPageFd/CleanEnergy"
+                  >
+                    Clean Energy
+                  </NavLink>
+                </MDBNavItem>
+              </MDBNavItem>
+
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink
+                  to="/pages/AboutIndexFd/aboutIndex"
+                  className="Ripple-parent"
+                >
+                  {t("RESEARCH_RESULTS")}
+                  <MDBIcon icon="angle-down" className="ml-1" />
+                </NavLink>
+                <MDBNavItem
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <NavLink
+                    className="dropdown-item"
+                    // style={{ textOverflow: "ellipsis", display: "block" }}
+                    to="/pages/AboutIndexFd/subPageFd/dlpp"
+                  >
+                    <div
+                      style={{
+                        width: "100%",
+                        textOverflow: "ellipsis",
+                        overflow: "hidden",
+                      }}
                     >
-                      관련기사
-                    </NavLink>
-                    {/* <NavLink
+                      {t("NUCLEAR_POWER_PLANT_DECOMMISSIONING")}
+                    </div>
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/AboutIndexFd/subPageFd/kstar"
+                  >
+                    {t("NUCLEAR_FUSION")}
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/AboutIndexFd/subPageFd/Voucher"
+                  >
+                    {t("VOUCHER_BUSINESS")}
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/AboutIndexFd/subPageFd/clean"
+                  >
+                    {t("CLEAN_ENERGY")}
+                  </NavLink>
+                </MDBNavItem>
+              </MDBNavItem>
+
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink
+                  to="/pages/ContactFd/contact"
+                  className="Ripple-parent"
+                >
+                  {t("CUSTOMER_INQUIRY")}
+                </NavLink>
+              </MDBNavItem>
+
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
+                <NavLink
+                  to="/pages/PromotionFd/subPageFd/NewsArticle"
+                  className="Ripple-parent"
+                >
+                  {t("BLOG")}
+                  <MDBIcon icon="angle-down" className="ml-1" />
+                </NavLink>
+                <MDBNavItem
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/PromotionFd/subPageFd/NewsArticle"
+                  >
+                    {t("RELATED_ARTICLES")}
+                  </NavLink>
+                  {/* <NavLink
                       className="dropdown-item"
                       to="/pages/PromotionFd/subPageFd/VideoNews"
                     >
                       동영상
                     </NavLink> */}
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/PromotionFd/subPageFd/ThesisPatent"
-                    >
-                      논문 / 특허{" "}
-                    </NavLink>
-                  </MDBNavItem>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/pages/PromotionFd/subPageFd/ThesisPatent"
+                  >
+                    {t("THESES_PATENTS")}
+                  </NavLink>
                 </MDBNavItem>
-              </MDBNavbarNav>
-            </MDBNav>
-
-            <MDBNavbarNav right>
-              <div className="barRightSpace"></div>
+              </MDBNavItem>
             </MDBNavbarNav>
-          </MDBNavbar>
+          </MDBNav>
+
+          <MDBNavbarNav right>
+            <div className="barRightSpace">
+              <LanguageToggleButton />
+            </div>
+          </MDBNavbarNav>
+        </MDBNavbar>
+      </div>
+    </>
+  );
+};
+
+const LanguageToggleButton = () => {
+  const { i18n } = useTranslation(["menu"]);
+  const flag = i18n.language === "ko-KR";
+  const handleChangeLanguage = useCallback(() => {
+    i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR");
+  }, [i18n]);
+  return (
+    <>
+      <div className="toggle-div" onClick={handleChangeLanguage}>
+        <div className={`toggle-container ${!flag && "toggle-checked"}`}></div>
+        <div className={`toggle-circle ${!flag && "toggle-checked"}`}>
+          {flag ? "KR" : "EN"}
         </div>
-      </>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
 export default Header;

@@ -35,9 +35,9 @@ const TopImgCompanyWeb = () => {
                   <hr className="hr-light pb-1" />
 
                   <h6 className="pb-5">
-                    <spen className="pr-5 pl-5">Virtual Simulation</spen>
-                    <spen className="pr-5 pl-5">ART Technology</spen>
-                    <spen className="pr-5 pl-5">Clean Energy</spen>
+                    <span className="pr-5 pl-5">Virtual Simulation</span>
+                    <span className="pr-5 pl-5">ART Technology</span>
+                    <span className="pr-5 pl-5">Clean Energy</span>
                   </h6>
 
                   <MDBRow className="text-center mb-5">

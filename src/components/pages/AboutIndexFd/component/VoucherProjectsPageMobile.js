@@ -9,22 +9,21 @@ import {
   MDBRow,
   MDBTable,
   MDBTableBody,
-  MDBTableHead,
   MDBView,
 } from "mdbreact";
 import { Fragment } from "react";
 import "../../../../common/form/contentFont.css";
 import "./VoucherProjectsPageMobile.css";
+import { useTranslation } from "react-i18next";
 
 const VoucherProjectsPage = () => {
+  const { t } = useTranslation(["voucher"]);
   return (
     <>
       <section id="voucherProjects" className="text-center my-5">
         <MDBContainer>{/* <TopLinkPageMobile/> */}</MDBContainer>
         <h2 className="h1-responsive font-weight-bold my-5">AR SIMULATION</h2>
-        <p className="w-responsive mx-auto mb-5">
-          비대면 비즈니스 디지털혁신 기술개발사업
-        </p>
+        <p className="w-responsive mx-auto mb-5">{t("P01")}</p>
         <MDBContainer>
           <hr className="voucherHrSize" />
         </MDBContainer>
@@ -48,11 +47,7 @@ const VoucherProjectsPage = () => {
 
       <section id="voucherSectionID">
         <MDBContainer>
-          <MDBRow className="rowText1Mb pl-2 pr-2 mb-5">
-            고객 주문 후 바로 제작하여 시공할 수 있도록 정밀도를 향상시킨 비대면
-            인테리어 발주 AR앱 개발 시공사의 고효울 업무 수행을 지원하여 대내외
-            차별화되는 사업 경쟁력 향상을 도모
-          </MDBRow>
+          <MDBRow className="rowText1Mb pl-2 pr-2 mb-5">{t("P02")}</MDBRow>
 
           <MDBRow className="text-center">
             <MDBCol sm="6" className="mb-lg-0 mb-4">
@@ -112,9 +107,7 @@ const VoucherProjectsPage = () => {
         <MDBRow className="text-center mt-5">
           <MDBCardBody className="pb-0">
             <MDBCol className="colVoucherProjectMb mt-1 pb-5 dark-text">
-              개발 및 사업화의 전문성을 갖춘 기관∙인력의 정밀한 가상 인테리어
-              종합 서비스 환경구축 차별성을 가진 가상 발주∙시공 AR앱을
-              사업화하여 인테리어 산업화의 다각화 도모
+              {t("P03")}
             </MDBCol>
           </MDBCardBody>
         </MDBRow>
@@ -157,22 +150,19 @@ const VoucherProjectsPage = () => {
         <MDBRow className="text-center mt-5">
           <MDBContainer>
             <MDBTable bordered className="mt-5">
-              <MDBTableHead>
-                <tr>
-                  <th style={{ fontWeight: "800" }}>기술 혁신</th>
-                  <td>국내최초 비대면 정밀시공 AR 앱 개발</td>
-                </tr>
-              </MDBTableHead>
-              <MDBTableBody>
-                <tr>
-                  <th style={{ fontWeight: "800" }}>구조 혁신</th>
-                  <td>프로세스 간소화를 통한 편의성</td>
-                </tr>
-                <tr>
-                  <th style={{ fontWeight: "800" }}>상품고도화</th>
-                  <td>해외시장 진출</td>
-                </tr>
-              </MDBTableBody>
+              {t("P04")
+                .split("\n")
+                .map((v, i) => {
+                  const l = v.split(":");
+                  const t = l[0];
+                  const c = l[1];
+                  return (
+                    <MDBTableBody key={i}>
+                      <th style={{ fontWeight: "800" }}>{t}</th>
+                      <td>{c}</td>
+                    </MDBTableBody>
+                  );
+                })}
             </MDBTable>
           </MDBContainer>
         </MDBRow>
@@ -212,10 +202,10 @@ const VoucherProjectsPage = () => {
 
           <MDBRow className="mb-5">
             <MDBCol className="text-center mt-3">
-              <h6>가상 / 정밀시공</h6>
+              <h6>{t("P05")}</h6>
             </MDBCol>
             <MDBCol className="text-center mt-3">
-              <h6>증강현실기술</h6>
+              <h6>{t("P06")}</h6>
             </MDBCol>
           </MDBRow>
 
@@ -230,10 +220,10 @@ const VoucherProjectsPage = () => {
 
           <MDBRow className="mb-5">
             <MDBCol className="text-center mt-3">
-              <h6>고객만족증대</h6>
+              <h6>{t("P09")}</h6>
             </MDBCol>
             <MDBCol className="text-center mt-3">
-              <h6>비대면 간편구매</h6>
+              <h6>{t("P08")}</h6>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

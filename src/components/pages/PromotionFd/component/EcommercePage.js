@@ -11,8 +11,10 @@ import {
 import "../../../../common/form/contentDesign.css";
 import "../../../../common/form/contentFont.css";
 import "./EcommercePage.css";
+import { useTranslation } from "react-i18next";
 
 const EcommercePage = () => {
+  const { t } = useTranslation(["blog"]);
   const TITLE_COLOR = "#212529";
   const GRAY_COLOR = "#565656";
 
@@ -21,12 +23,12 @@ const EcommercePage = () => {
       <section id="wideImgSection">
         <MDBContainer>
           <title2 style={{ color: TITLE_COLOR }} className="mb-1 text-center">
-            원전해체
+            {t("E01")}
           </title2>
           <br />
           <br />
           <p style={{ color: GRAY_COLOR }} className="text-center">
-            관련 기사
+            {t("E02")}
           </p>
         </MDBContainer>
       </section>
@@ -73,8 +75,7 @@ const EcommercePage = () => {
                   target="blank"
                 >
                   <p className="dark-grey-text mb-lg-0 mb-md-5 mb-4">
-                    레이저 절단기술 통해 원전 원격해체 시스템 가상 운전 기술개발
-                    주도
+                    {t("E03")}
                   </p>
                 </a>
               </div>
@@ -104,7 +105,7 @@ const EcommercePage = () => {
                   </MDBCol>
                   <MDBCol md="8">
                     <p className="font-weight-bold dark-grey-text">
-                      2019-05-07
+                      2019.05.07
                     </p>
                     <div className="d-flex justify-content-between">
                       <MDBCol size="11" className="text-truncate pl-0 mb-3">
@@ -113,7 +114,7 @@ const EcommercePage = () => {
                           target="blank"
                           className="dark-grey-text"
                         >
-                          원격으로 원전 해체…2022년까지 가상시스템 개발
+                          {t("E04")}
                         </a>
                       </MDBCol>
                       <a
@@ -158,7 +159,7 @@ const EcommercePage = () => {
                           target="blank"
                           className="dark-grey-text"
                         >
-                          기계연, 원전 원격해체 시스템 가상 운전 기술개발 착수
+                          {t("E05")}
                         </a>
                       </MDBCol>
                       <a
@@ -203,7 +204,7 @@ const EcommercePage = () => {
                           target="blank"
                           className="dark-grey-text"
                         >
-                          원전 원격 해체 시스템 가상운전 기술 개발
+                          {t("E06")}
                         </a>
                       </MDBCol>
                       <a
@@ -244,7 +245,7 @@ const EcommercePage = () => {
                     <div className="d-flex justify-content-between">
                       <MDBCol size="11" className="text-truncate pl-0 mb-3">
                         <a href="#!" className="dark-grey-text">
-                          원전산업의 미래…‘원전해체’
+                          {t("E07")}
                         </a>
                       </MDBCol>
                       <a

@@ -12,16 +12,16 @@ import { Fragment } from "react";
 import "../../../../common/form/contentDesign.css";
 import "../../../../common/form/contentFont.css";
 import "./VoucherProjectsPage.css";
+import { useTranslation } from "react-i18next";
 
 const VoucherProjectsPage = () => {
+  const { t } = useTranslation(["voucher"]);
   return (
     <>
       <section id="voucherProjects" className="text-center my-5">
         <MDBContainer>{/* <TopLinkPage/> */}</MDBContainer>
         <h2 className="h1-responsive font-weight-bold my-5">AR SIMULATION</h2>
-        <p className="w-responsive mx-auto mb-5">
-          비대면 비즈니스 디지털혁신 기술개발사업
-        </p>
+        <p className="w-responsive mx-auto mb-5">{t("P01")}</p>
         <MDBContainer>
           <hr className="voucherHrSize" />
         </MDBContainer>
@@ -49,11 +49,7 @@ const VoucherProjectsPage = () => {
               <h3 className="font-weight-bold mb-3 p-0">
                 {/* <strong>Title of the news</strong> */}
               </h3>
-              <p className="technology pl-0 pr-1 text-left">
-                고객 주문 후 바로 제작하여 시공할 수 있도록 정밀도를 향상시킨
-                비대면 인테리어 발주 AR앱 개발 시공사의 고효울 업무 수행을
-                지원하여 대내외 차별화되는 사업 경쟁력 향상을 도모
-              </p>
+              <p className="technology pl-0 pr-1 text-left">{t("P02")}</p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -70,12 +66,11 @@ const VoucherProjectsPage = () => {
                 {/* <strong>Title of the news</strong> */}
               </h3>
               <p className="technology pl-1 pr-4 text-left">
-                개발 및 사업화의 전문성을 갖춘 기관∙인력의 정밀한 가상 인테리어
-                종합 서비스 환경구축
-                <br />
-                <br />
-                차별성을 가진 가상 발주∙시공 AR앱을 사업화하여 인테리어 산업화의
-                다각화 도모
+                {t("P03")
+                  .split("\n")
+                  .map((v, i) => (
+                    <div key={i}>{v}</div>
+                  ))}
               </p>
             </MDBCol>
 
@@ -145,14 +140,19 @@ const VoucherProjectsPage = () => {
 
             <h3 className="font-weight-bold mb-3 p-0"></h3>
             <p className="letter pr-1 text-left">
-              <spen className="font-weight-bold">기 술 혁 신 :</spen> 국내최초
-              비대면 정밀시공 AR 앱 개발
-              <br />
-              <spen className="font-weight-bold">구 조 혁 신 :</spen> 프로세스
-              간소화를 통한 편의성
-              <br />
-              <spen className="font-weight-bold">상품고도화 :</spen> 해외시장
-              진출
+              {t("P04")
+                .split("\n")
+                .map((v, i) => {
+                  const l = v.split(":");
+                  const t = l[0];
+                  const c = l[1];
+                  return (
+                    <div key={i}>
+                      <span className="font-weight-bold">{t}:</span>
+                      {c}
+                    </div>
+                  );
+                })}
             </p>
           </MDBCol>
         </MDBRow>
@@ -178,14 +178,14 @@ const VoucherProjectsPage = () => {
               <img src="/img/aboutIndex/voucher/Precision.png" />
             </MDBCol>
             <MDBCol sm="4">
-              <h5>가상 / 정밀시공</h5>
+              <h5>{t("P05")}</h5>
             </MDBCol>
             <MDBCol sm="1"></MDBCol>
             <MDBCol sm="1">
               <img src="/img/aboutIndex/voucher/Augmentation.png" />
             </MDBCol>
             <MDBCol sm="4">
-              <h5>증강현실기술</h5>
+              <h5>{t("P06")}</h5>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -197,14 +197,14 @@ const VoucherProjectsPage = () => {
               <img src="/img/aboutIndex/voucher/client.png" />
             </MDBCol>
             <MDBCol sm="4">
-              <h5>시스템 최적화</h5>
+              <h5>{t("P07")}</h5>
             </MDBCol>
             <MDBCol sm="1"></MDBCol>
             <MDBCol sm="1">
               <img src="/img/aboutIndex/voucher/Nonface.png" />
             </MDBCol>
             <MDBCol sm="4">
-              <h5>비대면 간편구매</h5>
+              <h5>{t("P08")}</h5>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

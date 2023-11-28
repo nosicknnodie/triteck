@@ -21,8 +21,10 @@ import "../../../../common/form/contentFont.css";
 import Copyrights from "../../../Footer";
 import EcommercePage from "../component/EcommercePage";
 import "./NewsArticle.css";
+import { useTranslation } from "react-i18next";
 
 const NewsArticle = () => {
+  const { t } = useTranslation(["blog"]);
   const MAIN_COLOR = "#2A4A83";
   const GRAY_COLOR = "#565656";
   const SUB_COLOR = "#3F51B5";
@@ -77,7 +79,7 @@ const NewsArticle = () => {
         {/* --------------title--------------- */}
         <section id="pageTitleSection">
           <title1 style={{ color: TITLE_COLOR }} className="mb-1">
-            관련기사
+            {t("P01")}
           </title1>
         </section>
 
@@ -86,7 +88,7 @@ const NewsArticle = () => {
           <MDBContainer>
             <MDBRow>
               <MDBCol className="col-3 col-md-2">
-                <title2 style={{ color: MAIN_COLOR }}>CSO기사</title2>
+                <title2 style={{ color: MAIN_COLOR }}>{t("P02")}</title2>
               </MDBCol>
               <MDBCol className="col-9 col-md-10">
                 <hr className="line" style={{ borderColor: MAIN_COLOR }} />
@@ -139,7 +141,7 @@ const NewsArticle = () => {
           <MDBContainer>
             <MDBRow>
               <MDBCol className="col-3 col-md-2">
-                <title2 style={{ color: MAIN_COLOR }}>리포트</title2>
+                <title2 style={{ color: MAIN_COLOR }}>{t("P03")}</title2>
               </MDBCol>
               <MDBCol className="col-9 col-md-10">
                 <hr className="line" style={{ borderColor: MAIN_COLOR }} />
@@ -153,13 +155,11 @@ const NewsArticle = () => {
             <MDBRow>
               <MDBCol md="12" className="titleContainer">
                 <title2 style={{ color: TITLE_COLOR }} className="mb-1">
-                  전자산업 인적자원 개발위원회 (ISC)
+                  {t("P04")}
                 </title2>
                 <br />
-                <p style={{ color: GRAY_COLOR }}>2021년 2/4분기</p>
-                <title4 style={{ color: SUB_COLOR }}>
-                  작성자 : 상명대학교 기재석 교수
-                </title4>
+                <p style={{ color: GRAY_COLOR }}>{t("P05")}</p>
+                <title4 style={{ color: SUB_COLOR }}>{t("P06")}</title4>
               </MDBCol>
             </MDBRow>
 
@@ -175,16 +175,9 @@ const NewsArticle = () => {
                 </div>
 
                 <div className="mb-2">
-                  <title3 style={{ color: SUB_COLOR }}>
-                    메타버스가 주도하는 가상세계의 미래 전자산업 비전과 인력양성
-                  </title3>
+                  <title3 style={{ color: SUB_COLOR }}>{t("P07")}</title3>
                 </div>
-                <p>
-                  메타버스(Metaverse)는 ‘메타(meta)’와 현실 세계를 의미하는
-                  ‘유니버스 (Universe)’의 합성어로, 아바타를 통해 사용자들이
-                  놀이, 업무, 소비(경제), 소통 등 각종 활동을 할 수 있는
-                  플랫폼으로 비대면 사회에 새로운 산업으로 자리매김
-                </p>
+                <p>{t("P08")}</p>
 
                 <div>
                   <br />
@@ -194,8 +187,8 @@ const NewsArticle = () => {
                     href="https://tritech.s3.ap-northeast-2.amazonaws.com/documents/isc-issue-report-2021.pdf"
                     target="blank"
                   >
-                    <MDBIcon far icon="clone" className="left" /> 이슈리포트
-                    보기
+                    <MDBIcon far icon="clone" className="left" />
+                    {t("P09")}
                   </MDBBtn>
                 </div>
               </MDBCol>
@@ -210,11 +203,11 @@ const NewsArticle = () => {
             <MDBRow>
               <MDBCol className="titleContainer">
                 <title2 style={{ color: TITLE_COLOR }} className="mb-1">
-                  디지털콘텐츠산업 육성사업지원 성과 우수사례
+                  {t("P10")}
                 </title2>
                 <br />
                 <br />
-                <title4 style={{ color: SUB_COLOR }}>핵 융 합</title4>
+                <title4 style={{ color: SUB_COLOR }}>{t("P11")}</title4>
               </MDBCol>
             </MDBRow>
 
@@ -229,10 +222,7 @@ const NewsArticle = () => {
                   )}
                 </div>
 
-                <title3 style={{ color: SUB_COLOR }}>
-                  한국형 인공태양 KSTAR XR솔루현 통해 핵융합에너지 개발시기
-                  앞당긴다
-                </title3>
+                <title3 style={{ color: SUB_COLOR }}>{t("P12")}</title3>
 
                 <div>
                   <br />
@@ -243,8 +233,7 @@ const NewsArticle = () => {
                     href="https://tritech.s3.ap-northeast-2.amazonaws.com/documents/article-kstar.pdf"
                     target="blank"
                   >
-                    <MDBIcon far icon="clone" className="left" /> 이슈리포트
-                    보기
+                    <MDBIcon far icon="clone" className="left" /> {t("P09")}
                   </MDBBtn>
                 </div>
               </MDBCol>
@@ -260,7 +249,7 @@ const NewsArticle = () => {
           <MDBContainer>
             <MDBRow>
               <MDBCol className="col-5 col-md-4 col-lg-3 col-xl-2">
-                <title2 style={{ color: MAIN_COLOR }}>연구개발 기사</title2>
+                <title2 style={{ color: MAIN_COLOR }}>{t("P13")}</title2>
               </MDBCol>
               <MDBCol className="col-7 col-md-8 col-lg-9 col-xl-10">
                 <hr className="line" style={{ borderColor: MAIN_COLOR }} />
@@ -275,11 +264,11 @@ const NewsArticle = () => {
             <MDBRow>
               <MDBCol md="12" className="titleContainer">
                 <title2 style={{ color: TITLE_COLOR }} className="mb-1">
-                  핵융합
+                  {t("P14")}
                 </title2>
                 <br />
                 <br />
-                <p style={{ color: GRAY_COLOR }}>관련 기사</p>
+                <p style={{ color: GRAY_COLOR }}>{t("P15")}</p>
               </MDBCol>
             </MDBRow>
 
@@ -317,9 +306,7 @@ const NewsArticle = () => {
                               SW 가상화 기술 ‘디지털 트윈’시장 커진다
                             </strong>
                           </h4> */}
-                          <p className="px-1">
-                            SW 가상화 기술 ‘디지털 트윈’시장 커진다
-                          </p>
+                          <p className="px-1">{t("P16")}</p>
                           <MDBRow>
                             <MDBCol className="text-center">
                               <MDBBtn
@@ -328,7 +315,7 @@ const NewsArticle = () => {
                                 href="http://it.chosun.com/site/data/html_dir/2020/12/01/2020120102841.html"
                                 target="blank"
                               >
-                                더 보기
+                                {t("P17")}
                               </MDBBtn>
                             </MDBCol>
                           </MDBRow>
@@ -365,9 +352,7 @@ const NewsArticle = () => {
                               한국의 인공태양 KSTAR에게 쌍둥이 동생이?
                             </strong>
                           </h4> */}
-                          <p className="px-1">
-                            한국의 인공태양 KSTAR에 쌍둥이 동생이?
-                          </p>
+                          <p className="px-1">{t("P18")}</p>
                           <MDBRow>
                             <MDBCol className="text-center">
                               <MDBBtn
@@ -376,7 +361,7 @@ const NewsArticle = () => {
                                 href="https://m.blog.naver.com/nfripr/222002565903"
                                 target="blank"
                               >
-                                더 보기
+                                {t("P19")}
                               </MDBBtn>
                             </MDBCol>
                           </MDBRow>
@@ -411,9 +396,7 @@ const NewsArticle = () => {
                               핵융합도 게임처럼? 가상 핵융합장치로…….
                             </strong>
                           </h4> */}
-                          <p className="px-1">
-                            핵융합도 게임처럼? 가상 핵융합장치로…….
-                          </p>
+                          <p className="px-1">{t("P20")}</p>
                           <MDBRow>
                             <MDBCol className="text-center">
                               <MDBBtn
@@ -422,7 +405,7 @@ const NewsArticle = () => {
                                 href="https://blog.naver.com/nfripr/221643755093"
                                 target="blank"
                               >
-                                더 보기
+                                {t("P21")}
                               </MDBBtn>
                             </MDBCol>
                           </MDBRow>
