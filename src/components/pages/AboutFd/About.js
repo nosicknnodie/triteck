@@ -27,7 +27,6 @@ import {
 import "./About.css";
 import Copyrights from "../../Footer";
 import { NavLink } from "react-router-dom";
-import Test from "@/common/test";
 
 const About = () => {
   const GRAY_COLOR = "#565656";

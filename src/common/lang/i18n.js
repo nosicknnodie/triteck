@@ -1,16 +1,12 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import langEn from "./lang.en.json";
-import langKo from "./lang.ko.json";
+import en from "./locales/en";
+import ko from "./locales/ko";
 
 const resource = {
-  "en-US": {
-    translation: langEn,
-  },
-  "ko-KR": {
-    translation: langKo,
-  },
+  "en-US": en,
+  "ko-KR": ko,
 };
 
 i18n.use(initReactI18next).init({
@@ -22,8 +18,8 @@ i18n.use(initReactI18next).init({
     default: ["ko-KR"],
   },
   debug: true,
-  defaultNS: "translation",
-  ns: "translation",
+  defaultNS: "lang",
+  ns: ["menu", "lang"],
   keySeparator: false,
   interpolation: {
     escapeValue: false,
