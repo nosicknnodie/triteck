@@ -39,122 +39,6 @@ const Header = () => {
   return (
     <>
       <div className="mdb-skin">
-        <section id="headerId">
-          <MDBSideNav
-            // id="side-nav-logo"
-            logo="/img/logo/tritech-logo-light-xs.png"
-            href="/"
-            triggerOpening={toggleStateA}
-            // bg="https://mdbootstrap.com/img/Photos/Others/sidenav4.jpg"
-            mask="strong"
-          >
-            {/* <MDBSideNavNav>
-                <MDBSideNavCat
-                  name="언어"
-                  id="lang"
-                  // icon="chevron-right"
-                >
-                  <MDBSideNavLink to="/">
-                    <MDBSideNavItem>KOR</MDBSideNavItem>
-                  </MDBSideNavLink>
-                  <MDBSideNavLink to="/">
-                    <MDBSideNavItem>ENG</MDBSideNavItem>
-                  </MDBSideNavLink>
-                </MDBSideNavCat>
-              </MDBSideNavNav> */}
-
-            {/* <MDBInput
-                type="text"
-                hint="Search"
-                style={{
-                  color: "#fff",
-                  padding: "0 10px 8px 30px",
-                  boxSizing: "border-box",
-                }}
-              /> */}
-            <MDBSideNavNav id="sides-nav">
-              <MDBSideNavCat
-                href="/"
-                name="홈"
-                id="submit-home-cat"
-                // icon="chevron-right"
-              ></MDBSideNavCat>
-
-              <MDBSideNavCat
-                name={t("INTRODUCTION")}
-                id="submit-blog-cat"
-                icon="chevron-right"
-              >
-                <MDBSideNavItem href="/pages/CeoFd/ceo">
-                  {t("INTRODUCTION")}
-                </MDBSideNavItem>
-                <MDBSideNavItem href="/pages/CeoFd/ci">CI</MDBSideNavItem>
-              </MDBSideNavCat>
-
-              <MDBSideNavCat
-                name={t("RESEARCH_FIELD")}
-                id="about-cat"
-                icon="chevron-right"
-              >
-                <MDBSideNavItem href="/pages/FieldPageFd/subPageFd/Field">
-                  AR/VR
-                </MDBSideNavItem>
-
-                <MDBSideNavItem href="/pages/FieldPageFd/subPageFd/Rsa">
-                  ART Technology
-                </MDBSideNavItem>
-
-                <MDBSideNavItem href="/pages/FieldPageFd/subPageFd/CleanEnergy">
-                  Clean Energy
-                </MDBSideNavItem>
-              </MDBSideNavCat>
-
-              <MDBSideNavCat
-                // iconRegular
-                name="연구실적"
-                id="instruction-cat"
-                icon="chevron-right"
-              >
-                <MDBSideNavItem href="/pages/AboutIndexFd/subPageFd/dlpp">
-                  원전해체
-                </MDBSideNavItem>
-
-                <MDBSideNavItem href="/pages/AboutIndexFd/subPageFd/kstar">
-                  핵융합
-                </MDBSideNavItem>
-
-                <MDBSideNavItem href="/pages/AboutIndexFd/subPageFd/Voucher">
-                  바우처사업
-                </MDBSideNavItem>
-
-                <MDBSideNavItem href="/pages/AboutIndexFd/subPageFd/clean">
-                  클린에너지
-                </MDBSideNavItem>
-              </MDBSideNavCat>
-
-              <MDBSideNavCat
-                name="고객문의"
-                id="Contact-infor"
-                href="/pages/ContactFd/contact"
-                // icon="chevron-right"
-              ></MDBSideNavCat>
-
-              <MDBSideNavCat
-                name="블로그"
-                id="Corporate-promotion"
-                icon="chevron-right"
-              >
-                <MDBSideNavItem href="/pages/PromotionFd/subPageFd/NewsArticle">
-                  관련기사
-                </MDBSideNavItem>
-                <MDBSideNavItem href="/pages/PromotionFd/subPageFd/ThesisPatent">
-                  특허/논문
-                </MDBSideNavItem>
-              </MDBSideNavCat>
-            </MDBSideNavNav>
-          </MDBSideNav>
-        </section>
-
         {/* --------------------------------------------top nav ------------------------------------- */}
 
         <MDBNavbar
@@ -267,7 +151,7 @@ const Header = () => {
                   to="/pages/AboutIndexFd/aboutIndex"
                   className="Ripple-parent"
                 >
-                  연구실적
+                  {t("RESEARCH_RESULTS")}
                   <MDBIcon icon="angle-down" className="ml-1" />
                 </NavLink>
                 <MDBNavItem
@@ -306,7 +190,7 @@ const Header = () => {
                   to="/pages/ContactFd/contact"
                   className="Ripple-parent"
                 >
-                  고객문의
+                  {t("CUSTOMER_INQUIRY")}
                 </NavLink>
               </MDBNavItem>
 
@@ -315,7 +199,7 @@ const Header = () => {
                   to="/pages/PromotionFd/subPageFd/NewsArticle"
                   className="Ripple-parent"
                 >
-                  블로그
+                  {t("BLOG")}
                   <MDBIcon icon="angle-down" className="ml-1" />
                 </NavLink>
                 <MDBNavItem
