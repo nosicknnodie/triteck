@@ -148,7 +148,7 @@ const VoucherProjectsPage = () => {
                   const c = l[1];
                   return (
                     <div key={i}>
-                      <spen className="font-weight-bold">{t}:</spen>
+                      <span className="font-weight-bold">{t}:</span>
                       {c}
                     </div>
                   );

@@ -60,9 +60,8 @@ const Header = () => {
               id="top-menu-id"
               className="top-menu-1 mr-5 pr-5"
               style={specialCaseNavbarStyles}
-              center
             >
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink to="/" className="first_rid Ripple-parent">
                   <li>{t("HOME")}</li>
                 </NavLink>
@@ -76,7 +75,7 @@ const Header = () => {
                     <li>회사소개</li>
                   </NavLink>
                 </MDBNavItem> */}
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink
                   to="/pages/CeoFd/ceo"
                   className="first_rid Ripple-parent"
@@ -96,7 +95,7 @@ const Header = () => {
                 </MDBNavItem>
               </MDBNavItem>
 
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink
                   to="/pages/FieldPageFd/FieldIndex"
                   className="Ripple-parent"
@@ -129,7 +128,7 @@ const Header = () => {
                 </MDBNavItem>
               </MDBNavItem>
 
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink
                   to="/pages/AboutIndexFd/aboutIndex"
                   className="Ripple-parent"
@@ -177,7 +176,7 @@ const Header = () => {
                 </MDBNavItem>
               </MDBNavItem>
 
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink
                   to="/pages/ContactFd/contact"
                   className="Ripple-parent"
@@ -186,7 +185,7 @@ const Header = () => {
                 </NavLink>
               </MDBNavItem>
 
-              <MDBNavItem id="dropdown-top-menu" className="dropdown">
+              <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">
                 <NavLink
                   to="/pages/PromotionFd/subPageFd/NewsArticle"
                   className="Ripple-parent"

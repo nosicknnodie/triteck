@@ -47,7 +47,7 @@ const About = () => {
                   type="video/mp4"
                 />
               </video>
-            </MDBMask>{" "}
+            </MDBMask>
             <MDBContainer
               className="d-flex justify-content-center align-items-center px-md-3 px-sm-0"
               style={{ height: "100vh", width: "100%" }}
@@ -68,12 +68,10 @@ const About = () => {
           <section id="work">
             <MDBRow>
               <MDBCol md="12" className="mt-4">
-                <p>
-                  <h2 className="main-text_1 text-center my-5 font-weight-bold">
-                    TRITECH
-                    <span className="text-light-dark font-weight-light"></span>
-                  </h2>
-                </p>
+                <h2 className="main-text_1 text-center my-5 font-weight-bold">
+                  TRITECH
+                  <span className="text-light-dark font-weight-light"></span>
+                </h2>
 
                 <p
                   className="textSimulation text-center text-muted mb-5"

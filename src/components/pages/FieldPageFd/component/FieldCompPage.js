@@ -2,6 +2,7 @@ import fields from "@/common/data/_field";
 import { MDBCard, MDBCardBody, MDBRow } from "mdbreact";
 import "./FieldCompPage.css";
 import FieldCompPageItem from "./FieldCompPageItem";
+import { Fragment } from "react";
 
 const FieldCompPage = (uuid) => {
   return (
