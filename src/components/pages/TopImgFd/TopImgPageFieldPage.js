@@ -19,10 +19,12 @@ import {
 import CarouselWidget from "../FieldPageFd/component/CarouselWidget";
 import CarouselVourWidget from "../FieldPageFd/component/CarouselVourWidget";
 import CarouselRviWidget from "../FieldPageFd/component/CarouselRviWidget";
+import { useTranslation } from "react-i18next";
 
 //import { truncate } from "lodash";
 
 const TopImgPageFieldPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section id="TopImgPageFieldPage_1">
@@ -63,7 +65,7 @@ const TopImgPageFieldPage = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <h3 style={{ color: "white", wordBreak: "keep-all" }}>
-                          핵융합 가상화,가시화 XR프로젝트
+                          {t("T01")}
                         </h3>
                       </MDBCol>
                     </MDBRow>
@@ -75,7 +77,7 @@ const TopImgPageFieldPage = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <h3 style={{ color: "#FD8888", wordBreak: "keep-all" }}>
-                          ICT기반 원자력 안전혁신기술 개발사업
+                          {t("T02")}
                         </h3>
                       </MDBCol>
                     </MDBRow>
@@ -88,7 +90,7 @@ const TopImgPageFieldPage = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <h3 style={{ color: "#50EAF3", wordBreak: "keep-all" }}>
-                          비대면 비즈니스 디지털혁신 기술개발사업
+                          {t("T03")}
                         </h3>
                       </MDBCol>
                     </MDBRow>

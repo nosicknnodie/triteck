@@ -1,0 +1,15 @@
+{
+  "P01": "ICT-based nuclear power plant decommissioning",
+  "P02": "ICT-based nuclear safety innovation technology development project",
+  "P03": "Development of a virtual simulation system by integrating an ICT-based remote decommissioning module that can achieve the same effect as a demonstration experiment by performing the dismantlement of nuclear facilities and equipment under virtual reality.",
+  "P04": "Nuclear power plant decommissioning process technology and robot technology required for remote nuclear decommissioning, \n Real-time remote decommissioning process technology through 5G communication technology, \n Derivation and technology of optimal remote decommissioning public scenarios through AI technology, \n Virtual decommissioning environment development technology",
+  "P05": "By simulating complex nuclear power plant decommissioning procedures in virtual reality and applying various decommissioning process scenarios, \n analyze/evaluate decommissioning procedures and equipment problems, etc.",
+  "P06": "Remote Control",
+  "P07": "Digital Twin",
+  "P08": "System Optimization",
+  "P09": "Experimental analysis / application / management",
+  "V01_T": "Haptic-linked RVI cutting simulation",
+  "V01_D": "Optimization of the dismantling process system by increasing the skill of workers (ALARA) Dismantling\nDismantling\nThrough equipment emulation models used in the process system\nContribution to the safety and reliability evaluation of establishing a dismantling process strategy through simulation of the process",
+  "V02_T": "RVI Decommissioning Simulation System",
+  "V02_D": "Remote dismantling system architecture planning and design\nResearch on real-time dynamic mesh cutting algorithm and application of library\nDevelopment of automatic cutting path setting methodology using 3D spatial grid\nDevelopment of cutting simulation system integrating nuclear power plant facilities and dismantling equipment"
+}

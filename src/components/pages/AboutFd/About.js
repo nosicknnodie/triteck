@@ -27,13 +27,14 @@ import {
 import "./About.css";
 import Copyrights from "../../Footer";
 import { NavLink } from "react-router-dom";
-import Test from "@/common/test";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const GRAY_COLOR = "#565656";
   const handleScrollToTop = () => {
     window.scrollTo(0, 0);
   };
+  const { t } = useTranslation(["about"]);
   return (
     <>
       <div id="about">
@@ -78,11 +79,9 @@ const About = () => {
                   className="textSimulation text-center text-muted mb-5"
                   style={{ color: GRAY_COLOR }}
                 >
-                  (주)트라이텍은 국내 최고의 기술력과 사업수행실적을 보유한
-                  연구소로
+                  {t("P01")}
                   <br />
-                  VR.AR기반 Simulation, ART Technology, 친환경 폐기물 처리기술
-                  솔루션 및 서비스를 제공합니다.
+                  {t("P02")}
                 </p>
 
                 <MDBRow id="categories">
@@ -101,9 +100,9 @@ const About = () => {
                             <strong>Modeling & Simulation</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            현실과 비현실이 모두 공존할 수 있는 폭넓은 분야 구현
+                            {t("P03")}
                             <br />
-                            설계. 생활. 예술. 게임 3차원 가상 세계
+                            {t("P04")}
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -132,9 +131,9 @@ const About = () => {
                             <strong>DigitalTwin</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            현실 세계에서 발생하는 실제 데이터를
+                            {t("P05")}
                             <br />
-                            디지털 환경에서 실시간으로 반영
+                            {t("P06")}
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -168,9 +167,9 @@ const About = () => {
                             <strong>Metaverse</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation cardTextClean">
-                            가상 현실(VR), 증강 현실(AR), 3D 인터넷 등의
+                            {t("P07")}
                             <br />
-                            기술을 통해 현실과 가상 현실이 융합된 공간
+                            {t("P08")}
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -199,7 +198,7 @@ const About = () => {
                             <strong>ICT</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            정보의 효율적인 전달과 통신기술을 포함
+                            {t("P09")}
                           </MDBCardText>
                           <NavLink
                             tag="button"

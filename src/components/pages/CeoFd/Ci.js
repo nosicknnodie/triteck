@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { MDBRow, MDBCol, MDBContainer, MDBBtn, MDBIcon } from "mdbreact";
 import "./Ci.css";
 import "../../../common/form/contentDesign.css";
@@ -6,15 +6,14 @@ import "../../../common/form/contentFont.css";
 import TopImgContactedMobile from "../TopImgFd/TopImgContactedMobile";
 import TopImgContactedWeb from "../TopImgFd/TopImgContactedWeb";
 import Copyrights from "../../Footer";
-// import * as contentDesign from "../../../common/form/contentDesign.js";
+import { useTranslation } from "react-i18next";
 
-class Ci extends Component {
-  render() {
-    // const MAIN_COLOR = "#33B5E5";
-    // const SUB_BAR_COLOR = "2A99EA";
-    const GRAY_COLOR = "#565656";
+const Ci = () => {
+  const { t } = useTranslation(["ci"]);
+  const GRAY_COLOR = "#565656";
 
-    return (
+  return (
+    <>
       <div id="ci">
         <div className="topImgDesktopMode">
           <TopImgContactedWeb />
@@ -29,7 +28,7 @@ class Ci extends Component {
             <MDBContainer className="mainContent">
               <MDBRow>
                 <MDBCol>
-                  <title1 style={{ color: "black" }}>기관상징(CI)</title1>
+                  <title1 style={{ color: "black" }}>{t("P01")}(CI)</title1>
                   <br />
                   <br />
                   {/* </MDBCol>
@@ -39,13 +38,11 @@ class Ci extends Component {
               <MDBRow>
                 <MDBCol className="desc"> */}
                   <p style={{ color: GRAY_COLOR }}>
-                    트라이텍 업무영역의 대표 3축인 Virtual, Art, Clean을
-                    상징하는 ‘T’의 로고 타입을 미래지향적이고
-                    <br /> 속도감 있는 분위기로 해석하여 사업 로고를
-                    구체화했습니다.
-                    <br />
-                    Peacock(청록) + Navy Blue(짙은 청색)의 그라데이션 컬러로
-                    항상 변화하고 신뢰감 있는 분위기를 연출합니다.
+                    {t("P02")
+                      .split("\n")
+                      .map((v, i) => (
+                        <div key={i}>{v}</div>
+                      ))}
                   </p>
                 </MDBCol>
               </MDBRow>
@@ -93,10 +90,7 @@ class Ci extends Component {
                 <br />
                 <br />
                 <br />
-                <p>
-                  CI는 기본적으로 위 3타임으로 사용합니다. 임의로 혼용/변형하여
-                  사용하지 마세요.
-                </p>
+                <p>{t("P03")}</p>
                 <br />
                 <div>
                   <MDBBtn
@@ -106,7 +100,7 @@ class Ci extends Component {
                     href="https://tritech.s3.ap-northeast-2.amazonaws.com/tritech-ci-download.zip"
                     target="blank"
                   >
-                    <MDBIcon far icon="clone" className="left" /> CI 다운로드
+                    <MDBIcon far icon="clone" className="left" /> {t("P04")}
                   </MDBBtn>
                 </div>
               </MDBCol>
@@ -116,8 +110,8 @@ class Ci extends Component {
 
         <Copyrights />
       </div>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default Ci;
