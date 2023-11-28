@@ -3,31 +3,13 @@ import { useCallback, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
-import {
-  MDBIcon,
-  MDBNav,
-  MDBNavItem,
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBSideNav,
-  MDBSideNavCat,
-  MDBSideNavItem,
-  MDBSideNavNav,
-} from "mdbreact";
-import "./Header.css";
+import { MDBIcon, MDBNav, MDBNavItem, MDBNavbar, MDBNavbarNav } from "mdbreact";
 import { useTranslation } from "react-i18next";
+import "./Header.css";
 
 const Header = () => {
-  const [toggleStateA, setToggleStateA] = useState(false);
+  const [, setToggleStateA] = useState(false);
   const { t } = useTranslation(["menu"]);
-  // {
-  //   "HOME": "Home",
-  //   "INTRODUCTION": "Introduction",
-  //   "RESEARCH_FIELD": "Research field",
-  //   "RESEARCH_RESULTS": "Research results",
-  //   "CUSTOMER_INQUIRY": "Customer Inquiry",
-  //   "BLOG": "Blog"
-  // }
 
   const handleToggleClickA = useCallback(() => {
     setToggleStateA((f) => !f);
@@ -162,25 +144,25 @@ const Header = () => {
                     className="dropdown-item"
                     to="/pages/AboutIndexFd/subPageFd/dlpp"
                   >
-                    원전해체
+                    {t("NUCLEAR_POWER_PLANT_DECOMMISSIONING")}
                   </NavLink>
                   <NavLink
                     className="dropdown-item"
                     to="/pages/AboutIndexFd/subPageFd/kstar"
                   >
-                    핵융합
+                    {t("NUCLEAR_FUSION")}
                   </NavLink>
                   <NavLink
                     className="dropdown-item"
                     to="/pages/AboutIndexFd/subPageFd/Voucher"
                   >
-                    바우처사업
+                    {t("VOUCHER_BUSINESS")}
                   </NavLink>
                   <NavLink
                     className="dropdown-item"
                     to="/pages/AboutIndexFd/subPageFd/clean"
                   >
-                    클린에너지
+                    {t("CLEAN_ENERGY")}
                   </NavLink>
                 </MDBNavItem>
               </MDBNavItem>
@@ -210,7 +192,7 @@ const Header = () => {
                     className="dropdown-item"
                     to="/pages/PromotionFd/subPageFd/NewsArticle"
                   >
-                    관련기사
+                    {t("RELATED_ARTICLES")}
                   </NavLink>
                   {/* <NavLink
                       className="dropdown-item"
@@ -222,7 +204,7 @@ const Header = () => {
                     className="dropdown-item"
                     to="/pages/PromotionFd/subPageFd/ThesisPatent"
                   >
-                    논문 / 특허{" "}
+                    {t("THESES_PATENTS")}
                   </NavLink>
                 </MDBNavItem>
               </MDBNavItem>
@@ -237,37 +219,5 @@ const Header = () => {
     </>
   );
 };
-
-// class Header extends React.Component {
-//   rSNL(to, text) {
-//     return (
-//       <MDBSideNavLink to={to} onClick={this.props.onLinkClick}>
-//         {text}
-//       </MDBSideNavLink>
-//     );
-//   }
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       toggleStateA: false,
-//     };
-//     console.log(this.state.toggleStateA);
-//   }
-
-//   handleToggleClickA = () => {
-//     this.setState({
-//       toggleStateA: !this.state.toggleStateA,
-//     });
-//   };
-
-//   render() {
-//     // const mainStyle = {
-//     //   paddingTop: "5rem",
-//     // };
-
-//     return <></>;
-//   }
-// }
 
 export default Header;
