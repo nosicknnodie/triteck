@@ -353,10 +353,6 @@ div.toggle-div .toggle-circle.toggle-checked {
   transition: 0.5s;
 }
 
-/* toggleinner와 switch에 적용 */
-/* switch의 transition property는 all을 적용한다 */
-transition: margin-left 0.3s ease-in;
-
 /* ------------------------------------- */
 @media (max-width: 767px) {
   /* #top-menu .menuBtn {

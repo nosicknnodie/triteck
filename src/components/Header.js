@@ -1,31 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 
 import { NavLink } from "react-router-dom";
 
-import {
-  MDBBtn,
-  MDBBtnGroup,
-  MDBDropdown,
-  MDBDropdownItem,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBIcon,
-  MDBNav,
-  MDBNavItem,
-  MDBNavbar,
-  MDBNavbarNav,
-} from "mdbreact";
+import { MDBIcon, MDBNav, MDBNavItem, MDBNavbar, MDBNavbarNav } from "mdbreact";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
 
 const Header = () => {
-  const [, setToggleStateA] = useState(false);
-  const { t, i18n } = useTranslation(["menu"]);
+  // const [, setToggleStateA] = useState(false);
+  const { t } = useTranslation(["menu"]);
 
-  const handleToggleClickA = useCallback(() => {
-    setToggleStateA((f) => !f);
-  }, []);
+  // const handleToggleClickA = useCallback(() => {
+  //   setToggleStateA((f) => !f);
+  // }, []);
 
   const specialCaseNavbarStyles = {
     WebkitBoxOrient: "horizontal",
@@ -245,7 +233,7 @@ const Header = () => {
 };
 
 const LanguageToggleButton = () => {
-  const { t, i18n } = useTranslation(["menu"]);
+  const { i18n } = useTranslation(["menu"]);
   const flag = i18n.language === "ko-KR";
   const handleChangeLanguage = useCallback(() => {
     i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR");
