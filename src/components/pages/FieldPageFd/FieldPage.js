@@ -1,32 +1,23 @@
-import React from "react";
+/* eslint-disable react/jsx-pascal-case */
 import { Link } from "react-scroll";
 import "./FieldPage.css";
 
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBFooter,
   MDBAnimation,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
+  MDBCol,
+  MDBContainer,
+  MDBFooter,
+  MDBRow,
 } from "mdbreact";
 
 import Copyrights from "../../Footer";
-import TopLinkPage from "../component/TopLinkPage";
 import TopImgPageFieldPage from "../TopImgFd/TopImgPageFieldPage";
+import TopLinkPage from "../component/TopLinkPage";
+import FieldPageLink from "./component/FieldPageLink";
 import JumbotronPage_FieldPage from "./component/JumbotronPage_FieldPage";
 import JumbotronPage_FieldPage2 from "./component/JumbotronPage_FieldPage2";
 import JumbotronPage_FieldPageMobile from "./component/JumbotronPage_FieldPageMobile";
 import JumbotronPage_FieldPageMobile2 from "./component/JumbotronPage_FieldPageMobile2";
-import FieldPageLink from "./component/FieldPageLink";
 
 const FieldPage = () => {
   return (

@@ -1,9 +1,6 @@
-import React from "react";
-
-import "./subPageFd.css";
 import Copyrights from "../../../Footer";
-import TopLinkPage from "../../component/TopLinkPage";
 import TopImgPageFieldPage from "../../TopImgFd/TopImgPageFieldPage";
+import "./subPageFd.css";
 // import TopImgPageProjects from "../../FieldPageFd/component/TopImgPageProjects";
 import TopImgPageFieldPageMobile from "../../TopImgFd/TopImgPageFieldPageMobile";
 import IctProjectsPage from "../component/IctProjectsPage";

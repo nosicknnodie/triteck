@@ -1,30 +1,16 @@
-import React, { Component, Fragment } from "react";
+import { Component, Fragment } from "react";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  // MDBMask,
-  // MDBIcon,
-  MDBView,
-  MDBStep,
-  MDBCard,
-  MDBCardBody,
-  MDBStepper,
-  MDBBtn,
-  MDBTypography,
-  MDBBox,
-} from "mdbreact";
+import { MDBBtn, MDBCardBody, MDBContainer, MDBRow } from "mdbreact";
 
-import "./Ceo.css";
 import Copyrights from "../../Footer";
 import TopImgCompanyMobile from "../TopImgFd/TopImgContactedMobile";
 import TopImgCompanyWeb from "../TopImgFd/TopImgContactedWeb";
+import "./Ceo.css";
 
 class Ceo extends Component {
   render() {
     // const GRAY_COLOR = "#565656";
-    const LIGHT_GRAY_COLOR = "#565656";
+    // const LIGHT_GRAY_COLOR = "#565656";
 
     return (
       <div id="Ceo">
@@ -35,12 +21,20 @@ class Ceo extends Component {
           <TopImgCompanyMobile />
         </div>
 
-        <img src="/img/ceo/CEO.png" alt="temp" style={{width:'100%'}}/>
-        <img src="/img/ceo/Vision.jpg" alt="temp" style={{width:'100%'}}/>
-        <img src="/img/ceo/Vision.png" alt="temp" style={{width:'100%'}}/>
-        <img src="/img/ceo/Organization2.png" alt="temp" style={{width:'100%'}}/>
-        <img src="/img/ceo/History.jpg" alt="temp" style={{width:'100%'}}/>
-        <img src="/img/ceo/Certification.jpg" alt="temp" style={{width:'100%'}}/>
+        <img src="/img/ceo/CEO.png" alt="temp" style={{ width: "100%" }} />
+        <img src="/img/ceo/Vision.jpg" alt="temp" style={{ width: "100%" }} />
+        <img src="/img/ceo/Vision.png" alt="temp" style={{ width: "100%" }} />
+        <img
+          src="/img/ceo/Organization2.png"
+          alt="temp"
+          style={{ width: "100%" }}
+        />
+        <img src="/img/ceo/History.jpg" alt="temp" style={{ width: "100%" }} />
+        <img
+          src="/img/ceo/Certification.jpg"
+          alt="temp"
+          style={{ width: "100%" }}
+        />
 
         <section id="Partners">
           <MDBCardBody className="bodyPartners">
@@ -49,10 +43,16 @@ class Ceo extends Component {
                 <h6>CLIENTS & PARTNERS</h6>
               </MDBRow>
 
-             <br/><br/><br/><br/>
-              
-              
-              <img src="/img/ceo/Partner.png" alt="temp" style={{width:'100%'}}/>
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <img
+                src="/img/ceo/Partner.png"
+                alt="temp"
+                style={{ width: "100%" }}
+              />
               {/* <MDBRow className="mt-5" center>
                 <h6>foreign parts</h6>
               </MDBRow> */}

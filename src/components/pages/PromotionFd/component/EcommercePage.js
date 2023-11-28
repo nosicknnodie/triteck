@@ -1,26 +1,16 @@
-import React from "react";
+/* eslint-disable jsx-a11y/alt-text */
 import {
-  MDBRow,
   MDBCol,
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardFooter,
-  MDBTooltip,
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBIcon,
-  MDBView,
-  MDBMask,
   MDBContainer,
+  MDBIcon,
+  MDBMask,
+  MDBRow,
+  MDBView,
 } from "mdbreact";
 
-import "./EcommercePage.css";
-import "../../../../common/form/contentFont.css";
 import "../../../../common/form/contentDesign.css";
+import "../../../../common/form/contentFont.css";
+import "./EcommercePage.css";
 
 const EcommercePage = () => {
   const TITLE_COLOR = "#212529";

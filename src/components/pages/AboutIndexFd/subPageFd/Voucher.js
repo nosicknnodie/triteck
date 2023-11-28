@@ -1,28 +1,9 @@
-import React from "react";
-
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-} from "mdbreact";
-import "./Voucher.css";
 import Copyrights from "../../../Footer";
-import TopLinkPage from "../../component/TopLinkPage";
 import TopImgPageFieldPage from "../../TopImgFd/TopImgPageFieldPage";
 import TopImgPageFieldPageMobile from "../../TopImgFd/TopImgPageFieldPageMobile";
 import VoucherProjectsPage from "../component/VoucherProjectsPage";
 import VoucherProjectsPageMobile from "../component/VoucherProjectsPageMobile";
+import "./Voucher.css";
 
 const Voucher = () => {
   return (

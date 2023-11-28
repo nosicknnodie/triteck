@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+/* eslint-disable jsx-a11y/iframe-has-title */
+import { MDBBtn, MDBIcon } from "mdbreact";
+import { Component } from "react";
+import { config } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
-import { config } from "react-spring";
-import { MDBIcon, MDBBtn, MDBCardVideo } from "mdbreact";
 import "./CarouselRviWidget.css";
 
 class CarouselRviWidget extends Component {

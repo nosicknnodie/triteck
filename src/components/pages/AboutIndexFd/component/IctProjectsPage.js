@@ -1,19 +1,12 @@
-import React, { Fragment } from "react";
+/* eslint-disable jsx-a11y/alt-text */
 import {
-  MDBCardText,
-  MDBCardVideo,
-  MDBCardGroup,
-  MDBCardTitle,
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
   // MDBIcon,
   MDBBtn,
-  MDBView,
-  MDBMask,
+  MDBCol,
   MDBContainer,
-  MDBCard,
+  MDBRow,
 } from "mdbreact";
+import { Fragment } from "react";
 import "../../../../common/form/contentDesign.css";
 import * as contentDesign from "../../../../common/form/contentDesign.js";
 
@@ -65,7 +58,7 @@ const IctProjectsPage = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="10">
               {contentDesign.addImgView(
-                "/img/aboutIndex/dlpp/ict-overview.png",
+                "/img/aboutIndex/dlpp/ict-overview.png"
               )}
             </MDBCol>
             <MDBCol md="1"></MDBCol>
@@ -99,7 +92,7 @@ const IctProjectsPage = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="10">
               {contentDesign.addImgRoundedView(
-                "/img/aboutIndex/dlpp/ict-technology.jpg",
+                "/img/aboutIndex/dlpp/ict-technology.jpg"
               )}
             </MDBCol>
             <MDBCol md="1"></MDBCol>

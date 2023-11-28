@@ -1,27 +1,11 @@
-import React, { useState, useContext, useReducer } from "react";
+import { useContext } from "react";
 import "./AboutIndex.css";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBAnimation,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-} from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
+import { store } from "../../../common/Store";
 import Copyrights from "../../Footer";
 import KstarCompPage from "./component/KstarCompPage";
-import { store } from "../../../common/Store";
 // import TopImgPageFieldPage from '../FieldPageFd/component/TopImgPageFieldPage';
 // import TopImgPageFieldPageMobile from '../FieldPageFd/component/TopImgPageFieldPageMobile';
 import TopImgPageFieldPage from "../../pages/TopImgFd/TopImgPageFieldPage";

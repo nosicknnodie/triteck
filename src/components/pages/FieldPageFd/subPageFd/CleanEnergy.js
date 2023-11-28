@@ -1,26 +1,11 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-  MDBMask,
-} from "mdbreact";
-import "./CleanEnergy.css";
-import EcommercePage_Clean from "../../component/EcommercePage_Clean";
-import EcommercePageMobile_Clean from "../../component/EcommercePageMobile_Clean";
+import { MDBCol, MDBContainer, MDBFooter, MDBRow } from "mdbreact";
 import Copyrights from "../../../Footer";
+import EcommercePageMobile_Clean from "../../component/EcommercePageMobile_Clean";
+import EcommercePage_Clean from "../../component/EcommercePage_Clean";
+import "./CleanEnergy.css";
 // import TopImgPageFieldPage from '../../TopImgFd/TopImgPageFieldPage';
 // import TopImgPageFieldPageMobile from "../../TopImgFd/TopImgPageFieldPageMobile";
 import TopImgPageFieldPage from "../../TopImgFd/TopImgPageFieldPage";
@@ -34,8 +19,8 @@ class CleanEnergy extends React.Component {
     };
   }
 
-  toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
+  toggleCollapse = (collapseID) => () =>
+    this.setState((prevState) => ({
       collapseID: prevState.collapseID !== collapseID ? collapseID : "",
     }));
 

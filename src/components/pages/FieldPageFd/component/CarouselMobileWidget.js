@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import { MDBBtn, MDBCol, MDBIcon, MDBRow } from "mdbreact";
+import { Component } from "react";
+import { config } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
-import { config } from "react-spring";
-import { MDBIcon, MDBBtn, MDBRow, MDBCol, MDBRotatingCard } from "mdbreact";
 import "./CarouselMobileWidget.css";
 
 class CarouselMobileWidget extends Component {

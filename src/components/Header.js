@@ -1,39 +1,19 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {
-  MDBCollapse,
-  MDBNavbarToggler,
-  Dropdown,
-  MDBBreadcrumbItem,
-  MDBBreadcrumb,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  MDBListGroup,
-  MDBListGroupItem,
-  MDBInput,
+  MDBIcon,
+  MDBNav,
+  MDBNavItem,
   MDBNavbar,
   MDBNavbarNav,
-  MDBNavItem,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
-  MDBIcon,
-  MDBSideNavItem,
-  MDBSideNavCat,
-  MDBSideNavNav,
   MDBSideNav,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBLink,
-  MDBCardImage,
-  MDBNavbarBrand,
+  MDBSideNavCat,
+  MDBSideNavItem,
   MDBSideNavLink,
-  MDBNav,
+  MDBSideNavNav,
 } from "mdbreact";
 import "./Header.css";
 
@@ -61,9 +41,9 @@ class Header extends React.Component {
   };
 
   render() {
-    const mainStyle = {
-      paddingTop: "5rem",
-    };
+    // const mainStyle = {
+    //   paddingTop: "5rem",
+    // };
 
     const specialCaseNavbarStyles = {
       WebkitBoxOrient: "horizontal",

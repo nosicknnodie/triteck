@@ -1,22 +1,21 @@
-import React, { useState, useContext, useReducer } from "react";
-import { MDBCardText, MDBCardHeader, MDBCardTitle } from "mdbreact";
-import "./ThesisPatent.css";
-import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
-import TopImgCompanyMobile from "../../TopImgFd/TopImgCompanyMobile";
-import Copyrights from "../../../Footer";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBAnimation,
+  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBInput,
-  MDBIcon,
-  MDBBtn,
+  MDBCardHeader,
+  MDBCardText,
+  MDBCardTitle,
+  MDBCol,
+  MDBContainer,
   MDBMask,
+  MDBRow,
+  MDBView,
 } from "mdbreact";
+import Copyrights from "../../../Footer";
+import TopImgCompanyMobile from "../../TopImgFd/TopImgCompanyMobile";
+import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
+import "./ThesisPatent.css";
 
 const ThesisPatent = () => {
   return (

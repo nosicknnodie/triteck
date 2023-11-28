@@ -1,22 +1,20 @@
-import React, { Fragment } from "react";
+/* eslint-disable jsx-a11y/alt-text */
 import {
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBIcon,
   MDBBtn,
-  MDBView,
-  MDBMask,
-  MDBContainer,
   MDBCard,
+  MDBCardBody,
+  MDBCol,
+  MDBContainer,
+  MDBMask,
+  MDBRow,
   MDBTable,
-  MDBTableHead,
   MDBTableBody,
+  MDBTableHead,
+  MDBView,
 } from "mdbreact";
-import "./VoucherProjectsPageMobile.css";
-import TopLinkPageMobile from "../../component/TopLinkPageMobile";
-import * as contentDesign from "../../../../common/form/contentDesign.js";
+import { Fragment } from "react";
 import "../../../../common/form/contentFont.css";
+import "./VoucherProjectsPageMobile.css";
 
 const VoucherProjectsPage = () => {
   return (

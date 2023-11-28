@@ -1,29 +1,11 @@
-import React from "react";
-
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-} from "mdbreact";
-import "./Clean.css";
 import Copyrights from "../../../Footer";
+import "./Clean.css";
 // import TopImgPageFieldPage from "../../TopImgFd/TopImgPageFieldPage";
 // import TopImgPageFieldPageMobile from "../../TopImgFd/TopImgPageFieldPageMobile";
 import TopImgPageFieldPage from "../../TopImgFd/TopImgPageFieldPage";
 import TopImgPageFieldPageMobile from "../../TopImgFd/TopImgPageFieldPageMobile";
-import CleanProjectsPageMobile from "../component/CleanProjectsPageMobile";
 import CleanProjectsPage from "../component/CleanProjectsPage";
+import CleanProjectsPageMobile from "../component/CleanProjectsPageMobile";
 
 const Clean = () => {
   return (

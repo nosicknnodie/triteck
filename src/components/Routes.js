@@ -1,33 +1,32 @@
 /* eslint-disable react/jsx-pascal-case */
-import React from "react";
-import { Route, Routes as LRoutes, Switch } from "react-router-dom";
+import { Routes as LRoutes, Route } from "react-router-dom";
 
 import About from "../components/pages/AboutFd/About";
+import AboutIndex from "../components/pages/AboutIndexFd/AboutIndex";
+import Clean from "../components/pages/AboutIndexFd/subPageFd/Clean";
+import Dlpp from "../components/pages/AboutIndexFd/subPageFd/Dlpp";
 import Kstar from "../components/pages/AboutIndexFd/subPageFd/Kstar";
-import Rsa from "../components/pages/FieldPageFd/subPageFd/Rsa";
+import Voucher from "../components/pages/AboutIndexFd/subPageFd/Voucher";
+import ApiTestPage from "../components/pages/ApiTestPageFd/ApiTestPage";
 import Ceo from "../components/pages/CeoFd/Ceo";
 import Ci from "../components/pages/CeoFd/Ci";
-import Clean from "../components/pages/AboutIndexFd/subPageFd/Clean";
-import Field from "../components/pages/FieldPageFd/subPageFd/Field";
-import Dlpp from "../components/pages/AboutIndexFd/subPageFd/Dlpp";
-import Promotion from "../components/pages/PromotionFd/Promotion";
 import Contact from "../components/pages/ContactFd/Contact";
-import Voucher from "../components/pages/AboutIndexFd/subPageFd/Voucher";
-import CleanEnergy from "../components/pages/FieldPageFd/subPageFd/CleanEnergy";
-import CounterPage from "../components/pages/StudyPageFd/CounterPage";
-import AboutIndex from "../components/pages/AboutIndexFd/AboutIndex";
-import FieldPage from "../components/pages/FieldPageFd/FieldPage";
-import ModalFormPage from "../components/pages/ModalFormPageFd/ModalFormPage";
-import ApiTestPage from "../components/pages/ApiTestPageFd/ApiTestPage";
 import FieldIndex from "../components/pages/FieldPageFd/FieldIndex";
+import FieldPage from "../components/pages/FieldPageFd/FieldPage";
+import CleanEnergy from "../components/pages/FieldPageFd/subPageFd/CleanEnergy";
+import Field from "../components/pages/FieldPageFd/subPageFd/Field";
+import Rsa from "../components/pages/FieldPageFd/subPageFd/Rsa";
+import ModalFormPage from "../components/pages/ModalFormPageFd/ModalFormPage";
+import Promotion from "../components/pages/PromotionFd/Promotion";
 import NewsArticle from "../components/pages/PromotionFd/subPageFd/NewsArticle";
 import ThesisPatent from "../components/pages/PromotionFd/subPageFd/ThesisPatent";
 import VideoNews from "../components/pages/PromotionFd/subPageFd/VideoNews";
 import NewsPageSafe from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageSafe";
 import NewsPageSp from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageSp";
 import NewsPageTet from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageTet";
-import NewsPageWm_2 from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageWm_2";
 import NewsPageWm from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageWm";
+import NewsPageWm_2 from "../components/pages/PromotionFd/subPageFd/newsPages/NewsPageWm_2";
+import CounterPage from "../components/pages/StudyPageFd/CounterPage";
 
 const Routes = () => {
   return (

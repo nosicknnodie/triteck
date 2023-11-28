@@ -1,24 +1,15 @@
-import React, { useState, useContext, useReducer } from "react";
-
-import "./NewsPageSafe.css";
+/* eslint-disable jsx-a11y/alt-text */
 import {
+  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-  MDBContainer,
-  MDBMask,
   MDBCol,
-  MDBView,
+  MDBContainer,
   MDBRow,
 } from "mdbreact";
-import TopImgCompanyWeb from "../../../TopImgFd/TopImgCompanyWeb";
 import TopImgCompanyMobile from "../../../TopImgFd/TopImgCompanyMobile";
+import TopImgCompanyWeb from "../../../TopImgFd/TopImgCompanyWeb";
+import "./NewsPageSafe.css";
 
 const NewsPageSafe = () => {
   return (

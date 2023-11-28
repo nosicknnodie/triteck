@@ -1,24 +1,17 @@
-import React, { Fragment } from "react";
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/alt-text */
 import {
-  MDBCardText,
-  MDBCardTitle,
-  MDBCardVideo,
-  MDBCardGroup,
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBIcon,
   MDBBtn,
-  MDBView,
-  MDBMask,
+  MDBCol,
   MDBContainer,
-  MDBCard,
+  MDBMask,
+  MDBRow,
+  MDBView,
 } from "mdbreact";
-import "./VoucherProjectsPage.css";
-import SectionContainer from "../../../mdbCommon/sectionContainer";
+import { Fragment } from "react";
 import "../../../../common/form/contentDesign.css";
-import * as contentDesign from "../../../../common/form/contentDesign.js";
 import "../../../../common/form/contentFont.css";
+import "./VoucherProjectsPage.css";
 
 const VoucherProjectsPage = () => {
   return (

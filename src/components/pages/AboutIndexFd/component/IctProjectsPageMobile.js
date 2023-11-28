@@ -1,20 +1,20 @@
-import React, { Fragment } from "react";
+/* eslint-disable jsx-a11y/alt-text */
 import {
+  // MDBCardBody,
+  // MDBCardGroup,
+  MDBBtn,
+  MDBCol,
+  // MDBView,
+  // MDBMask,
+  MDBContainer,
   // MDBCardText,
   // MDBCardTitle,
   // MDBCardVideo,
   MDBRow,
-  MDBCol,
-  // MDBCardBody,
-  // MDBCardGroup,
-  MDBBtn,
-  // MDBView,
-  // MDBMask,
-  MDBContainer,
-  MDBCard,
 } from "mdbreact";
-import "../../../../common/form/contentDesignMobile.css";
+import { Fragment } from "react";
 import * as contentDesign from "../../../../common/form/contentDesign.js";
+import "../../../../common/form/contentDesignMobile.css";
 
 const IctProjectsPage = () => {
   const MAIN_COLOR = "#F7966D";
@@ -75,7 +75,7 @@ const IctProjectsPage = () => {
             <MDBRow className="mainContent">
               <MDBCol>
                 {contentDesign.addImgView(
-                  "/img/aboutIndex/dlpp/ict-overview.png",
+                  "/img/aboutIndex/dlpp/ict-overview.png"
                 )}
               </MDBCol>
             </MDBRow>
@@ -109,7 +109,7 @@ const IctProjectsPage = () => {
             <MDBRow className="mainContent">
               <MDBCol>
                 {contentDesign.addImgRoundedView(
-                  "/img/aboutIndex/dlpp/ict-technology.jpg",
+                  "/img/aboutIndex/dlpp/ict-technology.jpg"
                 )}
               </MDBCol>
             </MDBRow>

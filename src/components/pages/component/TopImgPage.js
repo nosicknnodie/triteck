@@ -1,24 +1,6 @@
-import React from "react";
-
 import "./TopImgPage.css";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBCard,
-  // MDBFooter,
-  // MDBAnimation,
-  // MDBCardBody,
-  // MDBCardImage,
-  // MDBCardTitle,
-  // MDBCardText,
-  // MDBTooltip,
-  // MDBCardFooter,
-  // MDBIcon,
-  // MDBBtn,
-} from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBView } from "mdbreact";
 
 const TopImgPage = () => {
   return (

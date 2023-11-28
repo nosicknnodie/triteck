@@ -1,30 +1,13 @@
-import React from "react";
+import { MDBCol, MDBContainer, MDBIcon, MDBRow } from "mdbreact";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-} from "mdbreact";
-
-import "./TopLinkPage.css";
 import { NavLink } from "react-router-dom";
+import "./TopLinkPage.css";
 
 const TopLinkPageMobile = () => {
-  const newsStyle = {
-    borderBottom: "1px solid #e0e0e0",
-    marginBottom: "1.5rem",
-  };
+  // const newsStyle = {
+  //   borderBottom: "1px solid #e0e0e0",
+  //   marginBottom: "1.5rem",
+  // };
 
   return (
     <>

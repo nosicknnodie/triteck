@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 
 import {
@@ -11,7 +12,6 @@ import {
   // MDBCardImage,
   // MDBCardTitle,
   // MDBCardText,
-  MDBTooltip,
   // MDBCardFooter,
   // MDBIcon,
   // MDBBtn,

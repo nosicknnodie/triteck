@@ -1,32 +1,25 @@
-import React, { useState, useContext, useReducer } from "react";
-
-import "./NewsArticle.css";
-import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable no-useless-escape */
 import TopImgCompanyMobile from "../../TopImgFd/TopImgCompanyMobile";
+import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
+import "./NewsArticle.css";
 
 import {
-  MDBCardHeader,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
   MDBBtn,
-  MDBContainer,
-  MDBMask,
+  MDBCard,
+  MDBCardImage,
   MDBCol,
-  MDBView,
+  MDBContainer,
+  MDBIcon,
+  MDBMask,
   MDBRow,
-  MDBRotatingCard,
+  MDBView,
 } from "mdbreact";
-import EcommercePage from "../component/EcommercePage";
-import Copyrights from "../../../Footer";
 import "../../../../common/form/contentDesign.css";
 import * as contentDesign from "../../../../common/form/contentDesign.js";
 import "../../../../common/form/contentFont.css";
+import Copyrights from "../../../Footer";
+import EcommercePage from "../component/EcommercePage";
 import "./NewsArticle.css";
 
 const NewsArticle = () => {
@@ -41,7 +34,7 @@ const NewsArticle = () => {
     }
 
     const isValidURL = newsUrl.match(
-      /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g,
+      /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g
     );
 
     let result;
@@ -107,35 +100,35 @@ const NewsArticle = () => {
             <MDBRow>
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/ws.png",
-                "/pages/PromotionFd/subPageFd/newsPages/newsPageWm",
+                "/pages/PromotionFd/subPageFd/newsPages/newsPageWm"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/safe.png",
-                "/pages/PromotionFd/subPageFd/newsPages/NewsPageSafe",
+                "/pages/PromotionFd/subPageFd/newsPages/NewsPageSafe"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/electronic.png",
-                "/pages/PromotionFd/subPageFd/newsPages/NewsPageTet",
+                "/pages/PromotionFd/subPageFd/newsPages/NewsPageTet"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/sp.png",
-                "/pages/PromotionFd/subPageFd/newsPages/NewsPageSp",
+                "/pages/PromotionFd/subPageFd/newsPages/NewsPageSp"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/ws_1.png",
-                "/pages/PromotionFd/subPageFd/newsPages/NewsPageWm_2",
+                "/pages/PromotionFd/subPageFd/newsPages/NewsPageWm_2"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/kspo.png",
-                "https://www.sports.re.kr/pyxis-api/1/digital-files/bed3f2f1-9356-4f99-ab5a-da6d00162bd5",
+                "https://www.sports.re.kr/pyxis-api/1/digital-files/bed3f2f1-9356-4f99-ab5a-da6d00162bd5"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/article-7-thumbnail.png",
-                "http://www.kidd.co.kr/news/226235",
+                "http://www.kidd.co.kr/news/226235"
               )}
               {addNewsImgInCol(
                 "/img/promotionFd/subPageFd/newsArticle/article-8-thumbnail.png",
-                "https://www.etnews.com/20220425000254",
+                "https://www.etnews.com/20220425000254"
               )}
             </MDBRow>
           </MDBContainer>
@@ -177,7 +170,7 @@ const NewsArticle = () => {
               <MDBCol className="col-10">
                 <div className="lineBreak">
                   {contentDesign.addImgRoundedView(
-                    "/img/promotionFd/subPageFd/newsArticle//metaverse.png",
+                    "/img/promotionFd/subPageFd/newsArticle//metaverse.png"
                   )}
                 </div>
 
@@ -232,7 +225,7 @@ const NewsArticle = () => {
               <MDBCol className="col-10">
                 <div className="lineBreak">
                   {contentDesign.addImgRoundedView(
-                    "/img/promotionFd/subPageFd/newsArticle/reports-kstar.jpg",
+                    "/img/promotionFd/subPageFd/newsArticle/reports-kstar.jpg"
                   )}
                 </div>
 

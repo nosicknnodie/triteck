@@ -1,26 +1,22 @@
-import React, { Component } from "react";
 import {
-  MDBContainer,
   MDBBtn,
+  MDBContainer,
+  MDBIcon,
+  MDBInput,
   MDBModal,
   MDBModalBody,
-  ModalHeader,
   MDBModalFooter,
-  MDBRow,
-  MDBInput,
-  MDBIcon,
-  MDBCol,
-  MDBTabContent,
-  MDBTabPane,
   MDBNav,
   MDBNavItem,
-  MDBBox,
+  MDBRow,
+  MDBTabContent,
+  MDBTabPane,
 } from "mdbreact";
+import { Component } from "react";
 import "./ModalFormPage.css";
 
-import SectionContainer from "../component/sectionContainer";
-import { store } from "../../../common/Store";
 import { NavLink } from "react-router-dom";
+import SectionContainer from "../component/sectionContainer";
 
 class ModalFormPage extends Component {
   state = {

@@ -1,20 +1,19 @@
-import React, { Fragment } from "react";
+/* eslint-disable jsx-a11y/alt-text */
 import {
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBTable,
-  MDBTableHead,
-  MDBTableBody,
-  MDBIcon,
   MDBBtn,
-  MDBView,
-  MDBMask,
-  MDBContainer,
   MDBCard,
+  MDBCardBody,
+  MDBCol,
+  MDBContainer,
+  MDBMask,
+  MDBRow,
+  MDBTable,
+  MDBTableBody,
+  MDBTableHead,
+  MDBView,
 } from "mdbreact";
+import { Fragment } from "react";
 import "./CleanProjectsPageMobile.css";
-import TopLinkPageMobile from "../../component/TopLinkPageMobile";
 
 const CleanProjectsPageMobile = () => {
   return (

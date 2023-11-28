@@ -1,12 +1,10 @@
-import React, { useState, useContext, useReducer } from "react";
-
-import "./VideoNews.css";
-import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
 import TopImgCompanyMobile from "../../TopImgFd/TopImgCompanyMobile";
+import TopImgCompanyWeb from "../../TopImgFd/TopImgCompanyWeb";
+import "./VideoNews.css";
 
-import { MDBContainer, MDBIframe } from "mdbreact";
-import TitleOfVideo from "../component/TitleOfVideo";
+import { MDBContainer } from "mdbreact";
 import Copyrights from "../../../Footer";
+import TitleOfVideo from "../component/TitleOfVideo";
 
 const VideoNews = () => {
   return (

@@ -1,28 +1,14 @@
-import React, { useState, useContext, useReducer } from "react";
+/* eslint-disable react/jsx-pascal-case */
+import { useContext } from "react";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBView,
-  MDBFooter,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBTooltip,
-  MDBCardFooter,
-  MDBIcon,
-  MDBBtn,
-} from "mdbreact";
-import "./Promotion.css";
-import Copyrights from "../../Footer";
-import FeaturesPage_promotion from "./component/FeaturesPage_promotion";
+import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import { store } from "../../../common/Store";
-import CommunityPage from "./component/CommunityPage";
-import TopImgCompanyWeb from "../TopImgFd/TopImgCompanyWeb";
+import Copyrights from "../../Footer";
 import TopImgCompanyMobile from "../TopImgFd/TopImgCompanyMobile";
+import TopImgCompanyWeb from "../TopImgFd/TopImgCompanyWeb";
+import "./Promotion.css";
+import CommunityPage from "./component/CommunityPage";
+import FeaturesPage_promotion from "./component/FeaturesPage_promotion";
 
 const PromotionPage = () => {
   const globalState = useContext(store);

@@ -1,16 +1,15 @@
-import React, { useState, useContext, useReducer, Fragment } from "react";
+import { useContext } from "react";
 import "./FieldIndex.css";
 
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
 import Copyrights from "../../Footer";
 // import TopImgPageFieldPage from '../TopImgFd/TopImgPageFieldPage';
 // import TopImgPageFieldPageMobile from "../TopImgFd/TopImgPageFieldPageMobile";
+import { store } from "../../../common/Store";
 import TopImgPageFieldPage from "../TopImgFd/TopImgPageFieldPage";
 import TopImgPageFieldPageMobile from "../TopImgFd/TopImgPageFieldPageMobile";
 import FieldCompPage from "./component/FieldCompPage";
-import { store } from "../../../common/Store";
-import CarouselWidget from "./component/CarouselWidget";
 
 const FieldIndex = () => {
   const globalState = useContext(store);

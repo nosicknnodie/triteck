@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import {
   MDBContainer,
@@ -25,7 +26,6 @@ import {
 } from "mdbreact";
 import "./About.css";
 import Copyrights from "../../Footer";
-import LightboxWidget from "../AboutFd/components/LightboxWidget";
 import { NavLink } from "react-router-dom";
 
 const About = () => {
@@ -100,7 +100,8 @@ const About = () => {
                             <strong>Modeling & Simulation</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                            현실과 비현실이 모두 공존할 수 있는 폭넓은 분야 구현<br/>
+                            현실과 비현실이 모두 공존할 수 있는 폭넓은 분야 구현
+                            <br />
                             설계. 생활. 예술. 게임 3차원 가상 세계
                           </MDBCardText>
                           <NavLink
@@ -130,8 +131,9 @@ const About = () => {
                             <strong>DigitalTwin</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                          현실 세계에서 발생하는 실제 데이터를<br/>
-                          디지털 환경에서 실시간으로 반영
+                            현실 세계에서 발생하는 실제 데이터를
+                            <br />
+                            디지털 환경에서 실시간으로 반영
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -165,7 +167,9 @@ const About = () => {
                             <strong>Metaverse</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation cardTextClean">
-                          가상 현실(VR), 증강 현실(AR), 3D 인터넷 등의<br/>기술을 통해 현실과 가상 현실이 융합된 공간
+                            가상 현실(VR), 증강 현실(AR), 3D 인터넷 등의
+                            <br />
+                            기술을 통해 현실과 가상 현실이 융합된 공간
                           </MDBCardText>
                           <NavLink
                             tag="button"
@@ -194,7 +198,7 @@ const About = () => {
                             <strong>ICT</strong>
                           </MDBCardTitle>
                           <MDBCardText className="textSimulation mb-5">
-                          정보의 효율적인 전달과 통신기술을 포함
+                            정보의 효율적인 전달과 통신기술을 포함
                           </MDBCardText>
                           <NavLink
                             tag="button"

@@ -1,25 +1,11 @@
-import React, { Fragment } from "react";
-import {
-  MDBCardText,
-  MDBCardTitle,
-  MDBCardVideo,
-  MDBCardGroup,
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBIcon,
-  MDBBtn,
-  MDBView,
-  MDBMask,
-  MDBContainer,
-  MDBCard,
-} from "mdbreact";
+/* eslint-disable jsx-a11y/alt-text */
+import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import { Fragment } from "react";
 // import "./KstarProjectsPageMobile.css";
 // import "../../../../common/form/contentDesignMobile.css";
-import SectionContainer from "../../../mdbCommon/sectionContainer";
-import "../../../../common/form/contentDesignMobile.css";
-import * as contentDesign from "../../../../common/form/contentDesign.js";
-import "../../../../common/form/contentFont.css";
+import * as contentDesign from "@/common/form/contentDesign.js";
+import "@/common/form/contentDesignMobile.css";
+import "@/common/form/contentFont.css";
 
 const KstarProjectsPage = () => {
   const MAIN_COLOR = "#2A99EA";
@@ -81,7 +67,7 @@ const KstarProjectsPage = () => {
             <MDBRow className="mainContent">
               <MDBCol>
                 {contentDesign.addImgView(
-                  "/img/aboutIndex/kstar/kstar-overview.png",
+                  "/img/aboutIndex/kstar/kstar-overview.png"
                 )}
               </MDBCol>
             </MDBRow>
@@ -116,7 +102,7 @@ const KstarProjectsPage = () => {
             <MDBRow className="mainContent">
               <MDBCol>
                 {contentDesign.addImgView(
-                  "/img/aboutIndex/kstar/kstar-technology.png",
+                  "/img/aboutIndex/kstar/kstar-technology.png"
                 )}
               </MDBCol>
             </MDBRow>
@@ -227,24 +213,24 @@ const KstarProjectsPage = () => {
               <MDBRow className="pb-1">
                 <MDBCol className="col-6 pr-1">
                   {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-0.jpg",
+                    "/img/aboutIndex/kstar/kstar-program-0.jpg"
                   )}
                 </MDBCol>
                 <MDBCol className="col-6 pl-1">
                   {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-1.jpg",
+                    "/img/aboutIndex/kstar/kstar-program-1.jpg"
                   )}
                 </MDBCol>
               </MDBRow>
               <MDBRow>
                 <MDBCol className="col-6 pr-1">
                   {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-2.jpg",
+                    "/img/aboutIndex/kstar/kstar-program-2.jpg"
                   )}
                 </MDBCol>
                 <MDBCol className="col-6 pl-1">
                   {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-3.jpg",
+                    "/img/aboutIndex/kstar/kstar-program-3.jpg"
                   )}
                 </MDBCol>
               </MDBRow>
@@ -281,7 +267,7 @@ const KstarProjectsPage = () => {
             <MDBRow className="mainContent">
               <MDBCol>
                 {contentDesign.addImgRoundedView(
-                  "/img/aboutIndex/kstar/kstar-showroom.jpg",
+                  "/img/aboutIndex/kstar/kstar-showroom.jpg"
                 )}
               </MDBCol>
             </MDBRow>
