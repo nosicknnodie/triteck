@@ -1,21 +1,10 @@
-import React from "react";
 // import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn, MDBLink } from "mdbreact";
-import { MDBRow, MDBCard, MDBCardBody } from "mdbreact";
-import { useQuery } from "@apollo/react-hooks";
-import { GET_RESARCHS } from "../../../../common/GraphQL";
-import KstarCompPageItem from "./KstarCompPageItem";
+import resarchs from "@/common/data/_resarch";
+import { MDBCard, MDBCardBody, MDBRow } from "mdbreact";
 import "./KstarCompPage.css";
+import KstarCompPageItem from "./KstarCompPageItem";
 
 const KstarCompPage = (uuid) => {
-  const { loading, error, data } = useQuery(GET_RESARCHS, {
-    variables: { uuid: uuid },
-  });
-  if (loading) return <p>로딩...</p>;
-  if (error) {
-    return <div>{error.message}</div>;
-  }
-  const { resarchs } = data;
-
   return (
     <section id="kstarCard">
       <MDBCard className="my-5 px-5 pb-5">

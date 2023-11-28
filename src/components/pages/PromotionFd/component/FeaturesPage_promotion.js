@@ -1,22 +1,9 @@
-import React from "react";
-import { MDBRow, MDBCard, MDBCardBody } from "mdbreact";
-import { useQuery } from "@apollo/react-hooks";
-import { GET_CARDICTS } from "../../../../common/GraphQL";
+import { MDBCard, MDBCardBody, MDBRow } from "mdbreact";
 import FeaturesPagePromotionItem from "./FeaturesPagePromotionItem";
 import "./FeaturesPage_promotion.css";
 // import CommunityPage from "./CommunityPage";
-
+import cardIcts from "@/common/data/_cardIct";
 const FeaturesPage = (uuid) => {
-  const { loading, error, data } = useQuery(GET_CARDICTS, {
-    variables: { uuid: uuid },
-  });
-  if (loading) return <p>로딩...</p>;
-  if (error) {
-    return <div>{error.message}</div>;
-  }
-
-  const { cardIcts } = data;
-
   return (
     <>
       <section id="secPromotionId">
