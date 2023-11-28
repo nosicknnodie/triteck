@@ -9,7 +9,6 @@ import {
   MDBRow,
   MDBTable,
   MDBTableBody,
-  MDBTableHead,
   MDBView,
 } from "mdbreact";
 import { Fragment } from "react";

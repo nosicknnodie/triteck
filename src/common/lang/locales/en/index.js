@@ -8,6 +8,7 @@ import clean from "./clean.json";
 import dlpp from "./dlpp.json";
 import kstar from "./kstar.json";
 import voucher from "./voucher.json";
+import blog from "./blog.json";
 
 const Default = {
   lang,
@@ -20,6 +21,7 @@ const Default = {
   dlpp,
   kstar,
   voucher,
+  blog,
 };
 
 export default Default;

@@ -30,6 +30,7 @@ i18n.use(initReactI18next).init({
     "dlpp",
     "kstar",
     "voucher",
+    "blog",
   ],
   keySeparator: false,
   interpolation: {

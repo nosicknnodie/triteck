@@ -3,7 +3,19 @@ import { useCallback, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
-import { MDBIcon, MDBNav, MDBNavItem, MDBNavbar, MDBNavbarNav } from "mdbreact";
+import {
+  MDBBtn,
+  MDBBtnGroup,
+  MDBDropdown,
+  MDBDropdownItem,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBIcon,
+  MDBNav,
+  MDBNavItem,
+  MDBNavbar,
+  MDBNavbarNav,
+} from "mdbreact";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
 
@@ -14,9 +26,7 @@ const Header = () => {
   const handleToggleClickA = useCallback(() => {
     setToggleStateA((f) => !f);
   }, []);
-  const handleChangeLanguage = useCallback(() => {
-    i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR")
-  }, [i18n])
+
   const specialCaseNavbarStyles = {
     WebkitBoxOrient: "horizontal",
     flexDirection: "row",
@@ -35,7 +45,7 @@ const Header = () => {
           scrolling
         >
           <MDBNavbarNav left>
-            <MDBNavItem className="menuBtn">
+            {/* <MDBNavItem className="menuBtn">
               <div
                 onClick={handleToggleClickA}
                 key="sideNavToggleA"
@@ -48,7 +58,7 @@ const Header = () => {
               >
                 <MDBIcon icon="bars" color="white" size="1x" />
               </div>
-            </MDBNavItem>
+            </MDBNavItem> */}
 
             <MDBNavItem className="navItemLogo">
               <a href="/">
@@ -145,9 +155,18 @@ const Header = () => {
                 >
                   <NavLink
                     className="dropdown-item"
+                    // style={{ textOverflow: "ellipsis", display: "block" }}
                     to="/pages/AboutIndexFd/subPageFd/dlpp"
                   >
-                    {t("NUCLEAR_POWER_PLANT_DECOMMISSIONING")}
+                    <div
+                      style={{
+                        width: "100%",
+                        textOverflow: "ellipsis",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {t("NUCLEAR_POWER_PLANT_DECOMMISSIONING")}
+                    </div>
                   </NavLink>
                   <NavLink
                     className="dropdown-item"
@@ -215,10 +234,29 @@ const Header = () => {
           </MDBNav>
 
           <MDBNavbarNav right>
-            <div className="barRightSpace"></div>
+            <div className="barRightSpace">
+              <LanguageToggleButton />
+            </div>
           </MDBNavbarNav>
-          <button onClick={handleChangeLanguage} className="">{i18n.language === "ko-KR" ? "한국어" : "English"}</button>
         </MDBNavbar>
+      </div>
+    </>
+  );
+};
+
+const LanguageToggleButton = () => {
+  const { t, i18n } = useTranslation(["menu"]);
+  const flag = i18n.language === "ko-KR";
+  const handleChangeLanguage = useCallback(() => {
+    i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR");
+  }, [i18n]);
+  return (
+    <>
+      <div className="toggle-div" onClick={handleChangeLanguage}>
+        <div className={`toggle-container ${!flag && "toggle-checked"}`}></div>
+        <div className={`toggle-circle ${!flag && "toggle-checked"}`}>
+          {flag ? "KR" : "EN"}
+        </div>
       </div>
     </>
   );

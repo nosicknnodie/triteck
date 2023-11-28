@@ -5,7 +5,6 @@ import {
   MDBCol,
   MDBCardBody,
   MDBTable,
-  MDBTableHead,
   MDBTableBody,
   MDBBtn,
   MDBContainer,
