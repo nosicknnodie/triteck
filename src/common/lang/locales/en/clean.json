@@ -17,5 +17,11 @@
   "P16": "Continuous supply type combustor",
   "P17": "Steam and hot water production method",
   "P18": "Designated waste incineration treatment method",
-  "P19": "Batch injection combustor"
+  "P19": "Batch injection combustor",
+  "A01": "Clean Energy",
+  "A02": "High-temperature multi-stage cyclone combustion technology",
+  "A03": "We have developed a low-NOx 'high-temperature multi-stage cyclone combustion technology' that combines pyrolysis combustion technology, multi-stage combustion, and exhaust gas recirculation equipment, and applied it to various waste (solid, liquid, and gas) combustion devices. there is.",
+  "A04": "Various application technologies across industries by implementing complete combustion with high preheating - ensuring cleanliness and economic feasibility",
+  "A05": "No need for fire-resistant walls / water-cooled cooling facilities: State-of-the-art film cooling technology\nComplete combustion and environmental friendliness: Self pre-heating, complete combustion realized with high air preheating and complete pyrolysis of harmful gases\nUltra-high temperature combustion: High-temperature combustion goes from simple heat supply to power generation/can be used in high-tech industries\nPrevention of clinker generation: Elimination of the cause of clinker generation by discharging the ash at the bottom of the combustion furnace.",
+  "A06": "Complicated nuclear power plant decommissioning procedures are simulated in virtual reality to apply various decommissioning process scenarios to analyze/evaluate decommissioning procedures and equipment problems, and increase worker proficiency to utilize decommissioning process system optimization (ALARA). Contributed to the safety and reliability evaluation of establishing a dismantling process strategy by simulating the dismantling process through an equipment emulation model used in the process system."
 }
