@@ -1,30 +1,54 @@
-// import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn, MDBLink } from "mdbreact";
-import resarchs from "@/common/data/_resarch";
-import { MDBCard, MDBCardBody, MDBRow } from "mdbreact";
+import { MDBCard, MDBCardBody, MDBRow, MDBCol,MDBView ,MDBMask  } from "mdbreact";
+import { Link } from 'react-router-dom';
 import "./KstarCompPage.css";
-import KstarCompPageItem from "./KstarCompPageItem";
 
 const KstarCompPage = (uuid) => {
   return (
     <section id="kstarCard">
       <MDBCard className="my-5 px-5 pb-5">
         <MDBCardBody className="kstarCardBody">
-          <h2 className="h1-responsive font-weight-bold text-center my-5">
-            연구실적
-          </h2>
-          <p className="text-center w-responsive mx-auto mb-5">
-            Research achievements
-          </p>
           <MDBRow>
-            {resarchs.map((kcpi) => {
-              return (
-                <>
-                  <MDBRow className="mt-5 mb-5">
-                    <KstarCompPageItem kcpi={kcpi} />
-                  </MDBRow>
-                </>
-              );
-            })}
+          <MDBCol lg="6">
+          <Link to="/pages/AboutIndexFd/subPageFd/kstar">
+            <MDBView className="rounded mb-4 mt-4 ml-4 mr-4" hover waves>
+              <img className="img-fluid" src="/img/FieldIndex/field/pfCard1.png" alt="" />
+                <MDBMask overlay="white-slight" />
+
+            </MDBView>
+          </Link>
+          </MDBCol>
+          <MDBCol lg="6">
+          <Link to="/pages/AboutIndexFd/subPageFd/dlpp">
+            <MDBView className="rounded mb-4 mt-4 ml-4 mr-4" hover waves>
+              <img className="img-fluid" src="/img/FieldIndex/field/pfCard2.png" alt="" />
+                <MDBMask overlay="white-slight" />
+            </MDBView>
+          </Link>
+          </MDBCol>
+          <MDBCol lg="6">
+          <Link to="/pages/AboutIndexFd/subPageFd/Fire">
+            <MDBView className="rounded mb-4 mt-4 ml-4 mr-4" hover waves>
+              <img className="img-fluid" src="/img/FieldIndex/field/pfCard3.png" alt="" />
+                <MDBMask overlay="white-slight" />
+            </MDBView>
+          </Link>
+          </MDBCol>
+          <MDBCol lg="6">
+          <Link to="/pages/AboutIndexFd/subPageFd/Voucher">
+            <MDBView className="rounded mb-4 mt-4 ml-4 mr-4" hover waves>
+              <img className="img-fluid" src="/img/FieldIndex/field/pfCard4.png" alt="" />
+                <MDBMask overlay="white-slight" />
+            </MDBView>
+          </Link>
+          </MDBCol>
+          <MDBCol lg="6">
+          <Link to="#!">
+            <MDBView className="rounded mb-4 mt-4 ml-4 mr-4" hover waves>
+              <img className="img-fluid" src="/img/FieldIndex/field/pfCard5.png" alt="" />
+                <MDBMask overlay="white-slight" />
+            </MDBView>
+          </Link>
+          </MDBCol>
           </MDBRow>
         </MDBCardBody>
       </MDBCard>

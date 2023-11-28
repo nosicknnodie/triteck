@@ -20,21 +20,35 @@ class Ceo extends Component {
         <div className="ceoMobile">
           <TopImgCompanyMobile />
         </div>
-
         <img src="/img/ceo/CEO.png" alt="temp" style={{ width: "100%" }} />
+        <MDBContainer>
+        <MDBRow>
         <img src="/img/ceo/Vision.jpg" alt="temp" style={{ width: "100%" }} />
-        <img src="/img/ceo/Vision.png" alt="temp" style={{ width: "100%" }} />
+        </MDBRow>
+        </MDBContainer>
+        <MDBContainer>
+        <MDBRow>
         <img
           src="/img/ceo/Organization2.png"
           alt="temp"
           style={{ width: "100%" }}
         />
+        </MDBRow>
+        </MDBContainer>
+        <MDBContainer>
+        <MDBRow>
         <img src="/img/ceo/History.jpg" alt="temp" style={{ width: "100%" }} />
+        </MDBRow>
+        </MDBContainer>
+        <MDBContainer>
+        <MDBRow>
         <img
           src="/img/ceo/Certification.jpg"
           alt="temp"
           style={{ width: "100%" }}
         />
+        </MDBRow>
+        </MDBContainer>
 
         <section id="Partners">
           <MDBCardBody className="bodyPartners">

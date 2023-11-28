@@ -5,6 +5,7 @@ import About from "../components/pages/AboutFd/About";
 import AboutIndex from "../components/pages/AboutIndexFd/AboutIndex";
 import Clean from "../components/pages/AboutIndexFd/subPageFd/Clean";
 import Dlpp from "../components/pages/AboutIndexFd/subPageFd/Dlpp";
+import Fire from "../components/pages/AboutIndexFd/subPageFd/Fire";
 import Kstar from "../components/pages/AboutIndexFd/subPageFd/Kstar";
 import Voucher from "../components/pages/AboutIndexFd/subPageFd/Voucher";
 import ApiTestPage from "../components/pages/ApiTestPageFd/ApiTestPage";
@@ -48,6 +49,7 @@ const Routes = () => {
       <Route path="/pages/PromotionFd/Promotion" element={<Promotion />} />
       <Route path="/pages/ContactFd/Contact" element={<Contact />} />
       <Route path="/pages/AboutIndexFd/subPageFd/Clean" element={<Clean />} />
+      <Route path="/pages/AboutIndexFd/subPageFd/Fire" element={<Fire />} />
       <Route
         path="/pages/AboutIndexFd/subPageFd/Voucher"
         element={<Voucher />}

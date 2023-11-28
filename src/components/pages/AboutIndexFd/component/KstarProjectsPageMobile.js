@@ -134,6 +134,49 @@ const KstarProjectsPage = () => {
         </MDBContainer>
       </section>
 
+      {/* --------------2차사업--------------- */}
+      <section id="wideImgSection">
+        {/* <title2 style={{ color: "#848484" }}>
+          Digital Twin Virtual K STAR
+        </title2> */}
+        <title1 style={{ color: MAIN_COLOR }} className="mb-1">2차 사업</title1>
+        <MDBContainer>
+          <MDBRow className="mainContent">
+            <MDBContainer>
+              <MDBRow className="mainContent">
+                <MDBCol md="1"></MDBCol>
+                <MDBCol md="10">
+                  {contentDesign.addImgView(
+                    "/img/aboutIndex/kstar/kstar-program-4.jpg"
+                  )}
+                </MDBCol>
+                <MDBCol md="1"></MDBCol>
+              </MDBRow>
+
+              <MDBRow className="mainContent">
+                <MDBCol md="1"></MDBCol>
+                <MDBCol md="10">
+                  {contentDesign.addImgView(
+                    "/img/aboutIndex/kstar/kstar-program-5.jpg"
+                  )}
+                </MDBCol>
+                <MDBCol md="1"></MDBCol>
+              </MDBRow>
+
+              <MDBRow className="mainContent">
+                <MDBCol md="1"></MDBCol>
+                <MDBCol md="10">
+                  {contentDesign.addImgView(
+                    "/img/aboutIndex/kstar/kstar-program-6.jpg"
+                  )}
+                </MDBCol>
+                <MDBCol md="1"></MDBCol>
+              </MDBRow>    
+            </MDBContainer>          
+          </MDBRow>
+        </MDBContainer>
+      </section>      
+
       {/* --------------effects--------------- */}
       <section id="wideImgSection">
         <MDBContainer>
@@ -202,42 +245,20 @@ const KstarProjectsPage = () => {
         </MDBContainer>
       </section>
 
-      {/* --------------img program--------------- */}
-      <section id="wideImgInGrayBgSection">
-        <title2Light style={{ color: "#848484" }}>
-          Digital Twin Virtual K STAR
-        </title2Light>
-        <MDBContainer className="mainContent">
-          <MDBRow>
-            <MDBContainer className="mx-3">
-              <MDBRow className="pb-1">
-                <MDBCol className="col-6 pr-1">
-                  {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-0.jpg"
+       {/* --------------img --------------- */}
+       <section id="wideImgSection">
+        <MDBContainer>
+
+          <MDBRow className="mainContent">
+            <MDBCol md="1"></MDBCol>
+            <MDBCol md="12">
+                  {contentDesign.addImgView(
+                     "/img/aboutIndex/kstar/Advanced.png"
                   )}
                 </MDBCol>
-                <MDBCol className="col-6 pl-1">
-                  {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-1.jpg"
-                  )}
-                </MDBCol>
-              </MDBRow>
-              <MDBRow>
-                <MDBCol className="col-6 pr-1">
-                  {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-2.jpg"
-                  )}
-                </MDBCol>
-                <MDBCol className="col-6 pl-1">
-                  {contentDesign.addImgRoundedView(
-                    "/img/aboutIndex/kstar/kstar-program-3.jpg"
-                  )}
-                </MDBCol>
-              </MDBRow>
-            </MDBContainer>
           </MDBRow>
         </MDBContainer>
-      </section>
+      </section>     
 
       {/* --------------img showRoom--------------- */}
       <section id="wideImgSection">

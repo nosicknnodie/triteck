@@ -196,6 +196,12 @@ class Header extends React.Component {
                     >
                       클린에너지
                     </NavLink>
+                    <NavLink
+                      className="dropdown-item"
+                      to="/pages/AboutIndexFd/subPageFd/fire"
+                    >
+                      소방
+                    </NavLink>
                   </MDBNavItem>
                 </MDBNavItem>
 

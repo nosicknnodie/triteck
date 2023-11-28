@@ -257,6 +257,47 @@ const EcommercePage = () => {
                   </MDBCol>
                 </MDBRow>
               </div>
+
+              <div className="mb-4">
+                <MDBRow>
+                  <MDBCol md="4">
+                    <MDBView hover rounded className="z-depth-1-half mb-4">
+                      <img
+                        className="img-fluid"
+                        src="/img/promotionFd/subPageFd/newsArticle/research-article-ict-6.jpg"
+                        alt=""
+                      />
+                      <a
+                        href="https://v.daum.net/v/20221110180102845"
+                        target="blank"
+                      >
+                        <MDBMask
+                          overlay="white-slight"
+                          className="waves-light"
+                        />
+                      </a>
+                    </MDBView>
+                  </MDBCol>
+                  <MDBCol md="8">
+                    <p className="font-weight-bold dark-grey-text">
+                      2022.11.10
+                    </p>
+                    <div className="d-flex justify-content-between">
+                      <MDBCol size="11" className="text-truncate pl-0 mb-3">
+                        <a href="#!" className="dark-grey-text">
+                        [영상]원전 수중해체 기술 나왔다..
+                        </a>
+                      </MDBCol>
+                      <a
+                        href="https://v.daum.net/v/20221110180102845"
+                        target="blank"
+                      >
+                        <MDBIcon icon="angle-double-right" />
+                      </a>
+                    </div>
+                  </MDBCol>
+                </MDBRow>
+              </div>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

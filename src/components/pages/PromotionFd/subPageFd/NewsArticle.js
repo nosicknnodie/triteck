@@ -429,6 +429,94 @@ const NewsArticle = () => {
                         </MDBView>
                       </a>
                     </MDBCol>
+                    <MDBCol className="col-12 col-sm-6 col-lg-4 mb-lg-0 mb-4">
+                      <a
+                        href="https://biz.chosun.com/science-chosun/science/2023/02/23/VNW64TMKKNAIRIWEF3VUSUK7QI/"
+                        target="blank"
+                        className="grey-text"
+                      >
+                        <MDBView hover className="rounded z-depth-1 mb-5" waves>
+                          <img
+                            className="img-fluid"
+                            src="/img/promotionFd/subPageFd/newsArticle/research-article-4.jpg"
+                            alt=""
+                          />
+                          <MDBMask overlay="white-slight" />
+
+                          <img
+                            src="/img/promotionFd/subPageFd/newsArticle/chosunbiz.jpg"
+                            className="pr-2 pt-1 pl-3 pb-2"
+                          />
+                          <h5 className="font-weight-bold ml-3 mb-3 text-left">
+                            2023.02.23
+                          </h5>
+                          {/* <h4 className="font-weight-bold mb-3">
+                            <strong style={{ fontSize: "0.5em" }}>
+                              [르포] 1억도 온도 300초 견뎌라….
+                            </strong>
+                          </h4> */}
+                          <p className="px-1">
+                           [르포] 1억도 온도 300초 견뎌라….
+                          </p>
+                          <MDBRow>
+                            <MDBCol className="text-center">
+                              <MDBBtn
+                                color="default ml-3 mb-3"
+                                size="md"
+                                href="https://biz.chosun.com/science-chosun/science/2023/02/23/VNW64TMKKNAIRIWEF3VUSUK7QI/"
+                                target="blank"
+                              >
+                                더 보기
+                              </MDBBtn>
+                            </MDBCol>
+                          </MDBRow>
+                        </MDBView>
+                      </a>
+                    </MDBCol>
+                    <MDBCol className="col-12 col-sm-6 col-lg-4 mb-lg-0 mb-4">
+                      <a
+                        href="https://m.dongascience.com/news.php?idx=60659"
+                        target="blank"
+                        className="grey-text"
+                      >
+                        <MDBView hover className="rounded z-depth-1 mb-5" waves>
+                          <img
+                            className="img-fluid"
+                            src="/img/promotionFd/subPageFd/newsArticle/research-article-5.jpg"
+                            alt=""
+                          />
+                          <MDBMask overlay="white-slight" />
+
+                          <img
+                            src="/img/promotionFd/subPageFd/newsArticle/donga_logo_2.png"
+                            className="pr-2 pt-1 pl-3 pb-2"
+                          />
+                          <h5 className="font-weight-bold ml-3 mb-3 text-left">
+                            2023.07.12
+                          </h5>
+                          {/* <h4 className="font-weight-bold mb-3">
+                            <strong style={{ fontSize: "0.5em" }}>
+                              [레디!퓨전] 한국 핵융합장치 'KSTAR'의….
+                            </strong>
+                          </h4> */}
+                          <p className="px-1">
+                          [레디!퓨전] 한국 핵융합장치 'KSTAR'의….
+                          </p>
+                          <MDBRow>
+                            <MDBCol className="text-center">
+                              <MDBBtn
+                                color="default ml-3 mb-3"
+                                size="md"
+                                href="https://m.dongascience.com/news.php?idx=60659"
+                                target="blank"
+                              >
+                                더 보기
+                              </MDBBtn>
+                            </MDBCol>
+                          </MDBRow>
+                        </MDBView>
+                      </a>
+                    </MDBCol>
                   </MDBRow>
                 </MDBContainer>
               </MDBCol>

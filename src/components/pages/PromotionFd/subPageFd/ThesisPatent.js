@@ -479,6 +479,17 @@ const ThesisPatent = () => {
                             </MDBCard>
                           </MDBCol>
                         </MDBRow>
+                        <MDBRow>
+                          <MDBCol>
+                          <img
+                                src="/img/promotionFd/subPageFd/thesisPatent/Patent.JPG"
+                                alt=""
+                                href="#"
+                                width="100%"
+                                target="blank"
+                              />
+                          </MDBCol>
+                        </MDBRow>
                       </MDBContainer>
                     </section>
                   </MDBCardBody>
