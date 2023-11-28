@@ -1,10 +1,5 @@
 import { MDBCard, MDBCardBody, MDBRow,MDBCardVideo,MDBContainer} from "mdbreact";
 import "./FieldCompPage.css";
-<<<<<<< HEAD
-=======
-import FieldCompPageItem from "./FieldCompPageItem";
-import { Fragment } from "react";
->>>>>>> c5656d76cefc619ed5942871799baf89549b9395
 
 const FieldCompPage = (uuid) => {
   return (

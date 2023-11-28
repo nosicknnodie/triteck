@@ -83,85 +83,6 @@ const Header = () => {
                   <li>
                     {t("INTRODUCTION")}
                     <MDBIcon icon="angle-down" className="ml-1" />
-<<<<<<< HEAD
-                  </NavLink>
-                  <MDBNavItem
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/FieldPageFd/subPageFd/Field"
-                    >
-                      AR/VR
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/FieldPageFd/subPageFd/Rsa"
-                    >
-                      ART Technology
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/FieldPageFd/subPageFd/CleanEnergy"
-                    >
-                      Clean Energy
-                    </NavLink>
-                  </MDBNavItem>
-                </MDBNavItem>
-
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink
-                    to="/pages/AboutIndexFd/aboutIndex"
-                    className="Ripple-parent"
-                  >
-                    연구실적
-                    <MDBIcon icon="angle-down" className="ml-1" />
-                  </NavLink>
-                  <MDBNavItem
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/dlpp"
-                    >
-                      원전해체
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/kstar"
-                    >
-                      핵융합
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/Voucher"
-                    >
-                      바우처사업
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/clean"
-                    >
-                      클린에너지
-                    </NavLink>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/fire"
-                    >
-                      소방
-                    </NavLink>
-                  </MDBNavItem>
-                </MDBNavItem>
-
-                <MDBNavItem id="dropdown-top-menu" className="dropdown">
-                  <NavLink
-                    to="/pages/ContactFd/contact"
-                    className="Ripple-parent"
-                  >
-                    고객문의
-=======
                   </li>
                 </NavLink>
                 <MDBNavItem
@@ -170,7 +91,6 @@ const Header = () => {
                 >
                   <NavLink className="dropdown-item" to="/pages/CeoFd/ci">
                     CI
->>>>>>> c5656d76cefc619ed5942871799baf89549b9395
                   </NavLink>
                 </MDBNavItem>
               </MDBNavItem>
@@ -253,6 +173,12 @@ const Header = () => {
                   >
                     {t("CLEAN_ENERGY")}
                   </NavLink>
+                  <NavLink
+                      className="dropdown-item"
+                      to="/pages/AboutIndexFd/subPageFd/fire"
+                    >
+                      소방
+                    </NavLink>
                 </MDBNavItem>
               </MDBNavItem>
 
