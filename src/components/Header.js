@@ -58,7 +58,7 @@ const Header = () => {
           <MDBNav>
             <MDBNavbarNav
               id="top-menu-id"
-              className="top-menu-1 mr-5 pr-5"
+              className="top-menu-1"
               style={specialCaseNavbarStyles}
             >
               <MDBNavItem tag="ul" id="dropdown-top-menu" className="dropdown">

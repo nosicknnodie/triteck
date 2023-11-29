@@ -182,6 +182,7 @@ transition-timing-function: ease-out;
 margin-bottom :4px;
 padding-left: 0px;
 } */
+
 #top-menu-id .Ripple-parent:before {
   content: "";
   position: absolute;
@@ -213,7 +214,13 @@ padding-left: 0px;
 #top-menu .nav {
   font-weight: 900;
 }
+
 /* dropdown-top-menu 시작 */
+#dropdown-top-menu.nav-item {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
 #dropdown-top-menu .btn-primary {
   background-color: transparent !important;
 }
@@ -434,6 +441,6 @@ div.toggle-div .toggle-circle.toggle-checked {
   }
   /*메뉴바 중앙으로 위치하도록 여백조절 #top-menu .navbar-nav>li{ padding } 값에 영향받음*/
   #top-menu-id {
-    margin-left: 115px;
+    /* margin-left: 115px; */
   }
 }
