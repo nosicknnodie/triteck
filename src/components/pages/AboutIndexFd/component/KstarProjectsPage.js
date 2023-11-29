@@ -108,11 +108,13 @@ const KstarProjectsPage = () => {
       </section>
 
       {/* --------------2차사업--------------- */}
-            <section id="wideImgSection">
+      <section id="wideImgSection">
         {/* <title2 style={{ color: "#848484" }}>
           Digital Twin Virtual K STAR
         </title2> */}
-        <title1 style={{ color: MAIN_COLOR }} className="mb-1">2차 사업</title1>
+        <title1 style={{ color: MAIN_COLOR }} className="mb-1">
+          {t("P13")}
+        </title1>
         <MDBContainer>
           <MDBRow className="mainContent">
             <MDBContainer>
@@ -144,8 +146,8 @@ const KstarProjectsPage = () => {
                   )}
                 </MDBCol>
                 <MDBCol md="1"></MDBCol>
-              </MDBRow>    
-            </MDBContainer>          
+              </MDBRow>
+            </MDBContainer>
           </MDBRow>
         </MDBContainer>
       </section>
@@ -200,20 +202,17 @@ const KstarProjectsPage = () => {
         </MDBContainer>
       </section>
 
-       {/* --------------img --------------- */}
-       <section id="wideImgSection">
+      {/* --------------img --------------- */}
+      <section id="wideImgSection">
         <MDBContainer>
-
           <MDBRow className="mainContent">
             <MDBCol md="1"></MDBCol>
             <MDBCol md="12">
-                  {contentDesign.addImgView(
-                     "/img/aboutIndex/kstar/Advanced.png"
-                  )}
-                </MDBCol>
+              {contentDesign.addImgView("/img/aboutIndex/kstar/Advanced.png")}
+            </MDBCol>
           </MDBRow>
         </MDBContainer>
-      </section>     
+      </section>
 
       {/* --------------img showRoom--------------- */}
       <section id="wideImgSection">

@@ -438,9 +438,7 @@ const NewsArticle = () => {
                               [르포] 1억도 온도 300초 견뎌라….
                             </strong>
                           </h4> */}
-                          <p className="px-1">
-                           [르포] 1억도 온도 300초 견뎌라….
-                          </p>
+                          <p className="px-1">{t("P22")}</p>
                           <MDBRow>
                             <MDBCol className="text-center">
                               <MDBBtn
@@ -449,7 +447,7 @@ const NewsArticle = () => {
                                 href="https://biz.chosun.com/science-chosun/science/2023/02/23/VNW64TMKKNAIRIWEF3VUSUK7QI/"
                                 target="blank"
                               >
-                                더 보기
+                                {t("P19")}
                               </MDBBtn>
                             </MDBCol>
                           </MDBRow>
@@ -482,9 +480,7 @@ const NewsArticle = () => {
                               [레디!퓨전] 한국 핵융합장치 'KSTAR'의….
                             </strong>
                           </h4> */}
-                          <p className="px-1">
-                          [레디!퓨전] 한국 핵융합장치 'KSTAR'의….
-                          </p>
+                          <p className="px-1">{t("P23")}</p>
                           <MDBRow>
                             <MDBCol className="text-center">
                               <MDBBtn
@@ -493,7 +489,7 @@ const NewsArticle = () => {
                                 href="https://m.dongascience.com/news.php?idx=60659"
                                 target="blank"
                               >
-                                더 보기
+                                {t("P19")}
                               </MDBBtn>
                             </MDBCol>
                           </MDBRow>

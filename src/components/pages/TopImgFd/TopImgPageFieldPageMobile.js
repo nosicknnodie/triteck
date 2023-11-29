@@ -19,8 +19,10 @@ import {
 import CarouselMobileWidget from "../FieldPageFd/component/CarouselMobileWidget";
 import CarouselMobileVourWidget from "../FieldPageFd/component/CarouselMobileVourWidget";
 import CarouselMobileRviWidget from "../FieldPageFd/component/CarouselMobileRviWidget";
+import { useTranslation } from "react-i18next";
 
 const TopImgPageFieldPageMobile = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section id="TopImgPageFieldPageMobile">
@@ -63,7 +65,7 @@ const TopImgPageFieldPageMobile = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <p style={{ color: "white", wordBreak: "keep-all" }}>
-                          핵융합 가상화,가시화 XR프로젝트
+                          {t("T01")}
                         </p>
                       </MDBCol>
                     </MDBRow>
@@ -78,7 +80,7 @@ const TopImgPageFieldPageMobile = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <p style={{ color: "#FD8888", wordBreak: "keep-all" }}>
-                          ICT기반 원자력 안전혁신기술 개발사업
+                          {t("T02")}
                         </p>
                       </MDBCol>
                     </MDBRow>
@@ -94,7 +96,7 @@ const TopImgPageFieldPageMobile = () => {
                     <MDBRow>
                       <MDBCol className="animate__animated animate__flipInX text-center">
                         <p style={{ color: "#50EAF3", wordBreak: "keep-all" }}>
-                          비대면 비즈니스 디지털혁신 기술개발사업
+                          {t("T03")}
                         </p>
                       </MDBCol>
                     </MDBRow>

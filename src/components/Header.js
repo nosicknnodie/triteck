@@ -174,11 +174,11 @@ const Header = () => {
                     {t("CLEAN_ENERGY")}
                   </NavLink>
                   <NavLink
-                      className="dropdown-item"
-                      to="/pages/AboutIndexFd/subPageFd/fire"
-                    >
-                      소방
-                    </NavLink>
+                    className="dropdown-item"
+                    to="/pages/AboutIndexFd/subPageFd/fire"
+                  >
+                    {t("FIRE_FIGHTING")}
+                  </NavLink>
                 </MDBNavItem>
               </MDBNavItem>
 

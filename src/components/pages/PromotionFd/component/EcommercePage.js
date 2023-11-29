@@ -286,7 +286,7 @@ const EcommercePage = () => {
                     <div className="d-flex justify-content-between">
                       <MDBCol size="11" className="text-truncate pl-0 mb-3">
                         <a href="#!" className="dark-grey-text">
-                        [영상]원전 수중해체 기술 나왔다..
+                          {t("E08")}
                         </a>
                       </MDBCol>
                       <a
