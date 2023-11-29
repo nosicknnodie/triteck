@@ -158,7 +158,7 @@ const IctProjectsPage = () => {
                   {
                     videoTitle: t("V02_T"),
                     videoPath:
-                      "https://tritech.s3.ap-northeast-2.amazonaws.com/HomePage_video/ict-project-demo-bexco.mp4",
+                      "https://tritech.s3.ap-northeast-2.amazonaws.com/videos/rvi-main-v1.mp4",
                     videoRatio: "16by9",
                     videoDesc: t("V02_D").split("\n"),
                   },

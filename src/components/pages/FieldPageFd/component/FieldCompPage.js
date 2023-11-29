@@ -7,7 +7,7 @@ const FieldCompPage = (uuid) => {
       <MDBContainer>
          <MDBRow>
           <MDBCardVideo
-              src='https://tritech.s3.ap-northeast-2.amazonaws.com/HomePage_video/kstar.mp4'
+              src='https://tritech.s3.ap-northeast-2.amazonaws.com/videos/company-main-v1.mp4'
               ratio='16by9'    
             />
           </MDBRow>

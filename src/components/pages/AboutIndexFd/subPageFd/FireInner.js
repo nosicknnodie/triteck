@@ -52,7 +52,7 @@ const FireInner = () => {
             <MDBCol md="1"></MDBCol>
             <MDBCol md="12">
               <MDBCardVideo
-                src="https://tritech.s3.ap-northeast-2.amazonaws.com/HomePage_video/kstar.mp4"
+                src="https://tritech.s3.ap-northeast-2.amazonaws.com/videos/fire-main-v1.mp4"
                 ratio="16by9"
               />
             </MDBCol>
