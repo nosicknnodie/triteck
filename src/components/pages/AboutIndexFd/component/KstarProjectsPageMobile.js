@@ -57,13 +57,11 @@ const KstarProjectsPage = () => {
           <MDBContainer>
             <MDBRow>
               <MDBCol className="desc">
-                <p>
-                  {t("P04")
-                    .split("\n")
-                    .map((v, i) => (
-                      <div key={i}>{v}</div>
-                    ))}
-                </p>
+                {t("P04")
+                  .split("\n")
+                  .map((v, i) => (
+                    <div key={i}>{v}</div>
+                  ))}
               </MDBCol>
             </MDBRow>
             <MDBRow className="mainContent">
@@ -110,16 +108,14 @@ const KstarProjectsPage = () => {
             </MDBRow>
             <MDBRow>
               <MDBCol className="desc">
-                <p>
-                  <br />
-                  <ul className="ul">
-                    {t("P05")
-                      .split("\n")
-                      .map((v, i) => (
-                        <li key={i}>{v}</li>
-                      ))}
-                  </ul>
-                </p>
+                <br />
+                <ul className="ul">
+                  {t("P05")
+                    .split("\n")
+                    .map((v, i) => (
+                      <li key={i}>{v}</li>
+                    ))}
+                </ul>
               </MDBCol>
             </MDBRow>
           </MDBContainer>

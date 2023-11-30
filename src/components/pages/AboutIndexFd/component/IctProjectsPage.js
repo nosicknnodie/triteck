@@ -46,13 +46,11 @@ const IctProjectsPage = () => {
           </MDBRow>
           <MDBRow>
             <MDBCol md="12" className="desc">
-              <p>
-                {t("P03")
-                  .split("\n")
-                  .map((v, i) => (
-                    <div key={i}>{v}</div>
-                  ))}
-              </p>
+              {t("P03")
+                .split("\n")
+                .map((v, i) => (
+                  <div key={i}>{v}</div>
+                ))}
             </MDBCol>
           </MDBRow>
 
@@ -78,13 +76,11 @@ const IctProjectsPage = () => {
           </MDBRow>
           <MDBRow>
             <MDBCol md="12" className="desc">
-              <p>
-                {t("P04")
-                  .split("\n")
-                  .map((v, i) => (
-                    <div key={i}>{v}</div>
-                  ))}
-              </p>
+              {t("P04")
+                .split("\n")
+                .map((v, i) => (
+                  <div key={i}>{v}</div>
+                ))}
             </MDBCol>
           </MDBRow>
 
@@ -100,30 +96,25 @@ const IctProjectsPage = () => {
         </MDBContainer>
       </section>
 
-     {/* --------------rvi--------------- */}
-     <section id="wideImgInGrayBgSection">
+      {/* --------------rvi--------------- */}
+      <section id="wideImgInGrayBgSection">
         <MDBContainer>
-
           <MDBRow className="mainContent">
             <MDBCol md="1"></MDBCol>
             <MDBCol md="12">
-              {contentDesign.addImgView(
-                "/img/aboutIndex/dlpp/Platform.png"
-              )}
+              {contentDesign.addImgView("/img/aboutIndex/dlpp/Platform.png")}
             </MDBCol>
             <MDBCol md="1"></MDBCol>
           </MDBRow>
           <MDBRow className="mainContent">
             <MDBCol md="1"></MDBCol>
             <MDBCol md="12">
-              {contentDesign.addImgView(
-                "/img/aboutIndex/dlpp/exhibition.png"
-              )}
+              {contentDesign.addImgView("/img/aboutIndex/dlpp/exhibition.png")}
             </MDBCol>
             <MDBCol md="1"></MDBCol>
           </MDBRow>
         </MDBContainer>
-      </section>      
+      </section>
 
       {/* --------------effects--------------- */}
       <section id="wideImgSection">
@@ -135,13 +126,11 @@ const IctProjectsPage = () => {
           </MDBRow>
           <MDBRow>
             <MDBCol md="12" className="desc">
-              <p>
-                {t("P05")
-                  .split("\n")
-                  .map((v, i) => (
-                    <div key={i}>{v}</div>
-                  ))}
-              </p>
+              {t("P05")
+                .split("\n")
+                .map((v, i) => (
+                  <div key={i}>{v}</div>
+                ))}
             </MDBCol>
           </MDBRow>
           <MDBRow className="mainContent">
@@ -165,7 +154,15 @@ const IctProjectsPage = () => {
                 ])}
               </MDBRow>
               <MDBRow>
-              <iframe width="100%" height="600" src="https://www.youtube.com/embed/JYHal68ZDNM" title="초고난도 원전 해체!...실제 같은 시뮬레이터로 연습 / YTN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe
+                  width="100%"
+                  height="600"
+                  src="https://www.youtube.com/embed/JYHal68ZDNM"
+                  title="초고난도 원전 해체!...실제 같은 시뮬레이터로 연습 / YTN"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </MDBRow>
             </MDBContainer>
           </MDBRow>

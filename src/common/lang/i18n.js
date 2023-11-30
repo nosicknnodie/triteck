@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
     "en-US": ["en-US"],
     default: ["ko-KR"],
   },
-  debug: true,
+  debug: false,
   defaultNS: "lang",
   ns: [
     "menu",

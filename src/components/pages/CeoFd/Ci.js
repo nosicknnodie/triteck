@@ -37,13 +37,13 @@ const Ci = () => {
             <MDBContainer className="mainContent">
               <MDBRow>
                 <MDBCol className="desc"> */}
-                  <p style={{ color: GRAY_COLOR }}>
+                  <div style={{ color: GRAY_COLOR }}>
                     {t("P02")
                       .split("\n")
                       .map((v, i) => (
                         <div key={i}>{v}</div>
                       ))}
-                  </p>
+                  </div>
                 </MDBCol>
               </MDBRow>
             </MDBContainer>

@@ -76,7 +76,9 @@ const ThesisPatent = () => {
                                   {t("T04")
                                     .split("\n")
                                     .map((v, i) => (
-                                      <div key={i}>{v}</div>
+                                      <span key={i}>
+                                        {v} <br />
+                                      </span>
                                     ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>1993.01</p>
@@ -209,7 +211,9 @@ const ThesisPatent = () => {
                                   {t("T09")
                                     .split("\n")
                                     .map((v, i) => (
-                                      <div key={i}>{v}</div>
+                                      <span key={i}>
+                                        {v} <br />
+                                      </span>
                                     ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2006.08</p>
@@ -338,7 +342,9 @@ const ThesisPatent = () => {
                                   {t("T15")
                                     .split("\n")
                                     .map((v, i) => (
-                                      <div key={i}>{v}</div>
+                                      <span key={i}>
+                                        {v} <br />
+                                      </span>
                                     ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2020.12</p>
@@ -420,7 +426,9 @@ const ThesisPatent = () => {
                                   {t("T19")
                                     .split("\n")
                                     .map((v, i) => (
-                                      <div key={i}>{v}</div>
+                                      <span key={i}>
+                                        {v} <br />
+                                      </span>
                                     ))}
                                 </p>
                                 <p style={{ fontSize: "0.5em" }}>2019.04</p>
@@ -489,13 +497,13 @@ const ThesisPatent = () => {
                         </MDBRow>
                         <MDBRow>
                           <MDBCol>
-                          <img
-                                src="/img/promotionFd/subPageFd/thesisPatent/Patent.JPG"
-                                alt=""
-                                href="#"
-                                width="100%"
-                                target="blank"
-                              />
+                            <img
+                              src="/img/promotionFd/subPageFd/thesisPatent/Patent.JPG"
+                              alt=""
+                              href="#"
+                              width="100%"
+                              target="blank"
+                            />
                           </MDBCol>
                         </MDBRow>
                       </MDBContainer>

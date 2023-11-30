@@ -1,19 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { MDBIcon, MDBNav, MDBNavItem, MDBNavbar, MDBNavbarNav } from "mdbreact";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
+import { Menu, MenuItem, Sidebar, SubMenu } from "react-pro-sidebar";
 
 const Header = () => {
   // const [, setToggleStateA] = useState(false);
   const { t } = useTranslation(["menu"]);
-
-  // const handleToggleClickA = useCallback(() => {
-  //   setToggleStateA((f) => !f);
-  // }, []);
+  const [toggled, setToggled] = useState(false);
+  const handleToggleClickA = useCallback(() => {
+    setToggled((f) => !f);
+  }, []);
 
   const specialCaseNavbarStyles = {
     WebkitBoxOrient: "horizontal",
@@ -22,6 +23,7 @@ const Header = () => {
   return (
     <>
       <div className="mdb-skin">
+        <SideBarComponent toggled={toggled} setToggled={setToggled} />
         {/* --------------------------------------------top nav ------------------------------------- */}
 
         <MDBNavbar
@@ -33,7 +35,7 @@ const Header = () => {
           scrolling
         >
           <MDBNavbarNav left>
-            {/* <MDBNavItem className="menuBtn">
+            <MDBNavItem className="menuBtn">
               <div
                 onClick={handleToggleClickA}
                 key="sideNavToggleA"
@@ -46,7 +48,7 @@ const Header = () => {
               >
                 <MDBIcon icon="bars" color="white" size="1x" />
               </div>
-            </MDBNavItem> */}
+            </MDBNavItem>
 
             <MDBNavItem className="navItemLogo">
               <a href="/">
@@ -227,11 +229,235 @@ const Header = () => {
           </MDBNav>
 
           <MDBNavbarNav right>
-            <div className="barRightSpace">
+            <li className="barRightSpace">
               <LanguageToggleButton />
-            </div>
+            </li>
           </MDBNavbarNav>
         </MDBNavbar>
+      </div>
+    </>
+  );
+};
+
+const SideBarComponent = ({ toggled, setToggled }) => {
+  const { t } = useTranslation(["menu"]);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleGoToUrl = useCallback(
+    (url) => {
+      navigate(url);
+      setToggled(false);
+    },
+    [navigate, setToggled]
+  );
+
+  return (
+    <>
+      <div
+        style={{
+          zIndex: 1050,
+          display: "flex",
+          position: "absolute",
+
+          left: 0,
+          top: 0,
+        }}
+      >
+        <Sidebar
+          backgroundColor="#fff"
+          onBackdropClick={() => setToggled(false)}
+          toggled={toggled}
+          breakPoint="all"
+        >
+          <div
+            style={{
+              marginTop: "40px",
+              marginBottom: "10px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              onClick={() => handleGoToUrl("/")}
+              style={{ objectFit: "cover" }}
+              alt="logo"
+              src="/img/logo/tritech-logo-light-xs.png"
+            ></img>
+          </div>
+          <Menu
+            menuItemStyles={{
+              button: ({ level, active, disabled }) => {
+                // only apply styles on first level elements of the tree
+                if (level === 0)
+                  return {
+                    backgroundColor: active ? "#ddd" : undefined,
+                  };
+              },
+            }}
+          >
+            <MenuItem
+              active={location.pathname === "/"}
+              onClick={() => handleGoToUrl("/")}
+            >
+              {t("HOME")}
+            </MenuItem>
+            <SubMenu
+              active={location.pathname === "/pages/CeoFd/ceo"}
+              label={t("INTRODUCTION")}
+            >
+              <MenuItem
+                active={location.pathname === "/pages/CeoFd/ceo"}
+                onClick={() => handleGoToUrl("/pages/CeoFd/ceo")}
+              >
+                {t("INTRODUCTION")}
+              </MenuItem>
+              <MenuItem
+                active={location.pathname === ""}
+                onClick={() => handleGoToUrl("/pages/CeoFd/ci")}
+              >
+                CI
+              </MenuItem>
+            </SubMenu>
+            <SubMenu
+              active={location.pathname.includes("/pages/FieldPageFd")}
+              label={t("RESEARCH_FIELD")}
+            >
+              <MenuItem
+                active={location.pathname === "/pages/FieldPageFd/FieldIndex"}
+                onClick={() => handleGoToUrl("/pages/FieldPageFd/FieldIndex")}
+              >
+                {t("RESEARCH_FIELD")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/FieldPageFd/subPageFd/Field"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/FieldPageFd/subPageFd/Field")
+                }
+              >
+                AR / VR
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/FieldPageFd/subPageFd/Rsa"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/FieldPageFd/subPageFd/Rsa")
+                }
+              >
+                ART Technology
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname ===
+                  "/pages/FieldPageFd/subPageFd/CleanEnergy"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/FieldPageFd/subPageFd/CleanEnergy")
+                }
+              >
+                Clean Energy
+              </MenuItem>
+            </SubMenu>
+            <SubMenu
+              active={location.pathname.includes("/pages/AboutIndexFd")}
+              label={t("RESEARCH_RESULTS")}
+            >
+              <MenuItem
+                active={location.pathname === "/pages/AboutIndexFd/aboutIndex"}
+                onClick={() => handleGoToUrl("/pages/AboutIndexFd/aboutIndex")}
+              >
+                {t("RESEARCH_RESULTS")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/AboutIndexFd/subPageFd/dlpp"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/AboutIndexFd/subPageFd/dlpp")
+                }
+              >
+                {t("NUCLEAR_POWER_PLANT_DECOMMISSIONING")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/AboutIndexFd/subPageFd/kstar"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/AboutIndexFd/subPageFd/kstar")
+                }
+              >
+                {t("NUCLEAR_FUSION")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/AboutIndexFd/subPageFd/Voucher"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/AboutIndexFd/subPageFd/Voucher")
+                }
+              >
+                {t("VOUCHER_BUSINESS")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/AboutIndexFd/subPageFd/clean"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/AboutIndexFd/subPageFd/clean")
+                }
+              >
+                {t("CLEAN_ENERGY")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname === "/pages/AboutIndexFd/subPageFd/fire"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/AboutIndexFd/subPageFd/fire")
+                }
+              >
+                {t("FIRE_FIGHTING")}
+              </MenuItem>
+            </SubMenu>
+            <MenuItem
+              active={location.pathname === "/pages/ContactFd/contact"}
+              onClick={() => handleGoToUrl("/pages/ContactFd/contact")}
+            >
+              {t("CUSTOMER_INQUIRY")}
+            </MenuItem>
+            <SubMenu
+              active={location.pathname.includes(
+                "/pages/PromotionFd/subPageFd"
+              )}
+              label={t("BLOG")}
+            >
+              <MenuItem
+                active={
+                  location.pathname ===
+                  "/pages/PromotionFd/subPageFd/NewsArticle"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/PromotionFd/subPageFd/NewsArticle")
+                }
+              >
+                {t("RELATED_ARTICLES")}
+              </MenuItem>
+              <MenuItem
+                active={
+                  location.pathname ===
+                  "/pages/PromotionFd/subPageFd/ThesisPatent"
+                }
+                onClick={() =>
+                  handleGoToUrl("/pages/PromotionFd/subPageFd/ThesisPatent")
+                }
+              >
+                {t("THESES_PATENTS")}
+              </MenuItem>
+            </SubMenu>
+          </Menu>
+        </Sidebar>
       </div>
     </>
   );
@@ -243,6 +469,7 @@ const LanguageToggleButton = () => {
   const handleChangeLanguage = useCallback(() => {
     i18n.changeLanguage(i18n.language === "ko-KR" ? "en-US" : "ko-KR");
   }, [i18n]);
+
   return (
     <>
       <div className="toggle-div" onClick={handleChangeLanguage}>

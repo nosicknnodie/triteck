@@ -65,13 +65,13 @@ const VoucherProjectsPage = () => {
               <h3 className="font-weight-bold mb-3 p-0">
                 {/* <strong>Title of the news</strong> */}
               </h3>
-              <p className="technology pl-1 pr-4 text-left">
+              <div className="technology pl-1 pr-4 text-left">
                 {t("P03")
                   .split("\n")
                   .map((v, i) => (
                     <div key={i}>{v}</div>
                   ))}
-              </p>
+              </div>
             </MDBCol>
 
             <MDBCol lg="5">
@@ -139,7 +139,7 @@ const VoucherProjectsPage = () => {
             />
 
             <h3 className="font-weight-bold mb-3 p-0"></h3>
-            <p className="letter pr-1 text-left">
+            <div className="letter pr-1 text-left">
               {t("P04")
                 .split("\n")
                 .map((v, i) => {
@@ -153,7 +153,7 @@ const VoucherProjectsPage = () => {
                     </div>
                   );
                 })}
-            </p>
+            </div>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
